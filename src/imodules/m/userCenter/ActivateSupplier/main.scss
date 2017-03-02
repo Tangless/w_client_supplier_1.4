@@ -1,0 +1,138 @@
+@import"src/sass/global/mixin";
+#ActivateSupplier {
+  .active-supplier {
+    position: relative;
+    padding-top: .40rem;
+  }
+  .active-title {
+
+    height: .18rem;
+    font-size: .18rem;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    text-align: center;
+    color: $black;
+  }
+  .active-name {
+    margin-top: .59rem;
+    margin-bottom: .19rem;
+  }
+  .form-control {
+    width: 100%;
+    height: .43rem;
+    line-height: .14rem;
+    font-size: .14rem;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    color: $black;
+    padding: .14rem 0 .14rem .2rem;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0rem;
+    border: none;
+    border-bottom: solid 1px $linecolor;
+  }
+  .form-control:focus {
+    border-bottom: solid 1px $blue;
+  }
+  .form-control:disabled {
+    background-color: #fff;
+  }
+  //placeholder颜色设置
+  .input-name::-webkit-input-placeholder {
+    　　color: $lightgray ;
+  }
+  .input-name:-moz-placeholder {
+    　　color: $lightgray ;
+  }
+  .input-name::-moz-placeholder {
+    　　color: $lightgray ;
+  }
+  .input-name:-ms-input-placeholder {
+    　　color: $lightgray ;
+  }
+  .active-phone {
+    width: 100%;
+    height: 0.43rem;
+    line-height: 0.14rem;
+    padding: .14rem 0 .14rem .2rem;
+    border-bottom: solid 1px $linecolor;
+    color: $gray;
+    font-size:0.14rem;
+  }
+  .active-click {
+    text-align: center;
+  }
+  .btn-active {
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    width: 2.55rem;
+    margin-top: 0.45rem;
+    margin-bottom: 0.35rem;
+  }
+  //性别显示样式
+  .active-gender {
+    text-align: center;
+    position: absolute;
+    top: 1.27rem;
+    right: 0.2rem;
+  }
+
+  .class-male, .class-female {
+    color: $lightgray;
+    display: inline-block;
+    font-size:0.14rem;
+    span {
+      display: inline-block;
+      height: 12px;
+      width: 12px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      border: solid 1px $linecolor;
+      margin-right: 5px;
+      position: relative;
+    }
+  }
+  .male-mark{
+    position: relative;
+    display: block;
+    height: 6px;
+    width: 6px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #78aaff;
+    top: 2px;
+    left: 2px;
+  }
+  .female-mark {
+    position: relative;
+    display: none;
+    height: 6px;
+    width: 6px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #78aaff;
+    top: 2px;
+    left: 2px;
+  }
+  //小竖线
+  .div-or {
+    display: inline-block;
+    background-color: $linecolor;
+    color: $linecolor;
+    width: 1px;
+    margin-left: 0.05rem;
+    margin-right: 0.05rem;
+  }
+  .spacer {
+    background-color:$linecolor;
+    width: 1px;
+    display: inline-block;
+  }
+}

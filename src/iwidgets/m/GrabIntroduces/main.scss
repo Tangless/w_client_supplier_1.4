@@ -1,0 +1,65 @@
+@import "src/sass/global/mixin";
+@import "src/sass/global/libs/variable";
+
+.GrabIntroduces {
+  
+  border-top: 1px solid #E0E1E6;
+  margin: 0.5rem 0.15rem 0;
+
+  li {
+    border-bottom: 1px solid #E0E1E6;
+    position: relative;
+    padding-bottom: 0.160000rem;
+  }
+
+  li > h5 {
+    font-size: 0.140000rem;
+    width: 90%;
+    font-weight: normal;
+    margin: 0.170000rem 0 0;
+    color: #2A2E33;
+  }
+
+  li.active h5 {
+    color: #FD4701;
+  }
+
+  li.active .part-doucon {
+    display: inline-block;
+  }
+
+  .grab-open {
+    width: 0.12rem;
+    height: 0.07rem;
+    float: left;
+    background: url({{WIMAGE}}/open.png) no-repeat;
+    background-size: 0.12rem auto;
+    position: absolute;
+    right: 0.09rem;
+    top: 0.061rem;
+  }
+
+  .grab-open.grab-stop {
+    background: url({{WIMAGE}}/stop.png) no-repeat;
+    background-size: 0.12rem auto;
+  }
+
+  /*最后一个子元素下面没有内容时不需要线*/
+  li.last-no-line {
+    border-bottom: none;
+  }
+
+  .part-doucon {
+    font-size: 0.130000rem;
+    color: #9E9EA2;
+    margin-top: 0.100000rem;
+    display: none;
+    line-height: 1.7;
+  }
+}
+
+ul,li,h6 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

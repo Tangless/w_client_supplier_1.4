@@ -1,0 +1,66 @@
+@import "src/sass/global/mixin";
+@import "src/sass/global/libs/variable";
+
+#Code {
+	.c-code {
+		width: 408px;
+		margin: 0 auto;
+		padding: 0 30px 30px 30px;
+		h1 {
+			font-size: 30px;
+			color: $black;
+			margin-bottom: 36px;
+			margin-top: 36px;
+		}
+	}
+	.c-code-phone {
+		float: left;
+		font-size: 14px;
+		color: $black;
+	}
+	.c-code-gain {
+		float: right;
+		color: #b3b5b7;
+		font-size: 14px;
+		outline: none;
+		border: none;
+		background: transparent;
+
+		&.code-blue {
+			color: $blue;
+		}
+	}
+	.c-code-parent {
+		width: 64px;
+		height: 64px;
+		border: 1px solid #d2d9e0;
+		display: inline-block;
+		margin: 0 12px;
+		border-bottom-color: #d2d9e0!important;
+	}
+	.c-one {
+		margin-left:0;
+	}
+	.c-last {
+		margin-right:0;
+	}
+	.c-code-put {
+		width: 100%;
+		text-align: center;
+		margin-top: 20px;
+	}
+	.c-code-put-one {
+		width: 61px;
+		height: 61px;
+		text-align: center;
+		line-height: 64px;
+		border: none;
+		padding: 0;
+		font-size: 36px;
+		color: $black;
+		outline: none;
+	}
+	.c-code-put-one:focus {
+		border-bottom-color: #d2d9e0;
+	}
+}

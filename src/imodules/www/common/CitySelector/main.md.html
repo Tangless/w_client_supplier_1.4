@@ -1,0 +1,27 @@
+<div id="{{ID}}" {{IMODULE}}>
+    <div class="hd">
+        <h1 class="title">已开通以下城市</h1>
+        <h3 class="localtion"><span class="icon-location-pcs mark"></span><strong idom="curCity">郑州</strong></h3>
+        <div class="search">
+            <input id="{{ID}}-search" type="text" class="filter" placeholder="请输入城市名开始查找..." />
+        </div>
+    </div>
+    <div class="bd">
+        <style>@@include('{{MCSS}}')</style>
+        <dl class="index" ievent="changeCard" idom="index">
+            <dt><a href="#" class="selected" card="0">热门</a></dt>
+            <dd>
+                <a href="#" card="1">ABCDE</a>
+                <a href="#" card="2">FGHIJ</a>
+                <a href="#" card="3">KLMNOP</a>
+                <a href="#" card="4">QRSTUV</a>
+                <a href="#" card="5">WXYZ</a>
+            </dd>
+        </dl>
+
+        <div class="list" idom="list" ievent="changeCity">
+
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,8 @@
+
+@@include('global/api/api.js')
+@@include('global/api/auth.js')
+@@include('global/api/baidu.js')
+@@include('global/api/demand.js')
+@@include('global/api/profile.js')
+@@include('global/api/repo.js')
+@@include('global/api/dict.js')

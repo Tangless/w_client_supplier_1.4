@@ -1,0 +1,24 @@
+#{{ID}} {
+	#container {
+		width:100%;
+		height:2.35rem;
+		position:fixed;
+		top:.48rem;
+		z-index:11;
+	}
+	.marker {
+		background:url({{MIMAGE}}/big_marker.png) no-repeat;
+        background-size:.24rem .36rem;
+        width:.24rem;
+        height:.36rem;
+	}
+	.marker1 {
+		background:url({{MIMAGE}}/small_marker.png) no-repeat;
+        background-size:.07rem .07rem;
+        width:.16rem;
+        height:.24rem;
+	}
+	.amap-geolocation-con,.amap-copyright,.amap-zoomcontrol,.amap-logo {
+		display:none!important;
+	}
+}

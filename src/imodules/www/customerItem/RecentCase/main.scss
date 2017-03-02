@@ -1,0 +1,145 @@
+@import "src/sass/global/mixin";
+@import "src/sass/global/libs/variable";
+
+#RecentCase {
+	.slick-slide {
+		outline: none;
+	}
+	.case {
+		width: 1140px;
+		margin: 0 auto;
+		padding-top: 74px;
+	}
+	.case-tit {
+		font-size: 20px;
+		color: #83848e;
+	}
+	.case-btn {
+		width: 100%;
+		position: relative;
+	}
+	.case-flow {
+		width: 100%;
+		overflow: hidden;
+	}
+	.case-cutting {
+		width: 1170px;
+		margin-left: -15px;
+	}
+	.case-con {
+		width: 100%;
+		padding-top: 11px;
+	}
+	.case-one {
+		width: 360px;
+		float: left;
+		display: inline;
+	}
+	.case-one-margin {
+		margin: 0 15px;
+	}
+	.case-pic {
+		width: 100%;
+		height: 240px;
+	}
+	.case-info {
+		font-size: 15px;
+		color: $black;
+		margin-top: 23px;
+		margin-bottom: 0px;
+		.price {
+			font-size: 24px;
+			margin: 0 3px;
+			font-weight: bold;
+		}
+	}
+	.case-time {
+		color: #83848e;
+		font-size: 12px;
+		margin-bottom: 26px;
+	}
+	.case-service {
+		color: #83848e;
+		font-size: 12px;
+		margin-bottom: 4px;
+	}
+	.case-company {
+		font-size: 14px;
+		color: $black;
+		font-weight: bold;
+	}
+	.slick-next {
+		position: absolute;
+		right: -19px;
+		top: 123px;
+		outline: none;
+		border: none;
+		background: transparent;
+		width: 15px;
+		overflow: hidden;
+	}
+
+	.slick-prev {
+		position: absolute;
+		left: -25px;
+		top: 123px;
+		outline: none;
+		border: none;
+		background: transparent;
+		width: 15px;
+		overflow: hidden;
+	}
+
+	.slick-disabled {
+		opacity: 0;
+	}
+	.pic-box {
+		width: 100%;
+		height: 100%;
+		background-color: #e3e8ee;
+	}
+
+	/*当屏幕小于1200的时候*/
+	@media (max-width: 1200px){
+		.case {
+			width: 940px;
+		}
+		.case-cutting {
+			width: 970px;
+		}
+		.case-one {
+			/* width: 293px; */
+      width: 30%;
+		}
+		.case-pic {
+			height: 195px;
+		}
+		.slick-next, .slick-prev {
+			top: 100px;
+		}
+
+	}
+
+	/*当屏幕小于992的时候*/
+	@media (max-width: 992px){
+		.case {
+			width: 720px;
+		}
+		.case-cutting {
+			width: 970px;
+			overflow-x: auto;
+		}
+		.case-con {
+			/* width: 1631px; */
+		}
+		.case-one {
+			width: 282px;
+		}
+		.case-pic {
+			height: 183px;
+		}
+		.case-flow {
+			height: 344px;
+		}
+	}
+}

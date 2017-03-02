@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    @@include('www/common/InsertTop/main.html',{"title": ""})
+
+    <style>
+        .frame {
+            padding: 20px;
+        }
+
+        #dad {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border: 1px solid blue;
+        }   
+
+        #son {
+            position: relative;
+            width: 50px;
+            height: 50px;
+            border: 1px solid red;
+            background-color: red;
+        }
+
+        #done {
+            position: absolute;
+            top: 200px;
+        }
+    </style>
+</head>
+<body id="{{ID}}" {{IMODULE}}>
+    <div class="frame">
+        @@include('global/misc/ImageUploader/main.md.html')
+    </div>
+
+    <button id="done" ievent="onDone">提交</button>
+
+    <!-- <div id="dad" ievent="onDad">
+        <div id="son" ievent="onSon"></div>
+    </div> -->
+
+    @@include('www/common/InsertBottom/main.html')
+</body>
+</html>

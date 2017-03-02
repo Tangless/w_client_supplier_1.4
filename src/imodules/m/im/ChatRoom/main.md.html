@@ -1,0 +1,38 @@
+<div id="{{ID}}" {{IMODULE}}>
+    {{IncludeMCSS}}
+    <div class="supplier-list chat-member hide" idom="slist">
+        <div class="sup-gChat active" ievent="changeChatObj">
+            <span class="icon-crowd"></span>
+            公共洽谈区
+        </div>
+        <div class="sup-cChat" ievent="changeChatObj">
+            <span class="icon-lock"></span>
+            与客户私聊
+        </div>
+    </div>
+    <div class="group-list chat-member hide" idom="glist">
+        <div class="default-chat">
+            <div class="gchat group-item active" gid="" ievent="clientChangeChat">
+                <span class="user-head icon-crowd"></span>
+            </div>
+            <div class="vip group-item" gid="" ievent="clientChangeChat">
+                <img class="user-head" src="{{MIMAGE}}/xiaohui.png">
+                <span class="icon-vip"></span>
+            </div>
+        </div>
+        <div class="group-member">
+            <div class="scroll-pane" idom="scrollPanel">
+
+            </div>
+        </div>
+    </div>
+    <div class="chat-pane" idom="chatPane">
+    </div>
+    <form class="input-pane" action="#" ievent="sendMsg">
+        <input id="input" placeholder="想了解哪些细节？问问吧" type="text"/>
+        <button type="submit" id="sendMsg" class="btn hide btn-primary" idom="send">发送</button>
+        <span class="icon-enclosure02 enclosure" idom="enclosure" ievent="sendImg"></span>
+        <span class="icon-expression emotion hide"></span>
+        <input id="imgFile" class="hide" type="file" accept="image/*">
+    </form>
+</div>

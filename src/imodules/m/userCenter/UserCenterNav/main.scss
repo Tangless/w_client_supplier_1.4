@@ -1,0 +1,48 @@
+@import "src/sass/global/mixin";
+#UserCenterNav{
+    width: 54px;
+    height: 100%;
+    background: #FFF;
+    border-right: $linecolor 1px solid;
+    overflow: hidden;
+    .nav .userInfo{
+        padding: .73rem 0;
+        [class^="icon-"]{
+            font-size: .25rem;
+        }
+    }
+    .nav li{
+        text-align: center;
+        padding-top: .155rem;
+        padding-bottom: .2rem;
+        border-bottom: $linecolor 1px solid;
+    }
+    [class^="icon-"]{
+        font-size: .16rem;
+    }
+    .curTab{
+        background-color: $blue;
+		color: #fff;
+        border-bottom: none !important;
+    }
+    .nav .supplierData,.nav .wallet,.nav .valueAdd{
+        height: 53px;
+    }
+    .logout{
+        text-align: center;
+        margin-top: 2.41rem;
+    }
+    .image-sm-avatar{
+        display: none;
+        width: 0.25rem;
+        height:0.25rem;
+        -webkit-border-radius:0.125rem;
+        -moz-border-radius:0.125rem;
+        border-radius:0.125rem;
+        position: relative;
+        left:25%;
+    }
+    .icon-user3－26px {
+        color: $blue
+    }
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @@include('m/common/InsertTop/main.html',{"title": ""})
+    {{IncludeMCSS}}
+</head>
+<body id="{{ID}}" {{IMODULE}}>
+<div class="grab-detail">
+    @@include('m/grab/GrabDetails/main.md.html')
+    @@include('m/grab/BiddingRule/main.md.html')
+</div>
+<div class="grab-chat hide" idom="grabChat">
+    @@include('m/im/NeteaseIm/main.md.html')
+</div>
+@@include('m/common/InsertBottom/main.html')
+<script src="/global/iscripts/libs/dropzone/exif.js"></script>
+<script src="/global/iscripts/libs/dropzone/dropzone.js"></script>
+<!-- 即时通讯 -->
+
+</body>
+</html>

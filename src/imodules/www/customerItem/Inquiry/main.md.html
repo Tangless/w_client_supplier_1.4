@@ -1,0 +1,144 @@
+<div id="{{ID}}"  {{IMODULE}}>
+{{IncludeMCSS}}
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 citycol">
+				<div class="city" ievent="citySelect">
+					<span class="icon-location-pcs blue"></span><span class="citySelect"></span>
+					</div>
+			</div>
+		</div>
+		<div class="row hide login">
+			<div class="col-xs-4 border inWid leftradius">
+				<div class="askDiv"  ievent="callModal">
+					<div class="title font13">类型</div>
+					<div class="info scrType">屏幕类型</div>
+				</div>
+				<div class="option scrModal hide">
+					<div class="select" type="2" ievent="type">户外广告牌</div>
+					<div class="select" type="5" ievent="type">室内高清</div>
+					<div class="select" type="3" ievent="type">信息告示牌</div>
+					<div class="select" type="1" ievent="type">门头招牌</div>
+					<div class="select" type="4" ievent="type">舞台用屏</div>
+					<div class="select" type="0" ievent="type">其他</div>
+				</div>
+			</div>
+			<div class="col-xs-4 border-middle inWid">
+				<div class="askDiv"  ievent="callModal">
+					<div class="title font13">要求</div>
+					<div class="info"><span class="location">环境</span>、<span class="color">颜色</span>、<span class="between">间距</span></div> 
+				</div>
+				<div class="option sizeModal hide">
+					<div class="scrSize">
+						<div class="title font12">用屏面积(必填)</div>
+						<div class="pos">
+							<input class="size" placeholder="面积(请填写数字，如15)">
+							<div class="unit">㎡</div>
+						</div>
+					</div>
+					<div class="errorTip sizeTip hide">
+						<span class="icon-mark"></span>
+						<span class="errorInfo">请输入正确的手机号</span>
+					</div>
+					<div class="container" style="width:100%">
+						<div class="title font12 top padding5">环境</div>
+						<div class="row">
+							<div class="col-xs-4">
+								<div class="choose locChoosed" ievent="select1" loc="1">户外</div>
+							</div>
+							<div class="col-xs-4">
+								<div class="choose" ievent="select1" loc="3">半户外</div>	
+							</div>
+							<div class="col-xs-4">
+								<div class="choose" ievent="select1" loc="2">室内</div>
+							</div>
+						</div>
+						<div class="title font12 top padding5">颜色</div>
+						<div class="row">
+							<div class="col-xs-4">
+								<div class="choose corChoosed " ievent="select2" color="3">全彩</div>
+							</div>
+							<div class="col-xs-4">
+								<div class="choose" ievent="select2" color="2">双色</div>	
+							</div>
+							<div class="col-xs-4">
+								<div class="choose" ievent="select2" color="1">单色</div>
+							</div>
+						</div>
+						<div class="title font12 top padding5">间距</div>
+						<div class="row span">
+							<div class="col-xs-3">
+								<div class="choose" ievent="select3">P12</div>
+							</div>
+							<div class="col-xs-3">
+								<div class="choose spanChoosed" ievent="select3">P10</div>	
+							</div>
+							<div class="col-xs-3">
+								<div class="choose" ievent="select3">P8</div>
+							</div>
+							<div class="col-xs-3">
+								<div class="choose" ievent="others">其他</div>
+							</div>
+
+							<!-- <div class="col-xs-3 choose" ievent="select3">
+								P12
+							</div>
+							<div class="col-xs-3 choose spanChoosed" ievent="select3">
+								P10
+							</div>
+							<div class="col-xs-3 choose" ievent="select3">
+								P8
+							</div>
+							<div class="col-xs-3 choose" ievent="others">
+								其他
+							</div> -->
+						</div>
+						<div class="row spanInput hide">
+							<div class="col-md-12 textBor">
+								<input  name="" placeholder="间距 （如P10、P4）">
+							</div>
+							<div class="icon-cross-pc close" ievent="close"></div>
+						</div>
+						<div class="row sure">
+							<div class="col-md-12 width" ievent="sure">
+								确定
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-4 border userInfo inWid1">
+				<div class="inline askDiv"  ievent="callModal">
+					<div class="title font13">联系方式</div>
+					<div class="info"><span class="nameT">称呼</span>、<span class="phoneT">电话</span></div>
+				</div>
+				<div class="btn" ievent="chatRoom">询价</div>
+				<div class="option infoModal hide">
+					<div class="scrSize">
+						<div class="title font12">称呼</div>
+						<input placeholder="怎么称呼您" class="name">
+					</div>
+					<div class="errorTip nameTip hide">
+						<span class="icon-mark"></span>
+						<span class="errorInfo">请输入正确的手机号</span>
+					</div>
+					<div  class="scrSize">
+						<div class="title font12" >电话</div>
+						<input class="phone" placeholder="您的手机号">
+					</div>
+					<div class="errorTip phoneTip hide">
+						<span class="icon-mark"></span>
+						<span class="errorInfo">请输入正确的手机号</span>
+					</div>
+					<div class="retract sure" ievent="retract">收起</div>
+				</div>
+			</div>
+			<span class="bubbles">即刻召集工程商，组建专属报价群<em class="horn"></em></span>
+			<cite class="con-tip"><i class="icon-mark"></i>如有项目未完成可直接登录查看</cite>
+		</div>
+		<div class="row logout">
+			{{IncludeMTPL}}
+		</div>
+	</div>
+</div>

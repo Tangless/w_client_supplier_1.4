@@ -1,0 +1,78 @@
+@import "src/sass/global/mixin";
+@import "src/sass/global/libs/variable";
+#Footer{
+    background: #2a2e33;
+    padding: 100px 0;
+
+  .ch {
+    color: $orange;
+  }
+  .center>.logo0303 {
+    display: inline-block;
+    width: 139px;
+    height: 67px;
+    margin-left: 0;
+    @include background('{{MIMAGE}}/f-logo.png');
+  }
+
+
+  .center>.main {
+    margin-left: 270px;
+    display: inline;
+    float: right;
+    /* border: 1px solid blue; */
+  }
+
+  .company-info {
+    padding-top: 18px;
+    a {
+      color:$gray;
+    }
+    span {
+      color: $gray;
+    }
+  }
+
+  .main h3 {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1;
+  }
+
+  .main h2 {
+    margin: 26px 0 12px 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1;
+  }
+
+  .main h2 i {
+    margin: 0 12px;
+  }
+
+  .main a {
+    padding-right: 31px;
+    position: relative;
+  }
+
+  .main a.ch:hover {
+    text-decoration: underline;
+  }
+
+  .main a.ch:after {
+    content: '';
+    position: absolute;
+    height: 16px;
+    right: 15px;
+    top: 3px;
+    width: 1px;
+    background: #e96733;
+  }
+  .main .company-info a{
+    padding-right: 0;
+  }
+  .website-info {
+    color: $gray;
+  }
+
+}

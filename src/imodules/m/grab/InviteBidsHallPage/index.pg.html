@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @@include('m/common/InsertTop/main.html',{"title": ""})
+	{{IncludeMCSS}}
+</head>
+<body id="{{ID}}" {{IMODULE}}>
+@@include('m/common/Header/main.md.html',{"MenuIcon":"icon-location5","MenuName":"cityName","MenuText":"郑州","MenuAction":"","TitleClass":"logo","Title":""})
+<div class="container">
+
+
+</div>
+	
+<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.3&key=24a59ee2492ddf5fba6e8208f6383560&plugin=AMap.CitySearch"></script>
+@@include('m/grab/InviteBidsInfo/main.md.html')
+@@include('m/grab/MyInviteBidsInfo/main.md.html')
+<div class="top icon-arrow hide"></div> 
+<div class="my-invite icon-file top" ievent="goTo">
+	<div class="my-info"></div>
+	<div class="my-msgs hide"></div>
+</div>
+
+@@include('m/common/Footer/main.md.html', {"foo": "false"})
+@@include('m/common/InsertBottom/main.html')
+<script src="/global/iscripts/libs/dropzone/exif.js"></script>
+<script src="/global/iscripts/libs/dropzone/dropzone.js"></script>
+</body>
+</html>

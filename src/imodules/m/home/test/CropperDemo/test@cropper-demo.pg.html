@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    @@include('m/common/InsertTop/main.html',{"title": ""})
+    <link rel="stylesheet" href="/global/iscripts/libs/cropper/cropper.css">
+    <style>
+        img {
+            max-width: 100%; /* This rule is very important, please do not ignore this! */
+        }
+
+        #preview {
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body id="{{ID}}" {{IMODULE}}>
+    <input id="select" type="file" accept="image/*"></input>
+    <button id="upload" disabled>upload</button>
+
+    <img id="crop" src="">
+
+    @@include('m/common/InsertBottom/main.html')
+    <script src="/global/iscripts/libs/canvasResize/binaryajax.js"></script>
+    <script src="/global/iscripts/libs/canvasResize/exif.js"></script>
+    <script src="/global/iscripts/libs/canvasResize/canvasResize.js"></script>
+</body>
+</html>

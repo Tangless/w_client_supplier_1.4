@@ -1,0 +1,71 @@
+<div id="{{ID}}" {{IMODULE}}>
+    {{IncludeMCSS}}
+    <div class="new-info clearfix">
+        <a class="info-return icon-return" ievent="returnScroll"></a>
+        <p class="pull-right grab-status" idom="status">
+            <span class="icon-Tender statusIcon" idom="statusIcon"></span>
+            <span class="statusText" idom="statusText"></span>
+        </p>
+        <a class="client-fname"  ievent="grabOrder" idom="grabNow"><span idom="firstName"></span><em class="info-iphone" idom="namePhone"><span class="icon-phone06"></span></em></a>
+    </div>
+
+    <div class="qiatan-info">
+        <cite class="info-ci"><span class="qiatan-infowid" idom="bargaInfo"></span><span class="icon-circle-down" id="barDown"></span></cite>
+    </div>
+
+    <div class="demand-info-content" id="demand-info">
+        <div class="demand-info">
+            <p class="demand-budget" idom="budget">
+
+            </p>
+            <p class="demand-type">
+                <span idom="screenType"></span>项目招标
+            </p>
+            <p>
+                <span class="icon-checkmark02"></span>
+                <!--位置在（已挪到js中，为了地址显示完整）--><span class="address" idom="address"></span>
+            </p>
+            <p>
+                <span class="icon-checkmark02"></span>
+                面积约<span idom="size"></span>m<sup>2</sup>
+            </p>
+            <p>
+                <span class="icon-checkmark02"></span>
+                <span idom="location"></span><span idom="color"></span><span idom="span"></span>
+            </p>
+            <p class="note hide">
+                <span class="icon-checkmark02"></span>
+                <span idom="note"></span>
+            </p>
+            <div class="demand-image hide">
+                <img src="" alt="工程场地实拍图" idom="image" ievent="scanBig">
+                <span class="icon-nail"></span>
+                工程场地实拍图
+            </div>
+            <div class="audio-items hide" idom="audioPane">
+                @@include('../iwidgets/m/Audio/main.html')
+            </div>
+            <p class="reedit-bid hide" idom="reedit" ievent="reeditBid">
+                <span class="icon-publishing-editor"></span>
+                编辑标书
+            </p>
+        </div>
+        <div class="text-center btn-fixed">
+            <button type="button" class="btn edit-comment" idom="comment" id="inRoom">
+                <span class="icon-message02"></span>
+                进入洽谈室
+                <span class="icon-circle-up"></span>
+            </button>
+            <a type="button" class="btn grab-call" ievent="grabOrder" idom="grabNow">
+                <span class="icon-phone06"></span>
+                致电客户
+            </a>
+            <div class="wait-tips hide" idom="wait">
+                联系者太多，需排队预约!
+            </div>
+        </div>
+        <!--p class="demand-tips" idom="tip">
+            <span idom="num"></span>人感兴趣
+        </p-->
+    </div>
+</div>

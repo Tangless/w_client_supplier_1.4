@@ -1,0 +1,126 @@
+@import "src/sass/global/mixin" ;
+#{{ID}} {
+	float:left;
+	height:100%;
+	.choose {
+		background-color:#b5cef9;
+		height:80px;
+		line-height:80px;
+		color:#fff;
+		text-align:center;
+		font-size:14px;
+	}
+	.choosed {
+		background-color:$blue!important;
+	}
+	.col-md-12 {
+		border-bottom:1px solid $linecolor;
+	}
+	.noImg {
+		height:40px;
+		width:40px;
+		border-radius:40px;
+		background-color:$blue;
+		text-align:center;
+		line-height:40px;
+		vertical-align: text-bottom;
+   	    margin-right: 14px;
+   	    color:#fff;
+	}
+	.much {
+		font-size:28px;
+	}
+	.inline {
+		display:inline-block;
+	}
+	.mark {
+		font-size:12px;
+	}
+	.list {
+		padding:32px 0 31px;
+	}
+	.name {
+		@include font(15px);
+		color:$black;
+		margin-bottom:10px;
+	}
+	.addr {
+		color:$gray;
+		@include font(12px);
+	}
+	.img {
+		height:40px;
+		width:40px;
+		border-radius:40px;
+		vertical-align: text-bottom;
+		margin-right:14px;
+	}
+	img {
+		height:40px;
+		width:40px;
+		border-radius:40px;
+	}
+	.loading {
+		width:100%;
+		height:64px;
+		background:url({{MIMAGE}}/loading.gif) no-repeat center;
+		background-size:80px 14px; 
+	}
+	.phone {
+		margin-top:10px;
+		width:30px;
+		height:30px;
+		line-height:30px;
+		font-size:15px;
+		text-align:center;
+		color:#fff;
+		background-color:$blue;
+		border-radius:30px;
+		position:absolute;
+		top:-5px;
+		left:-6px;
+	}
+	.phoneDiv {
+		float:right;
+		position:relative
+	}
+	.phoneNum {
+		width:127px;
+		height:20px;
+		background:#f4f8ff;
+		color:$blue;
+		padding-right:9px;
+		text-align:right;
+		line-height:20px;
+		border-radius:20px;
+		font-size:14px;
+		margin-top:12px;
+	}
+	
+	.container {
+		height:100%;
+		overflow:auto;
+		float:left;
+		box-shadow: 0 1px 4px rgba(0,0,0,.13);
+	}
+	@media (max-width: 992px) {
+		.container {
+			width:480px;
+		}
+	}
+	@media (min-width: 992px) {
+		.container {
+			width:600px;
+		}
+	}
+}
+@media (max-width: 992px) {
+		#{{ID}} {
+			width:480px;
+		}
+	}
+	@media (min-width: 992px) {
+		#{{ID}} {
+			width:600px;
+		}
+	}

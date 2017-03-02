@@ -1,0 +1,20 @@
+{{#children}}
+	<li class="comment" id="comment-{{id }}" itemscope itemtype="http://schema.org/Comment">
+	    <div class="comment-content" data-comment-content-id="<?php echo $comment->id ?>">
+	        <div class="comment-author-avatar">
+	        <img src="{{avatar}}" alt = "{{authorName}}">
+	        </div>
+	        <div class="comment-details">
+	            <div class="comment-author-name" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+	                <span itemprop="name">{{authorName}}</span>
+	                <span class="comment-date">
+	                    {{postedDate}}
+	                </span>
+	            </div>
+	            <div class="comment-body" itemprop="text">
+	                {{content}}
+	            </div>
+	        </div>
+	    </div>
+	</li>
+{{/children}}

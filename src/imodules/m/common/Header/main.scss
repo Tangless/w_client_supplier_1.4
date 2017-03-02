@@ -1,0 +1,158 @@
+@import "src/sass/global/mixin";
+#Header{
+  font-size: .14rem;
+  .header{
+    position: relative;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .13);
+    height: .48rem;
+    width:100%;
+    text-align: center;
+    -overflow: hidden; //由于页面需要，暂去掉，如果哪有被影响到，要改回来时告诉我一下，高悦
+    z-index: 100;
+    background-color:#fff;
+    top: 0;
+    .title-box {
+      width: 1.36rem;
+      display: inline-block;
+      text-align: right;
+      position: relative;
+    }
+    .title{
+      height: .48rem;
+      margin: 0;
+      display:inline-block;
+      font-size: .18rem;
+      line-height: .48rem;
+    }
+    .logo {
+      width:100%;
+      background: url({{MIMAGE}}/logo.png) left center no-repeat;
+      background-size: 1.13rem auto;
+    }
+    .title-btn {
+      font-size: 0.12rem;
+      color: #4785F9;
+      position: absolute;
+      right: 0;
+      top: 0.18rem;
+      margin-left: 0.1rem;
+      transition: transform .3s ease-in 0s;
+      -webkit-transition: -webkit-transform .3s ease-in 0s;
+      -o-transition: -o-transform .3s ease-in 0s;
+      -ms-transition: -ms-transform .3s ease-in 0s;
+    }
+    .title-btn.rotate {
+      transform: rotate(-180deg);
+      -webkit-transform: rotate(-180deg);
+      -o-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+      transform-origin: center center;
+      -webkit-transform-origin: center center;
+      -o-transform-origin: center center;
+      -ms-transform-origin: center center;
+    }
+    .top-left{
+      position: absolute;
+      line-height: .48rem;
+      color: #666;
+      left: .15rem;
+    }
+    .top-left [class^="icon-"]{
+      color:#4785F9;
+    }
+    .top-right{
+      position: absolute;
+      line-height: .48rem;
+      height: .48rem;
+      right: .15rem;
+      color:#4785F9;
+      font-size:.18rem;
+      width: .26rem;
+      text-align: right;
+      top: 0;
+    }
+    .content {
+      font-size:0.13rem;
+      color:#2A2E33;
+      margin: 0.24rem 0.15rem 0.11rem;
+      float:right;
+    }
+    .icon-Turn-page{
+      font-size: 20px;
+      top: 2px;
+      position: relative;
+    }
+
+    .menu {
+      width: 2.2rem;
+      background-color: #fff;
+      position: absolute;
+      left: -0.42rem;
+      top: 0.48rem;
+      text-align: center;
+      display: none;
+      padding-bottom: 0.10rem;
+      p {
+        height: 0.48rem;
+        line-height: 0.48rem;
+        border-bottom: 1px solid #e3e8ee;
+        margin: 0;
+        position: relative;
+      }
+
+      p:first-child:before {
+        content: "";
+        position: absolute;
+        top: -0.08rem;
+        left: 0;
+        box-shadow: 0px 2px 1px rgba(0,0,0,.06);
+        width: 100%;
+        height: 0.08rem;
+      }
+
+      p a {
+        color: #83848e;
+        font-size: 0.14rem;
+        display: block;
+        position: relative;
+      }
+      p.active a {
+        color: #4785F9;
+      }
+      .blueact {
+        position: absolute;
+        top:-1px;
+        left:0;
+        width:0.06rem;
+        height: 0.49rem;
+        background-color: #4785f9;
+        float: left;
+        display: none;
+      }
+      .icon-Doubt {
+        font-size: 0.14rem;
+        margin-right: 0.04rem;
+        vertical-align: -1px;
+      }
+
+      p.active a.know .icon-Doubt {
+        color: #4785F9;
+      }
+
+      p.active a .blueact {
+        display: inline;
+      }
+
+      p:last-child {
+        border-bottom: none;
+      }
+    }
+
+    .menu, .menu p:last-child, .menu p:last-child a {
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px;
+    }
+    
+  }
+  
+}

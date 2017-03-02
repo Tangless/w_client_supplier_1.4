@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    @@include('www/common/InsertTop/main.html',{"title": ""})
+    <style>
+        html,body{height:100%;}
+        ul,li{padding: 0;margin:0;list-style: none;}
+        li a{display: block;padding-top:2px;padding-bottom:2px;color: #999;}
+        li a:hover{color:#00b3ee;}
+        .-test-link{color:blue;text-decoration: underline;}
+        .-test-sml{font-size: 12px;}
+        .-test-nav{position:absolute;width: 200px;overflow: hidden;height: 100%;background: #FFF;border-right:#CCC 1px solid;}
+        .-test-loader{left: 200px;top:31px;position: absolute;overflow: hidden;box-sizing:content-box;border-right: #ccc 1px solid;border-bottom:#ccc 1px solid;right:0px;bottom:0px;}
+        .-test-con{position: absolute;left: 200px;right:0;top:0;height: 30px;background: #EEE;border-bottom: #CCC 1px solid;padding-top: 5px;padding-left: 5px;}
+        .-test-tab{height: 30px;background: #EEE;border-bottom: #CCC 1px solid;padding-top: 5px;padding-left: 5px;}
+        .-test-tab .btn-default{color:red;}
+        .-test-tab .btn-default.active{color:#666;}
+        .-test-nav ul{display: none;padding-top: 5px;padding-left: 5px;}
+        .-test-nav ul.on{display: block;}
+        .-test-tips{padding:5px;display:none;border:#CCC 1px solid;box-shadow: -5px 5px 5px #ddd;position: absolute;left: 180px;top:30px;bottom:0;width: 200px;background: #FFF;overflow: auto;}
+        .-test-nav li{border-bottom: #DDD 1px solid;line-height: 2;}
+        .-test-ul{width: 100%;height: 100%;overflow: auto;}
+        .-test-con .ptitle{float:right;padding-right:20px;}
+        .-test-on{color: #ffffff;background: #3fad46;}
+    </style>
+</head>
+<body id="{{ID}}" {{IMODULE}}>
+<nav class="-test-nav">
+    <div class="-test-tab" idom="tab">
+        <div class="btn-group btn-group-xs" role="group">
+            <button type="button" class="btn btn-default active" idom="pagesBtn">页面</button>
+            <button type="button" class="btn btn-default" idom="modulesBtn">模块</button>
+        </div>
+    </div>
+    <div class="-test-ul" idom="nav">
+        <ul idom="pagesTab">
+
+        </ul>
+        <ul idom="modulesTab" class="on">
+
+        </ul>
+    </div>
+</nav>
+<div class="-test-con">
+    <div class="btn-group btn-group-xs" role="group">
+        <button type="button" class="btn btn-default active" idom="fixSize" data-size="768x1024">768x1024</button>
+        <button type="button" class="btn btn-default active" idom="fixSize" data-size="1024x768">1024x768</button>
+        <button type="button" class="btn btn-default active" idom="fixSize" data-size="1280x720">1280x720</button>
+        <button type="button" class="btn btn-default" idom="fixSize" data-size="9999x9999">全屏</button>
+    </div>
+    <div class="ptitle"><a target="_blank" idom="title" href="#" class="-test-link"></a></div>
+</div>
+<section class="-test-loader" idom="panel">
+    <iframe idom="pageIframe" src="about:blank" frameborder="0" width="100%" height="100%"></iframe>
+</section>
+<div class="-test-tips" idom="tips" data-tip="hold">
+
+</div>
+@@include('www/common/InsertBottom/main.html')
+</body>
+</html>

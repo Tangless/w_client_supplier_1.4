@@ -1,0 +1,231 @@
+@import "src/sass/global/mixin";
+
+//覆盖头部的logo以及相应的样式
+#L005LedScreenPrice{
+	background-color: #F6F6F6;
+	#LandHeader {
+		background: #000;
+		.landing-logo {
+			width: 114px;
+			@include background('{{MIMAGE}}/logo.png',114px,26px,0,16px)
+		}
+	}
+}
+.whiteBg{
+	position: absolute;
+	top:58px;
+	left: 0;
+	width: 100%;
+	height: 352px;
+	background-color: #fff;
+}
+.company-info {
+	margin: 40px auto;
+	text-align:center;
+	font-size:18px;
+	color:#4a4a4a;
+	font-weight: 200;
+	.sup-phone {
+		display:inline-block;
+		position: relative;
+		top:2px;
+		width:12px;
+		height:17px;
+		@include background('{{MIMAGE}}/phone.png',12px,17px)
+	}
+	.white {
+		color:#000;
+		font-weight: 500;
+	}
+}
+@media (min-width: 1600px){
+	.company-info{
+		margin: 70px;
+	}
+
+}
+.font14 {
+		font-size:14px;
+	}
+.screen-info {
+	position: relative;
+	background-color:#fff;
+	border-radius: 4px;
+	width:91.2%;
+	margin:0 auto 20px;
+
+	img{
+		width: 100%;
+		height: 66.7%;
+		background-color: #999;
+	}
+	.img-title {
+		position: absolute;
+    	top: 22%;
+		left: 50%;
+		margin-top: -25px;
+		margin-left: -96px;
+    	color: #fff;
+		text-shadow: 0 2px 3px rgba(0,0,0,.75);
+    	font-size:48px;
+		font-weight: 500;
+	}
+	.padding15 {
+		padding:15px;
+	}
+	.label {
+			color: #666;
+		    font-size: 14px;
+		    font-weight: 400;
+		    background-color: #F4F4F4;
+		    padding: 5px 15px;
+            display: inline-block;
+		}
+	.margin30 {
+		margin-bottom:20px;
+	}
+	.single-info {
+		overflow: hidden;
+		display:inline-block;
+		width:67%;
+		margin-bottom: 10px;
+		p{
+			color: #4D8F00;
+			font-family: Arial;
+			font-weight: bold;
+			margin-bottom: 0;
+		}
+	}
+	
+	h5 {
+		margin-top: 0;
+		span {
+			color:#4D8F00;
+			font-weight: bold;
+		}
+	}
+	.get-price-btn {
+		width:100%;
+		background-color:#4D8F00;
+		color:#fff;
+		padding:10px;
+		text-align:center;
+		font-size:18px;
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+		&:hover{
+			$hoverColor: darken(#4D8F00, 5%);
+			background-color: $hoverColor;
+		}
+	}
+	.sup-star {
+		position: absolute;
+		top: 10px;
+		right: -15px;
+		width: 70px;
+		height:80px;
+	}
+	.sup-star1{
+		@include background('{{MIMAGE}}/screens-icon1.png',69px,79px)
+	}
+	.sup-star2{
+		@include background('{{MIMAGE}}/screens-icon2.png',69px,79px);
+	}
+	.sup-star3{
+		@include background('{{MIMAGE}}/screens-icon3.png',69px,79px);
+	}
+}
+.input-group {
+	width: 83.5%;
+	margin:20px auto 40px;
+	position: relative;
+	.user-phone {
+		position: absolute;
+		top:14px;
+		left: 15px;
+		width:19px;
+		height:30px;
+		@include background('{{MIMAGE}}/user-phone1.png',19px,30px);
+		z-index: 9;
+	}
+	#inputSuccess {
+		text-indent: 30px;
+		font-size: 18px;
+		border-color: #4D8F00;
+		border-top-left-radius: 6px;
+		border-bottom-left-radius: 6px;
+
+		&:focus {
+			border-color: #4D8F00;
+			outline: 0;
+			box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(77, 143, 0, 0.6);
+		}
+
+	}
+	.btn-success {
+		width: 144px;
+		background-color:#4D8F00;
+		color:#fff;
+	}
+}
+@media (min-width: 1600px){
+	.input-group{
+		margin-top: 50px;
+	}
+}
+.error-tip {
+	color: #fff;
+	font-size: 14px;
+	position: absolute;
+	width: 180px;
+	height: 40px;
+	background-color: #D0021B;
+	border-radius: 5px;
+	top: -10px;
+	left: 78px;
+	@include background('{{MIMAGE}}/error-tip.png',14px,14px,15px,center);
+	padding-left:40px;
+	line-height:40px;
+	display:none;
+	.xiaosanjiao {
+		position:absolute;
+		left:80px;
+		top:36px;
+		width:14px;
+		height:14px;
+		@include background('{{MIMAGE}}/xiaosanjiao.png',8px,8px,center,center);
+	}
+}
+.succ-tip {
+	z-index: -1;
+    width: 40%;
+    padding: 15px 70px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    @include opacity(0);
+    left: 50%;
+    margin-left: -20%;
+    background-color: #fff;
+    border: 1px solid #E0E1E6;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,.18);
+    transition: all .3s;
+    h5 {
+    	font-size:15px;
+    	img {
+		    width: 24px;
+		    margin-right: 5px;
+		}
+	}
+	p {
+	    font-size: 12px;
+	    color: #A8A8A8;
+	}
+}
+.fadeInBottom{
+	z-index: 16;
+  @include opacity(1);
+  bottom: 58px;
+  transition: all .3s;
+}

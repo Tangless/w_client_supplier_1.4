@@ -1,0 +1,32 @@
+{{DONE}}
+<!-- 1. default: 为include本文件时传进来的参数的缺省值。如需改变，就在include时再传进来 -->
+<!-- 2. 推荐放在文件开头部分（此为一般的编程原则）-->
+@@default {
+    "foo": "true",
+    "bar": "hello"
+}
+<div id="Footer" {{IMODULE}}>
+    {{IncludeMCSS}}
+    <div class="footer">
+    	<div class="footer-logo"></div>
+    	<div class="footer-info">
+    		<p class="phonecon">
+                <a href="tel:4009929033">
+        			<i class="icon-phone04 white"></i>
+        			<span class="phone">400-992-9033<a class="about" ievent="aboutUs">关于我们</a></span>
+                    
+                </a>
+    		</p>
+            <div class="company grey">深圳市万屏时代科技有限公司 </div>
+            <div class="grey">深圳市南山区清华信息港综合楼501-502室</div>
+    		<p class="addr grey">
+    			 © wanpinghui.com 粤ICP备16014213号
+    		</p>
+    	</div>
+    </div>
+</div>
+
+<!-- 1. this is for test default: @@bar -->
+@@if (foo === "true") {
+    <!-- 2. this is for test default too. if -->
+}

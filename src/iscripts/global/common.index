@@ -1,0 +1,32 @@
+//此文件仅为合并入口文件，请不要写任何代码
+@@if (site === 'www') {
+    @@include('global/libs/jquery-1.11.2.min.js')
+}
+@@if (site === 'm') {
+    @@include('global/libs/jquery-1.11.2.min.js')
+}
+
+@@include('global/libs/mobile-detect.js')
+@@include('global/libs/bootstrap.js')
+@@include('global/libs/mustache.js')
+@@include('global/libs/jquery.easing.1.3.js')
+@@include('global/libs/js.cookie.js')
+@@include('global/libs/number_format.js')
+@@include('global/libs/wow.min.js')
+@@include('global/libs/jquery.lazyload.js')
+@@include('global/immy/libs/helpers.js')
+@@include('global/immy/libs/potato2.js')
+@@include('global/immy/libs/potato_dom.js')
+@@include('global/immy/libs/require.min.js')
+@@include('global/immy/libs/potato.js')
+@@include('global/immy/project.js')
+@@include('global/immy/utils.js')
+@@include('global/immy/baseIWidgets.js')
+@@include('global/immy/baseIModules.js')
+@@include('global/funs.js')
+@@include('global/data.js')
+@@include('global/server.js')
+
+
+@@include('global/api.index')
+@@include('global/base.index')

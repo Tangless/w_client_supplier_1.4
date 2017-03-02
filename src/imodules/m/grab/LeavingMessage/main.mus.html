@@ -1,0 +1,47 @@
+{{#comments}}
+<li class="comment" id="comment-{{id }}" itemscope itemtype="http://schema.org/Comment">
+    <div class="comment-content clearfix" data-comment-content-id="{{id}}" >
+        <div class="comment-author-avatar" ievent='open@{"url":"imodule://BusinessCard","dialog":"maxWidth","data":"{{user_id}}"}'>
+            <span class="icon-user3－26px"></span>
+        </div>
+        <div class="comment-details">
+            <div class="comment-author-name clearfix" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+                <span itemprop="name" class="com-ming">{{authorName}}<em class="position">{{company_name}}{{position}}</em></span>
+                <span class="comment-date">
+                    {{postedDate}}
+                </span>
+            </div>
+            <div class="comment-body {{show_del_con}}" itemprop="text">
+                <div class="com-box {{already_del}}">{{content}} <a href="javascript:;" class="relpay-delete icon-delete {{show_del}}" ievent="messageDel" data-comment-id="{{id }}"></a></div>
+            </div>
+            <div class="comment-body comment-del hide {{del_seat}}">
+                此回复已被工程商删除
+            </div>
+        </div>
+    </div>
+    <ul class="children">
+        {{#children}}
+        	<li class="comment" id="comment-{{id }}" itemscope itemtype="http://schema.org/Comment">
+        	    <div class="comment-content" data-comment-content-id="{{id }}">
+        	        <div class="comment-details">
+        	            <div class="comment-author-name" itemprop="creator" itemscope itemtype="http://schema.org/Person">
+        	                <!--span itemprop="name">{{authorName}}:</span-->
+                            <span itemprop="name" class="hfDetail">{{authorName}}:</span>
+        	                <span class="comment-date">
+        	                    {{postedDate}}
+        	                </span>
+        	            </div>
+        	            <div class="comment-body {{already_del}}" itemprop="text" >
+        	                {{content}}
+        	            </div>
+        	        </div>
+        	    </div>
+                <a href="javascript:;" class="relpay-delete icon-delete {{show_del}}" data-comment-id="{{id }}" data-url="/index.php?r=comment%2Fdefault%2Fdelete&id=1079" data-action="delete" ievent="childDel"></a>
+        	</li>
+        {{/children}}
+    </ul>
+    <div class="comment-isme clearfix">
+        <a href="javascript:;" class="isme-replay {{show_reply}}" ievent="customerBtn" data-comment-id="{{id }}" data-action="reply">回复</a>
+    </div>
+</li>
+{{/comments}}

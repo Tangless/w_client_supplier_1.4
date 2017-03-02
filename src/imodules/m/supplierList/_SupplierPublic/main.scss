@@ -1,0 +1,88 @@
+._SupplierPublic {
+	.much {
+		font-size:.24rem;
+		color:#4785f9;
+	}
+	.nationwide {
+		padding:.16rem .2rem;
+		border-bottom:1px solid #E3E8EE;
+		font-size:.12rem;
+		line-height:.20rem;
+		position:fixed;
+		width:100%;
+		z-index:97;
+		background:#fff;
+		box-shadow: 0px -1px 2px rgba(0,0,0,.13);
+	}
+	.inline {
+		display:inline-block;
+	}
+	.list {
+		font-size:.12rem;
+		padding:.175rem .2rem;
+		border-bottom:1px solid #E3E8EE;
+		position:relative;
+	}
+	.mar5 {
+		margin-bottom:.05rem;
+	}
+	.name {
+		font-size:.16rem;
+		color:#202122;
+		padding-right:.135rem;
+		line-height:.16rem;
+		
+	}
+	.supList {
+		padding-top:.57rem;
+		position:relative;
+	}
+	.margin {
+		margin-bottom:.05rem;
+	}
+	.info {
+		color:#B3B5B7;
+	}
+	.addr {
+		color:#83848E;
+		max-width: 2rem;
+	    white-space: nowrap;
+	    overflow: hidden;
+	    text-overflow: ellipsis;
+	    line-height:.12rem;
+	}
+	.img {
+		height:.36rem;
+		width:.36rem;
+		border-radius:50%;
+		margin-right:.2rem;
+	    vertical-align: top;
+		img {
+			height:.36rem;
+			width:.36rem;
+			border-radius:50%;
+			margin-top:.025rem;
+		}
+	}
+	.phone {
+		height:.36rem;
+		width:.36rem;
+		background:#4785F9;
+		color:#fff;
+		font-size:.18rem;
+		text-align:center;
+		line-height:.36rem;
+		border-radius:50%;
+		float:right;
+		position: absolute;
+	    right: .2rem;
+	    top: 50%;
+	    margin-top: -.18rem;
+	}
+	.downMore {
+	    width:100%;
+	    height:.7rem;
+	    background:url('{{MIMAGE}}/loading.gif') no-repeat center;
+	    background-size:.6rem .1rem;
+	  }
+}

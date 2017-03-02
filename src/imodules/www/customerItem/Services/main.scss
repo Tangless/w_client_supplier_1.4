@@ -1,0 +1,115 @@
+@import "src/sass/global/mixin";
+@import "src/sass/global/libs/variable";
+
+#{{ID}} {
+	.services {
+		width: 100%;
+		background-color: #e3e8ee;
+		margin-top: 53px;
+		padding-bottom: 46px;
+	}
+	.s-con {
+		width: 1140px;
+		margin: 0 auto;
+		letter-spacing: 1.5px;
+	}
+	.sc-title {
+		font-size: 30px;
+		color: $black;
+		padding-top: 58px;
+	}
+	.sc-tip {
+		font-size: 14px;
+		color: #83848e;
+		-webkit-font-smoothing: antialiased;
+	}
+	.sc-box {
+		width: 100%;
+		overflow: hidden;
+		margin-top: 52px;
+	}
+	.sc-flowwid {
+		width: 1170px;
+	}
+	.scf-list {
+		width: 286px;
+		float: left;
+	}
+	.icon {
+		color: #4785f9;
+		font-size: 36px;
+		width: 41px;
+		float: left;
+	}
+	.scf-rt {
+		float: left;
+		margin-left: 16px;
+		display: inline;
+		width: 227px;
+		-webkit-font-smoothing: antialiased;
+		h6 {
+			font-size: 18px;
+			color: $black;
+			margin-bottom: 16px;
+			margin-top: 4px;
+		}
+		p {
+			font-size: 12px;
+			color: #83848e;
+			line-height: 20px;
+		}
+	}
+	.line {
+		float: left;
+		width: 1px;
+		border-left: 1px dashed #d2d9e0;
+		height: 74px;
+		margin: 0 75px 0 71px;
+	}
+
+	/*当屏幕小于1200的时候*/
+	@media (max-width: 1200px){
+		.s-con {
+			width: 940px;
+		}
+		.sc-flowwid {
+			width: 970px;
+		}
+		.scf-list {
+			width: 258px;
+		}
+		.scf-rt {
+			width: 199px;
+		}
+		.line {
+			border: none;
+			margin: 0 43px 0 42px;
+		}
+	}
+
+	/*当屏幕小于992的时候*/
+	@media (max-width: 992px){
+		.s-con {
+			width: 720px;
+		}
+		.sc-flowwid {
+			width: 750px;
+		}
+		.scf-list {
+			width: 202px;
+		}
+		.scf-rt {
+			width: 148px;
+		}
+		.line {
+			border: none;
+			margin: 0 24px 0 23px;
+		}
+		.icon {
+			color: #4785f9;
+			font-size: 33px;
+			width: 37px;
+			float: left;
+		}
+	}
+}

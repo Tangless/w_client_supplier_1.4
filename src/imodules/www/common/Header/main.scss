@@ -1,0 +1,169 @@
+@import "src/sass/global/mixin";
+
+#Header {
+  position: relative;
+  z-index: 222;
+  .content {
+    height: 37px;
+    margin-bottom: 13px;
+    position: relative;
+    -webkit-font-smoothing: antialiased; /*chrome、safari字体抗锯齿效果*/
+  }
+
+  .header .content:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+
+  .headLogo {
+    text-indent: -9999px;
+    display: inline-block;
+    width: 115px;
+    height: 24px;
+    margin: 13px 0 0 24px;
+    vertical-align: top;
+    @include background('{{MIMAGE}}/logo.png', 115px, 24px, left, center);
+    float: left;
+  }
+  .unilumin {
+    position: absolute;
+    bottom: 0;
+    height: 12px;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: 0.3px;
+    margin-left: 12px;
+    color: $gray;
+  }
+  .nav {
+    display: inline-block;
+    vertical-align: top;
+    height: 37px;
+    float: right;
+  }
+
+  .nav a {
+    display: inline-block;
+    height: 14px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1;
+    text-align: center;
+    vertical-algin: top;
+    margin-top: 18px;
+    color: $gray;
+    font-size: 14px;
+    @include hover(0.2s);
+  }
+  .nav a.active,
+  .nav a:hover {
+    color: $black;
+  }
+  .user {
+    color: $lightgray;
+    margin-right: -58px;
+    margin-left: 76px;
+  }
+  .icon-user-pc {
+    margin-right: 1.3px;
+  }
+  .ll, .join, .lo {
+    margin-right: 24px;
+    margin-left: 60px;
+  }
+  .join {
+    display: none;
+    @include hover(0.2s);
+  }
+
+  @media screen and (min-width: 767px) and (max-width: 992px) {
+    .headLogo {
+      margin-left: 24px;
+    }
+    .ll, .join, .lo {
+      margin-right: 24px;
+    }
+  }
+  @media screen and (min-width: 992px) and (max-width: 1200px) {
+    .headLogo {
+      margin-left: 26px;
+    }
+    .ll, .join, .lo {
+      margin-right: 26px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .headLogo {
+      margin-left: 30px;
+    }
+    .ll, .join, .lo {
+      margin-right: 29.5px;
+    }
+  }
+  .login-in {
+    .ch {
+      display: inline-block;
+    }
+    .ll {
+      display: none;
+    }
+    .lo {
+      display: inline-block;
+    }
+    .user {
+      display: inline-block;
+    }
+    .join {
+      display: none;
+    }
+  }
+  .login-out {
+    .ch {
+      display: inline-block;
+    }
+    .ll {
+      display: inline-block;
+    }
+    .lo {
+      display: none;
+    }
+    .user {
+      display: none;
+    }
+    .join {
+      display: none;
+    }
+  }
+  @-webkit-keyframes loader {
+    from {
+      -webkit-transform: rotate(0deg) translateZ(0);
+      transform: rotate(0deg) translateZ(0)
+    }
+    to {
+      -webkit-transform: rotate(360deg) translateZ(0);
+      transform: rotate(360deg) translateZ(0)
+    }
+  }
+  @keyframes loader {
+    from {
+      -webkit-transform: rotate(0deg) translateZ(0);
+      transform: rotate(0deg) translateZ(0)
+    }
+    to {
+      -webkit-transform: rotate(360deg) translateZ(0);
+      transform: rotate(360deg) translateZ(0)
+    }
+  }
+}
+
+#SupplierPage {
+  .nav .join {
+    display: inline-block;
+  }
+  .nav .ch, .nav .lo, .nav .ll, .nav .user {
+    display: none;
+  }
+}

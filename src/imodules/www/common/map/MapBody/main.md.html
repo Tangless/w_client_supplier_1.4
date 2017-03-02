@@ -1,0 +1,57 @@
+{{DONE}}
+<div id="MapBody" {{IMODULE}}>
+<style type="text/css">@@include('{{MCSS}}')</style>
+  <!-- 真地图容器 -->
+<div id="container" class="the_map"></div>
+<div class="map_search @@v">
+  <i class="sear-ico"></i>
+  <input type="text" placeholder="@@search" class="input" />
+</div>
+
+<!-- 一块屏 -->
+<div class="screen hide">
+  <i class="id hide">1</i>
+
+  <!-- 大面板 -->
+  <div class="board hide">
+	<div class="img_frame"><img class="snapshot" src="{{MIMAGE}}/no_snap.png" /></div>
+    <h3 class="address"></h3>
+	<div class="t_or_c">
+	  <h4 class="type hide"></h4>
+      <h4 class="contact hide"></h4>
+	</div>
+    <p class="stat"></p>
+  </div>
+
+  <!-- mini面板 -->
+  <div class="board_mini hide">
+	<div class="img_frame"><img class="snapshot" src="{{MIMAGE}}/no_snap.png" /></div>
+	<!-- todo -->
+  </div>
+
+  <!-- 大头针 -->
+  <h2 class="pin"></h2>
+
+  <!-- 备选、禁选 -->
+  <!-- 备选: onready; 禁选: onforbidden -->
+  <span class="" ievent="onSelect"></span>
+</div>
+
+<div class="zm_maptools ">
+  <span class="zm_maplocal maplocal"></span>
+  <div class="big_small">
+    <span class="zm_mapmagnify mapmagnify"></span>
+    <span class="zm_mapshrink mapshrink"></span>
+  </div>
+  <span class="debug_tool hidden"></span>
+</div>
+
+<div class="closeSelect hide"></div>
+<!--未选择的时候使用fixSelect这个样式，选择完了使用fixSubmit这个样式-->
+<div class="selectFixscreen unvisible">
+  <button class="fixSelect">请选择报修屏幕</button>
+  <button class="fixSubmit unvisible">提交</button>
+</div>
+
+</div>
+

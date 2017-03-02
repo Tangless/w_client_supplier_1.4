@@ -1,0 +1,29 @@
+{{DONE}}
+<div id="ClientLoginForm" {{IMODULE}}>
+<div class="m-login">
+	<h6 class="m-log-tit">需注册／登录...</h6>
+	<!--<div class="m-log-con adm-login">-->
+		<form method="post" ievent="submitForm" idom="form" autocomplete="off">
+			<div class="m-log-yan clearfix">
+				<span class="icon-phone05"></span>
+				<input class="mlo-input phone" type="text" placeholder="手机号" name="mobile">
+	    	</div>
+			<div class="m-log-yan clearfix">
+				<span class="icon-lock"></span>
+				<input class="code" type="text" placeholder="验证码" name="captcha">
+				<div class="div-or">
+					<i class="spacer"></i>
+				</div>
+				<button class="getcode" type="button" ievent="getCaptcha" name="getCaptcha">获取验证码</button>
+			</div>
+			<div class="hide">
+				<a href="#">我是工程商</a>
+			</div>
+			<div class="m-log-btn clearfix">
+				<div class="error-tip"><span class="icon-error"></span><span class="error-data"></span></div>
+				<button id="login" type="submit" class="btn btn-primary">登录</button>
+			</div>
+		</form>
+	<!--</div>-->
+</div>
+</div>

@@ -1,0 +1,654 @@
+@import "src/sass/global/mixin";
+
+#MapBody {
+    /* 隐藏高德地图的logo */
+    
+    .amap-logo {
+      display:none!important;
+    }
+
+    .amap-copyright {
+      display: none !important;
+      left: 80% !important;
+    }
+
+    #map {
+      background: url(/images/map.jpg) no-repeat center;
+      background-size: cover;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+    input {
+      border-radius:3px;
+    }
+    // .map_search {
+    //   position: fixed;
+    //   top: 28px;
+    //   width: 274px;
+    //   left: 96px;
+
+    .input {
+      width: 100%;
+      font-size: 14px;
+      -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, .25);
+      -moz-box-shadow: 3px 3px 6px rgba(0, 0, 0, .25);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2),0 -1px 0px rgba(0,0,0,0.02);
+      color: #8D8D8E;
+      height: 49px;
+      line-height: 25px;
+    }
+
+    .sear-ico {
+      width: 23px;
+      height: 22px;
+      display: block;
+      position: absolute;
+      right: 13px;
+      top: 15px;
+      @include background('{{MIMAGE}}/icon-70.png');
+    }
+
+    .map_search_activeput .sear-ico {
+      color: #2a2e33;
+      @include background('{{MIMAGE}}/map-search-active.png');
+    }
+    // }
+
+    /* 24H托管页，有个头部 */
+     #container { 
+      top: 58px;
+      height: auto;
+    }
+    #container {
+        position: absolute;
+        top: 0;
+        /* left: 0; */
+        /* right: 0; */
+        bottom: 0;
+        width: 100%;
+    }
+    .map_search {
+      width: 328px;
+      top: 88px;
+      left: -699px;
+      margin: auto;
+      position: absolute;
+      right: 0;
+    }
+
+    .map_search input {
+      padding: 12px 35px 12px 13px !important;
+      width: 328px !important;
+      background-position-x: 295px !important;
+      background-size: 20px !important;
+    }
+
+
+    
+
+
+    .screen {
+      position: absolute;
+      cursor: pointer;
+      /* border: 1px solid black; */
+      min-width: 26px;
+      min-height: 38px;
+    }
+
+    /* 大面板 */
+    .screen .board {
+      /* position: relative; */
+      width: 168px;
+      height: 212px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      /* overflow: hidden; */
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    .screen .board:after {
+      content: '';
+      position: absolute;
+      bottom: -17px;
+      left: 2px;
+      width: 51px;
+      height: 17px;
+      background: url('{{MIMAGE}}/down-arrow.png') no-repeat;
+      background: url('{{MIMAGE}}/down-arrow@1x.png') no-repeat\9;
+      *background: url('{{MIMAGE}}/down-arrow@1x.png') no-repeat;
+      background-size: 51px auto;
+      *left: 7px;
+      left: 7px\9;
+    }
+
+    .screen .board .img_frame {
+      height: 104px;
+      overflow: hidden;
+    }
+
+    .screen .board img {
+      width: 100%;
+      height: auto;
+      -webkit-border-radius: 5px 5px 0 0;
+      -moz-border-radius: 5px 5px 0 0;
+      border-radius: 5px 5px 0 0;
+    }
+
+    .screen h3 {
+      height: 12px;
+      margin: 16px 11px 0 11px;
+      color: #2A2E33;
+      font-size: 12px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      line-height: 1.1\9;
+    }
+
+    .screen .t_or_c {
+      margin: 18px 11px 0 11px;
+      height: 12px;
+      overflow: hidden;
+    }
+
+    .screen h4 {
+      padding: 0px 0 0px 20px;
+      color: #8D8D8E;
+      font-size: 12px;
+      font-weight: normal;
+      // @include background('{{MIMAGE}}/icon-66.png',14px,12px);
+      @include behavior('{{MIMAGE}}/icon-66.png');
+      background-size:14px 12px;
+      line-height: 1.1;
+    }
+
+    .screen h4.type {
+      // @include background('{{MIMAGE}}/icon-66a-new.png',10px,12px);
+      @include behavior('{{MIMAGE}}/icon-66a-new.png');
+      background-size:10px 12px;
+      line-height:1.1\9;
+    }
+
+    .screen p {
+      margin: 18px 11px 0 11px;
+      line-height: 1;
+      color: #8D8D8E;
+      font-size: 12px;
+    }
+
+    .screen.red p {
+      color: #FD4701;
+    }
+
+    .screen.gray p {
+      color: gray;
+    }
+
+    .screen p:before {
+      content: ' ';
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      background: #44DB5E;
+      vertical-align: top;
+      margin-right: 9px;
+      // @include background('{{MIMAGE}}/status-green.png');
+    }
+
+    .screen.red p:before {
+      background: #FD4701;
+    }
+
+    .screen.gray p:before {
+      background: gray;
+    }
+
+    /* mini面板 */
+    .screen .board_mini {
+      width: 112px;
+      height: 78px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      /* overflow: hidden; */
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    .screen .board_mini:after {
+      content: '';
+      position: absolute;
+      left: 28px;
+      bottom: -6px;
+      width: 12px;
+      height: 12px;
+      background-color: #fff;
+      /* background-color: red; */
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      box-shadow: 4px 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .screen .board_mini .img_frame {
+      height: 70px;
+      overflow: hidden;
+    }
+
+    .screen .board_mini img {
+      width: 100%;
+      height: auto;
+      -webkit-border-radius: 5px 5px 0 0;
+      -moz-border-radius: 5px 5px 0 0;
+      border-radius: 5px 5px 0 0;
+    }
+
+    /* 大头针 */
+    .screen .pin {
+      content: '';
+      width: 26px;
+      height: 38px;
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      background: red;
+    }
+
+    
+
+    .screen.green .pin {
+      width: 26px;
+      height: 38px;
+      display: inline-blpck;
+      /*@include background('{{MIMAGE}}/icon1-36-new.png',26px,);*/
+      background: url('{{MIMAGE}}/icon1-36-new.png') no-repeat;
+      background: url('{{MIMAGE}}/icon1-36-new@1x.png') no-repeat\9;
+      *background: url('{{MIMAGE}}/icon1-36-new@1x.png') no-repeat;
+      background-size: 26px 38px;
+    }
+
+    .screen.red .pin {
+      background: url('{{MIMAGE}}/icon1-38-new.png') no-repeat;
+      background: url('{{MIMAGE}}/icon1-38-new@1x.png') no-repeat\9;
+      *background: url('{{MIMAGE}}/icon1-38-new@1x.png') no-repeat;
+      background-size: 26px 38px;
+    }
+
+    .screen.gray .pin {
+      background: url('{{MIMAGE}}/icon1-35.png') no-repeat;
+      background: url('{{MIMAGE}}/icon1-35@1x.png') no-repeat\9;
+      *background: url('{{MIMAGE}}/icon1-35@1x.png') no-repeat;
+      background-size: 26px 38px;
+    }
+
+    .screen.yellow .pin {
+      background: url('{{MIMAGE}}/icon1-37.png') no-repeat;
+      background: url('{{MIMAGE}}/icon1-37-new@1x.png') no-repeat\9;
+      *background: url('{{MIMAGE}}/icon1-37-new@1x.png') no-repeat;
+      background-size: 26px 38px;
+    }
+
+
+    .screen>span.onready {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 168px;
+      height: 222px;
+      background: url({{MIMAGE}}/screen-daixuan.png) 127px 8px no-repeat;
+      background-size: 30px 30px;
+      z-index: 99;
+    }
+
+    .screen>span.onselect {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 168px;
+      height: 222px;
+      @include background('{{MIMAGE}}/xuanzhong.png');
+      z-index: 99;
+    }
+
+    .screen>span.onforbidden{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 168px;
+      height: 222px;
+      /*background: url({{MIMAGE}}/forbidden.png);*/
+      background-size: 168px 222px;
+      z-index: 99;
+      cursor: default;
+    }
+
+    /*报修屏幕*/
+    .closeSelect {
+      position: fixed;
+      top: 27px;
+      right: 27px;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      box-shadow: 0px 0px 10px #aaa;
+      @include background('{{MIMAGE}}/fixClose.png');
+      cursor: pointer;
+    }
+
+    .selectFixscreen {
+      position: fixed;
+      bottom: 0px;
+      left: 0px;
+      width: 100%;
+      height: 92px;
+      text-align: center;
+      z-index: 10;
+      /* cursor: pointer; */
+    }
+
+    .selectFixscreen>button {
+      display: inline-block;
+      width: 300px;
+      height: 36px;
+      margin-top: 28px;
+      border: 0;
+      border-radius: 5px;
+      font-size: 14px;
+      color: #fff;
+      text-align: center;
+      line-height: 36px;
+      -webkit-transform: translate3d(0,100%,0);
+      transform: translate3d(0,100%,0);
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s;
+      position: absolute;
+      left: 50%;
+      bottom:0;
+      margin-left: -150px;
+    }
+
+    .selectFixscreen>button.slideup-repair {
+      -webkit-transform: translate3d(0,0,0);
+      transform: translate3d(0,0,0);
+    }
+
+    .selectFixscreen>button.fixSelect {
+      background-color: transparent;
+      width: 266px;
+      height: 87px;
+      @include background('{{MIMAGE}}/screen-my-select.png');
+      margin-top: 5px;
+      font-size: 16px;
+    }
+
+    .selectFixscreen>button.fixSubmit {
+      background-color: transparent;
+      cursor: pointer;
+      width: 266px;
+      height: 87px;
+      @include background('{{MIMAGE}}/screen-my-submit.png');
+      margin-top: 5px;
+      font-size: 16px;
+    }
+
+
+    .zm_wardenry {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      width: 138px;
+      height: 138px;
+      margin-top: -69px;
+      margin-left: -69px;
+    }
+
+    .zm_wardenry .zm_wardenry1 {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      text-align: center;
+      background: #E96733;
+      color: #fff;
+      z-index: 3;
+    }
+
+    .zm_wardenry .zm_wardenry1>h1 {
+      position: relative;
+      padding-top: 14px;
+      padding-bottom: 5px;
+      font-size: 70px;
+      z-index: 99;
+    }
+
+    .zm_wardenry .zm_wardenry1>span {
+      position: relative;
+      display: block;
+      width: 138px;
+      font-size: 16px;
+      z-index: 99;
+    }
+
+    .zm_wardenry1::before {
+      position: absolute;
+      content: "";
+      top: -16px;
+      left: -16px;
+      width: 170px;
+      height: 170px;
+      border-radius: 50%;
+      background-color: #E96733;
+      opacity: 0.5;
+      animation: bigger 1.5s infinite;
+      -webkit-animation: bigger 1.5s infinite;
+    }
+
+    .zm_wardenry1::after {
+      position: absolute;
+      content: "";
+      top: -31px;
+      left: -31px;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background-color: #E96733;
+      opacity: 0.3;
+      animation: bigger 1.5s infinite;
+      -webkit-animation: bigger 1.5s infinite;
+    }
+
+    @keyframes bigger {
+      from {
+        transform: scale(0);
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0)
+      }
+      50% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1)
+      }
+      to {
+        transform: scale(0);
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+      }
+    }
+
+    @-webkit-keyframes bigger {
+      from {
+        transform: scale(0);
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0)
+      }
+      50% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1)
+      }
+      to {
+        transform: scale(0);
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+      }
+    }
+
+    .zm_district>div {
+      position: fixed;
+      width: 72px;
+      height: 88px;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .zm_district>div.zm_district_green {
+      @include background('{{MIMAGE}}/district_green.png',72px,88px);
+    }
+
+    .zm_district>div.zm_district_red {
+      @include background('{{MIMAGE}}/district_red.png',72px,88px);
+    }
+
+    .zm_district>div.zm_district_gray {
+      @include background('{{MIMAGE}}/district_gray.png',72px,88px);
+    }
+
+    .zm_maptools {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      width: 28px;
+    }
+    .zm_maptools .big_small {
+      display: block;
+      width: 28px;
+      height: 56px;
+      border-radius: 5px;
+      background-color: #fff;
+      background-repeat: no-repeat;
+      background-position: center;
+      box-shadow: 0 0 4px rgba(0,0,0,0.3);
+      /*box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);*/
+      -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.3);
+      -moz-box-shadow: 0 0 4px rgba(0,0,0,0.3);
+    }
+    .maplocal {
+      display: block;
+      width: 28px;
+      height: 28px;
+      border-radius: 5px;
+      background-color: #fff;
+      background-repeat: no-repeat;
+      background-position: center;
+      box-shadow: 0 0 4px rgba(0,0,0,0.3);
+      /*box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);*/
+      -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.3);
+      -moz-box-shadow: 0 0 4px rgba(0,0,0,0.3);
+      cursor: pointer;
+      transition: all .2s cubic-bezier(0.4,0.5,0.5,0.4);
+      -webkit-transition: all .2s cubic-bezier(0.4,0.5,0.5,0.4);
+    }
+
+    .zm_maplocal {
+      margin-bottom: 4px;
+      @include behavior('{{MIMAGE}}/maplocal.png');
+      background-size:16px 16px;
+      background-position:center;
+      background-color:#fff;
+      // @include background('{{MIMAGE}}/maplocal.png',16px,16px,center,center);
+    }
+
+    .zm_maptools>.zm_maplocal:hover {
+      background-image: url({{MIMAGE}}/maplocal-01.png);
+    }
+
+    .zm_mapmagnify {
+      /*margin-bottom: 10px;*/
+      display: block;
+      width:28px;
+      height:28px;
+      @include behavior('{{MIMAGE}}/mapmagnify.png');
+      background-size: 10px 10px;
+      background-position:center;
+      border-bottom:1px solid #E0E1E6;
+      cursor: pointer;
+      transition: all .2s cubic-bezier(0.4,0.5,0.5,0.4);
+      -webkit-transition: all .2s cubic-bezier(0.4,0.5,0.5,0.4);
+    }
+    .zm_maptools .zm_mapmagnify:hover {
+      @include behavior('{{MIMAGE}}/mapmagnify-01.png');
+      background-size: 10px 10px;
+      background-position:center;
+    }
+    .zm_mapshrink {
+      display: block;
+      width:28px; 
+      height:28px;
+      @include behavior('{{MIMAGE}}/mapshrink.png');
+      background-size:10px auto;
+      background-position:center;
+      cursor: pointer;
+      transition: all .2s cubic-bezier(0.4,0.5,0.5,0.4);
+      -webkit-transition: all .2s cubic-bezier(0.4,0.5,0.5,0.4);
+    }
+    .zm_maptools .zm_mapshrink:hover {
+      @include behavior('{{MIMAGE}}/mapshrink-01.png');
+      background-size:10px auto;
+      background-position:center;
+      // @include background('{{MIMAGE}}/mapshrink-01.png',10px,auto,center,center);
+    }
+    .debug_tool {
+      margin-top: 20px;
+      @include background('{{MIMAGE}}/order_repair.png',20px,20px);
+    }
+
+    .zm_streetgreen{
+      position: fixed;
+      top: 50%;
+      left: 45%;
+      border:1px solid #2c933c;
+    }
+
+    .debug-frame {
+      position: absolute;
+      border: 1px solid red;
+    }
+
+    .debug-pin {
+      position: absolute;
+      width: 3px;
+      height: 3px;
+      background-color: green;
+    }
+    .hide {
+      display:none;
+    }
+
+}
+
+.unvisible {
+  visibility:hidden;
+}
+
+
+
+
+
+
+
+

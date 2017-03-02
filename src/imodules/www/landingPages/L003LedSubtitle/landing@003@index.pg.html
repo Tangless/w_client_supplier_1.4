@@ -1,0 +1,90 @@
+{{DONE}}
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    @@include('www/common/InsertTop/main.html',{"title": ""})
+
+    <style>@@include('{{MCSS}}')</style>
+</head>
+<body id="{{ID}}" {{IMODULE}}>  <!-- id和imodule属性都统一放在body标签上-->
+<div class="box container-fluid">
+
+    <!-- 引入头部 通过backgroub去更换logo图,通过传参数确定logo是否跳转-->
+    @@include('www/common/LandHeader/main.md.html',{"href":"#"})
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12"> <!-- 增加了一层栅格包裹H1标签;在有row的div内我们要尽量避免内容外漏在栅格之外,因为这样不能保证内容的对齐,内容会因为row的负margin而变宽;-->
+                <h1 class="text-center lsubtitle">在线登记，免费上门提供报价</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="lsub-step text-center">
+                    <img src="{{MIMAGE}}/reservation.png">
+                    <h6 class="step-title">在线登记</h6>
+                    <p class="step-content">在线登记，即可获得3位商家上门提供方案和报价</p>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="lsub-step text-center">
+                    <img src="{{MIMAGE}}/standard-option.png">
+                    <h6 class="step-title">在线选标</h6>
+                    <p class="step-content">在3份方案和报价中挑选一份您满意的</p>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="lsub-step text-center">
+                    <img src="{{MIMAGE}}/guarantee.png">
+                    <h6 class="step-title">担保交易</h6>
+                    <p class="step-content">平台为您提供交易担保和售后承保</p>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="lsub-step text-center">
+                    <img src="{{MIMAGE}}/visit.png">
+                    <h6 class="step-title">上门服务</h6>
+                    <p class="step-content">中标的商家免费上门安装，只收取材料费</p>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3 lsub-padd">
+                <div class="lsub-form-con">
+                    <div class="lsub-form clearfix">
+                        <span class="error-tip hide" idom="errorTip">* 请输入正确的手机号</span>
+                        <div class="media">
+                            <div class="media-body">
+                                <input type="text" class="form-control lsub-put-shadow" ievent='' idom="phoneText" placeholder="输入您的电话，立即登记">
+                            </div>
+                            <div class="media-right">
+                                <button class="btn btn-info lsub-btn" ievent="postPhone">提交</button>
+                                ...
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="lsub-alert-con text-center" idom="succTip">
+                        <a href="javascript:" class="layer-close" ievent="layerClose"><img src="{{MIMAGE}}/layer-close.png"></a>
+                        <img src="{{MIMAGE}}/success-ico.png" class="layer-success">
+                        <h3>您已成功预约</h3>
+                        <p>客服小萍将在3分钟内电话联系到您！</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@@include('www/common/LandFooter/main.md.html')
+@@include('www/common/LandInsertBottom/main.html')
+
+</body>
+</html>

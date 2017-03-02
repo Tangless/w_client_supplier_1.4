@@ -1,0 +1,123 @@
+@import "src/sass/global/mixin";
+.center {
+  width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.shadow_on {
+  box-shadow: 0 0 5px #ccc;
+  position: relative;
+  z-index: 222;
+  border-bottom: 1px solid #efefef \9;
+}
+#container {
+    top: 58px!important;
+    height: auto;
+}
+.screen .pin {
+    content: '';
+    width: 26px;
+    height: 38px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-size: 26px 38px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.input{
+  display: block;
+  padding: 10px;
+  color: #8D8D8E;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  font-size: 14px!important;
+  border: none;
+  background: #fff;
+  outline: 0;
+}
+.hoverBg{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.55);
+  z-index: 319;
+}
+.close{
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  @include background('/images/ui/close-new.png');
+  z-index: 9;
+  opacity: 1;
+}
+.close:hover {
+  @include background('/images/ui/close-new-hover.png');
+  opacity: 1;
+}
+.btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus{
+  outline: 0;
+  outline: none;
+}
+.wHide{
+  display: none !important;
+}
+.wVisno{
+  visibility: hidden !important;
+}
+.btn-loading {
+  overflow: hidden;
+  text-indent: -999rem;
+
+  ursor: not-allowed;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  position: relative;
+}
+.btn-loading:before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  display: block;
+  top: 50%;
+  left: 50%;
+  margin: -9px 0 0 -9px;
+  background-image: url(/global/images/btn-loading-new.svg);
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  background-position: center center;
+  -ms-behavior: url(/iscripts/libs/ie8/backgroundsize.min.htc);
+  behavior: url(/iscripts/libs/ie8/backgroundsize.min.htc);
+  *background-image: url(/global/images/btn-loading@1x.gif);
+  -webkit-animation:loader 1s linear infinite;animation:loader 1s linear infinite;
+}
+
+@-webkit-keyframes loader {
+  from{
+    -webkit-transform:rotate(0deg) translateZ(0);
+    transform:rotate(0deg) translateZ(0)
+  }to{
+    -webkit-transform:rotate(360deg) translateZ(0);
+    transform:rotate(360deg) translateZ(0)
+  }
+}
+@keyframes loader {
+  from{
+    -webkit-transform:rotate(0deg) translateZ(0);
+    transform:rotate(0deg) translateZ(0)
+  }to{
+    -webkit-transform:rotate(360deg) translateZ(0);
+    transform:rotate(360deg) translateZ(0)
+  }
+}
+
+body,html,h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, p {
+  font-family: "Hiragino Sans GB","华文细黑","STHeiti","微软雅黑","Microsoft YaHei",SimHei,"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    @@include('m/common/InsertTop/main.html',{"title": ""})
+    <link rel="stylesheet" href="/global/iscripts/libs/dropzone/dropzone.css">
+    <style>
+        #upload {
+            /* background: gray; */
+            /* color: #fff; */
+            margin: 10px auto;
+            width: 200px;
+            font-size: 25px;
+            cursor: pointer;
+        }
+        #previewDiv {
+            border: 1px solid blue;
+        }
+
+        /* 下面用于隐藏不需要的内容 */
+        .dz-preview {
+            font-size: 0px;
+        }
+        .dz-success-mark, .dz-error-mark {
+            height: 0;
+        }
+
+    </style>
+
+</head>
+<body id="{{ID}}" {{IMODULE}}>
+    <!-- <form action="/upload-target" class="dropzone"></form> -->
+    <div id="upload">click to upload</div>
+    <div id="previewDiv"></div>
+    <div id="del" class="hide">delete</div>
+
+    @@include('m/common/InsertBottom/main.html')
+
+    <script src="/global/iscripts/libs/dropzone/exif.js"></script>
+    <script src="/global/iscripts/libs/dropzone/dropzone.js"></script>
+</body>
+</html>

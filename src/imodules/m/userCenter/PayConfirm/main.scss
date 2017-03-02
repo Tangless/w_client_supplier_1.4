@@ -1,0 +1,37 @@
+@import "src/sass/global/mixin";
+
+#PayConfirm {
+  .content {
+    padding: 0.4rem 0.3rem 0.35rem 0.3rem;
+
+  }
+  .pay-title {
+    font-size: 0.18rem;
+    color: $black;
+    text-align: center;
+  }
+  .pay-content {
+    padding:0 0.08rem;
+    font-size: 0.14rem;
+    line-height: 1.43;
+    text-align: center;
+    margin-top:0.36rem;
+    margin-bottom:0.35rem;
+    color: $lightgray;
+    .total-amount {
+      color: $blue;
+    }
+  }
+  .btn-primary {
+    width: 1.2rem;
+    height: 0.45rem;
+    font-size: 0.15rem;
+    line-height: 1;
+    padding: 0.15rem 0.45rem;
+  }
+  .btn-right{
+    //margin-left:0.15rem;
+    float: right;
+  }
+
+}

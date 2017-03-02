@@ -1,0 +1,89 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="renderer" content="webkit">
+<meta name="keywords" content="安装LED显示屏,LED显示屏安装,LED显示屏报价,LED显示屏维修">
+<meta name="description" content="万屏汇是一家提供LED显示屏报价,LED显示屏安装,LED显示屏维修服务的网站,为全国客户提供上门报价,安装,维修服务">
+
+@@if (title === '') {
+<title>万屏汇-上门安装LED屏,LED显示屏安装,LED显示屏报价,LED显示屏维修</title>
+}
+@@if (title !== '') {
+<title>@@title</title>
+}
+
+<link rel="stylesheet" href="/global/sass/libs/bootstrap.css">
+<link rel="stylesheet" href="/global/sass/immy.css">
+<link rel="stylesheet" href="/global/sass/libs/animation.css"/>
+<link rel="stylesheet" href="/sass/common.css">
+<link rel="stylesheet" href="/font/font.css">
+<link rel="stylesheet" href="/sass/override.css">
+
+@@include('global/track/TrackHead/main.html')
+
+<!--[if lt IE 8]>
+<script>
+    // 为防止出现死循环跳，故加判断
+    var unsup = "/unsupport.html"; 
+    if (window.location.pathname !== unsup) {
+        window.location.href = unsup;
+    }
+</script>
+<![endif]-->
+
+<!-- 下面script：若在手机上访问www内容，则跳到m端网站。注：仅万屏汇需要，卫星站不需要（只有www一套代码，响应式）-->
+<!-- wph这值从哪里来？缺省值在gulp任务中给，如需覆盖，则在include时给其他值 -->
+@@if (wph) {
+<script>
+    function browserRedirect() {
+        //var isIE = navigator.userAgent.indexOf("compatible") > -1 && navigator.userAgent.indexOf("MSIE") > -1;
+
+        var sUserAgent = navigator.userAgent.toLowerCase();
+        //var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+        var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+        var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+        var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+        var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+        var bIsAndroid = sUserAgent.match(/android/i) == "android";
+        var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+        var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+
+        if (bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+            // 用手机访问www任一页面，跳到m版首页
+            window.location.href = "http://m.wanpinghui.com";
+        }
+    }
+    browserRedirect();
+</script>
+}
+
+<!--[if IE 8]>
+<script src="/iscripts/ie8top.js"></script>
+<![endif]-->
+
+<script>
+
+@@if (wph) {
+    // 万屏汇才需此逻辑，卫星站不需要
+    var clientWidth = window.screen.width || window.screen.availWidth;
+    if (clientWidth < 768) {
+        var href = window.location.href;
+        var hrefArr = href.split('.');
+        hrefArr[0] = 'http://m';
+        var newUrl = hrefArr.join('.');
+        location.href = newUrl;
+    }
+}
+
+
+    document.documentElement.className = "-immy-loading";
+
+    //console兼容
+    window.console = window.console || (function () {
+                var c = {};
+                c.log = c.warn = c.debug = c.info = c.error = c.time = c.dir = c.profile
+                        = c.clear = c.exception = c.trace = c.assert = function () {
+                };
+                return c;
+            })();
+</script>

@@ -1,0 +1,253 @@
+@import "src/sass/global/mixin";
+#InviteBidsInfo {
+   
+  .publish {
+    margin-top:.48rem;
+    width:100%;
+    background: url({{MIMAGE}}/bidbg3.jpg) center top no-repeat;
+    background-size: auto 4rem;
+    color:#4785F9;
+    height:4rem;
+    display:block;
+    text-align:center;
+    .pTitle {
+      height:.99rem;
+      width:1.725rem;
+      font-size:.41rem;
+      margin:0 0 .25rem 0;
+      width:100%;
+      text-align:center;
+      line-height:.41rem;
+      background:url('{{MIMAGE}}/logo1.png') no-repeat center 0.58rem;
+      background-size:1.725rem .41rem;
+    }
+    .pContent {
+      width:100%;
+      text-align:center;
+      font-size:.42rem;
+      margin:0 auto;
+      line-height:.24rem;
+      color: #fff;
+      padding-top: 0.51rem;
+    }
+    .pcompany {
+      margin: 0;
+      font-size: 0.14rem;
+      color: #fff;
+      padding-top: .22rem;
+    }
+    .pbusiness {
+      width: 100%;
+      margin-top: 0.53rem;
+      .pb-area {
+        width: 1.3rem;
+        height: 0.7rem;
+        display: inline-block;
+        margin: 0 0.1rem;
+        position: relative;
+        .pb-col {
+          position: absolute;
+          display: block;
+          width: 100%;
+          height: 100%;
+          background-color: #2d4d87;
+          border: 1px solid #a3c2fc;
+          opacity: 0.5;
+          top: 0;
+          left: 0;
+          border-radius: 2px;
+        }
+        cite {
+          position: absolute;
+          width: 100%;
+          top: 0;
+          left: 0;
+          font-style: normal;
+        }
+        span {
+          display: block;
+          width: 100%;
+          text-align: center;
+          font-size: 0.12rem;
+          color: #fff;
+          padding-top: 0.13rem;
+        }
+        em {
+          display: block;
+          width: 100%;
+          text-align: center;
+          color: #fff;
+          font-size: 0.24rem;
+          font-style: normal;
+          line-height: 0.24rem;
+          margin-top: 0.03rem;
+        }
+      }
+    }
+    .icon-go {
+      font-size: 0.14rem;
+      vertical-align: -1px;
+      margin-left: 0.08rem;
+    }
+    .pFCount {
+      font-size: 0.24rem;
+    }
+    .pFujin {
+      width: 1.66rem;
+      margin: 0 auto;
+      line-height: 0.22rem;
+      font-size: 0.14rem;
+      color: #fff;
+      padding-top: 0.25rem;
+    }
+    .pBtn {
+      width:1.8rem;
+      //height:.44rem;
+      margin:.79rem auto 0 auto;
+      text-align:center;
+      position: relative;
+    }
+  }
+  .btn-bao {
+    position: absolute;
+    padding: 0.07rem 0.16rem;
+    background-color: #fff;
+    //border: 1px solid #78aaff;
+    color: #78aaff;
+    top: -0.42rem;
+    left: 0.30rem;
+    font-size: 0.12rem;
+    border-radius: 20px;
+
+    &:before {
+      content: "";
+      width: 0.26rem;
+      height: 0.125rem;
+      background-color: #fff;
+      float: left;
+      position: absolute;
+      bottom: -0.08rem;
+      left: 18%;
+      margin-left: -0.06rem;
+      background: url({{MIMAGE}}/down-horn2.png) no-repeat;
+      background-size: cover;
+    }
+  }
+  .upMore,.downMore {
+    width:100%;
+    height:.7rem;
+    background:url('{{MIMAGE}}/loading.gif') no-repeat center;
+    background-size:.6rem .1rem;
+  }
+  #first {
+    padding-bottom:.49rem
+  }
+  .plane {
+    padding-right:.08rem;
+  }
+  .hasNew {
+    width: 2.55rem;
+    height: .33rem;
+    background: #4785F9;
+    color: #fff;
+    font-size: .15rem;
+    text-align: center;
+    z-index: 1;
+    border-radius: .2rem;
+    line-height: .33rem;
+    margin: 0.2rem auto;
+  }
+  
+  }
+
+/*以下代码是招标大厅的动画交互，故意放在大括号外面，否则不生效，高悦*/
+@keyframes tenderFade{
+  0%{
+    -webkit-transform: translate3d(0, -0.10rem, 0);
+    -o-transform: translate3d(0, -0.10rem, 0);
+    -ms-transform: translate3d(0, -0.10rem, 0);
+    transform: translate3d(0, -0.10rem, 0);
+  }
+  100% {
+    -webkit-transform: 0;
+    -o-transform: 0;
+    -ms-transform: 0;
+    transform: 0;
+  }
+}
+
+@keyframes tenderFade2{
+  0%{
+    -webkit-transform: translate3d(0, -0.10rem, 0);
+    -o-transform: translate3d(0, -0.10rem, 0);
+    -ms-transform: translate3d(0, -0.10rem, 0);
+    transform: translate3d(0, -0.10rem, 0);
+    -moz-opacity:0;              
+    -khtml-opacity:0;             
+    opacity: 0; 
+    filter:alpha(opacity=0);   
+  }
+  100% {
+    -webkit-transform: 0;
+    -o-transform: 0;
+    -ms-transform: 0;
+    transform: 0;
+    opacity: 1; 
+    -moz-opacity:1;              
+    -khtml-opacity:1;             
+    opacity: 1; 
+    filter:alpha(opacity=100);   
+  }
+}
+
+@keyframes tenderFade3{
+  0%{
+    -webkit-transform: 0;
+    -o-transform: 0;
+    -ms-transform: 0;
+    transform: 0;
+    opacity: 1; 
+    -moz-opacity:1;              
+    -khtml-opacity:1;             
+    opacity: 1; 
+    filter:alpha(opacity=100);  
+  }
+  100% {
+    -webkit-transform: translate3d(0, -0.10rem, 0);
+    -o-transform: translate3d(0, -0.10rem, 0);
+    -ms-transform: translate3d(0, -0.10rem, 0);
+    transform: translate3d(0, -0.10rem, 0);
+    -moz-opacity:0;              
+    -khtml-opacity:0;             
+    opacity: 0; 
+    filter:alpha(opacity=0);   
+  }
+}
+.pubshadow {
+  -webkit-animation-name: tenderFade2;
+  animation-name: tenderFade2;
+  -webkit-animation-duration: .3s;
+  animation-duration: .3s;
+  animation-fill-mode: both;
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+}
+.pubAnimation {
+  
+  -webkit-animation-duration: .3s;
+  animation-duration: .3s;
+  animation-fill-mode: both;
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  transform: translate3d(0, -0, 0);
+}
+.pubAnimation2 {
+  -webkit-animation-name: tenderFade3;
+  animation-name: tenderFade3;
+  -webkit-animation-duration: .3s;
+  animation-duration: .3s;
+  animation-fill-mode: both;
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  transform: translate3d(0, -0, 0);
+}

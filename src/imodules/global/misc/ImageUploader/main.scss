@@ -1,0 +1,56 @@
+@import "src/sass/global/mixin";
+
+#ImageUploader {
+    .btn-upload {
+        position: relative;
+        overflow: hidden;
+
+        width: 114px;
+        height: 70px;
+        border: solid 1px $blue;
+
+        display: table-cell; 
+        vertical-align: middle;
+        text-align: center;
+        color: $blue;
+        z-index: 20;
+    }
+
+    .input-upload {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+        opacity: 0;
+        -ms-filter: 'alpha(opacity=0)';
+        cursor: pointer;
+		direction: ltr;
+		font-size: 200px !important;  /* 为了能点中，弄个超大字号 */
+    }
+
+	.preview {
+        position: absolute;
+	}
+    
+    .img-frame {
+        img {
+            max-width: 114px;
+            max-height: 70px;
+        }
+    }
+
+	.remove {
+        position: absolute;
+        top: -8px;
+        right: -8px;
+        z-index: 10;
+        width: 16px; 
+        height: 16px;
+        border-radius: 50%;
+        color: white;
+        background: $blue; 
+        font-size: 11px;
+        text-align: center;
+        padding-top: 2px;
+	}
+}

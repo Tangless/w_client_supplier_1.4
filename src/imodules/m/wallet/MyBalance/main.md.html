@@ -1,0 +1,54 @@
+<div id="{{ID}}" {{IMODULE}}>
+    {{IncludeMCSS}}
+    <div class="balance col-xs-12">
+    	<div class="balance-title col-xs-12 text-center">
+    		<span class="enough">余额不足</span>
+    	</div>
+
+    	<!--默认为余额不足的样式，sufficient为余额充足的样式-->
+    	<div class="balance-money col-xs-12 text-center">
+    		&yen;<span class="money-text">0</span>
+    	</div>
+    	<div class="balance-timely col-xs-12 text-center">
+    		<p class="paycheck hide">暂无法提现</p>
+    		<p class="withdrawals hide"><a ievent="openModal"><i class="icon-card"></i>申请提现</a></p>
+    	</div>
+    </div>
+
+    <div class="coninter trans-btn clearfix">
+        <div class="row">
+            <div class="col-xs-4 text-center active onefirst" ievent="transTabBtn">
+                <span>所有</span>
+            </div>
+            <div class="col-xs-4 text-center"  ievent="transTabBtn">
+                <span>收入</span>
+            </div>
+            <div class="col-xs-4 text-center last"  ievent="transTabBtn">
+                <span>支出</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="trans-list">
+        <!--tab-list 开始-->
+        <div class="trans-con" idom="transTabContent">
+
+            <!-- 重复开始 -->
+            <div class="trans-conone clearfix hide">
+                <div class="trans-left">
+                    <p class="zhifu"></p>
+                    <p class="shijian"></p>
+                </div>
+                <div class="trans-right">
+                    <span class="payMoney">-8.00</span>
+                </div>
+            </div>
+        </div>
+        <!--tab-list 开始-->
+    </div>
+
+    <div class="trans-none hide" idom="transportNone">
+        <p>钱包余额用于获取客户联系方式</p>
+        <h6><a href="javascript:;" class="trans-cz" ievent="pCenterCharge" id="centerCharge">去充值</a></h6>
+    </div>
+</div>

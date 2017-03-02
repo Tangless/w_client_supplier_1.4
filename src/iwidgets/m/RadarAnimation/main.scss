@@ -1,0 +1,119 @@
+@import "src/sass/global/mixin";
+@import "src/sass/global/libs/variable";
+
+.RadarAnimation {
+  width: 100%;
+  overflow: hidden;
+  height: 1.47rem;
+  .single {
+    width: 3.8rem;
+    height: 3.8rem;
+    position: relative;
+    background-color: #fff;
+    border-radius: 50%;
+    left: 50%;
+    margin-left: -1.9rem;
+  }
+
+  .sing-com {
+    position: absolute; 
+    border-radius: 50%; 
+    top: 50%; 
+    left: 50%; 
+    opacity: 1; 
+  }
+  .one { 
+    width: 1.9rem; 
+    height: 1.9rem; 
+    box-shadow: 0 0 1px 0.15rem rgba(202,220,255,0.8); 
+    margin-top: -0.95rem;
+    margin-left: -0.95rem; 
+    z-index: 2;
+    -webkit-animation: halo 1s 0.5s infinite ease-out;
+  }
+
+  .two { 
+    width: 2.2rem; 
+    height: 2.2rem; 
+    box-shadow: 0 0 1px 0.3rem rgba(202,220,255,0.6); 
+    margin-top: -1.1rem; 
+    margin-left: -1.1rem; 
+    z-index: 2;
+    -webkit-animation: halo2 1s 0.5s infinite ease-out;
+  }
+
+  .three { 
+    width: 2.8rem; 
+    height: 2.8rem; 
+    box-shadow: 0 0 1px 0.3rem rgba(202,220,255,0.4); 
+    margin-top: -1.4rem; 
+    margin-left: -1.4rem; 
+    z-index: 2;
+    -webkit-animation: halo3 1s 0.5s infinite ease-out;
+  }
+
+  .single em {
+      width: 1.9rem;
+      height: 1.9rem;
+      margin: 0 auto;
+      background: #cadcff;
+      cursor: pointer;
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: -0.95rem 0 0 -0.95rem;
+      border-radius: 50%;
+  }
+
+  @keyframes halo {
+    0% { 
+      opacity: 0; 
+      transform: scale(1); 
+      box-shadow: 0 0 1px 0.15rem rgba(202,220,255,0.8);
+    }
+    50% {opacity: 1; }
+    100%{
+      opacity: 0.6;
+      transform: scale(1); 
+      box-shadow: 0 0 1px 0.30rem rgba(202,220,255,0.8);
+    } 
+  }
+
+  @keyframes halo2 {
+    0% { 
+      opacity: 0; 
+      transform: scale(1); 
+      box-shadow: 0 0 1px 0.15rem rgba(202,220,255,0.6); 
+      width: 2.18rem; height: 2.18rem; margin-top: -1.09rem; margin-left: -1.09rem;
+    }
+    50% {opacity: 1; }
+    100%{
+      opacity: 0.3;
+      transform: scale(1); 
+      box-shadow: 0 0 1px 0.30rem rgba(202,220,255,0.6); 
+      width: 2.48rem; 
+      height: 2.48rem; 
+      margin-top: -1.24rem; 
+      margin-left: -1.24rem;
+    } 
+  }
+  @keyframes halo3 {
+    0% { 
+      opacity: 0; 
+      transform: scale(1); 
+      box-shadow: 0 0 1px 0.15rem rgba(202,220,255,0.4); 
+      width: 2.5rem; height: 2.5rem; margin-top: -1.25rem; margin-left: -1.25rem;
+    }
+    50% {opacity: 1; }
+    100%{
+      opacity: 0.3;
+      transform: scale(1); 
+      box-shadow: 0 0 1px 0.3rem rgba(202,220,255,0.4); 
+      width: 3.06rem; 
+      height: 3.06rem; 
+      margin-top: -1.53rem; 
+      margin-left: -1.53rem;
+    } 
+  }
+}

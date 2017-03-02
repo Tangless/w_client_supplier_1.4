@@ -1,0 +1,197 @@
+@import "src/sass/global/mixin";
+@import "src/sass/global/libs/variable";
+
+#AlipayModal {
+    @media screen and (max-width: 768px) {
+        ul, li, h1, h2, h3, h4 {
+            padding: 0;
+            margin: 0;
+        }
+        form {
+            font-size: 0;
+        }
+        .submit {
+            margin: 0 9%;
+            width: 82%;
+            line-height: .24rem;
+            height: .44rem;
+        }
+        .pos {
+            padding-bottom: .35rem;
+
+        }
+        h2 {
+            text-align: center;
+            color: $black;
+            font-size: 0.18rem;
+            padding-top: 0.4rem;
+        }
+
+        h1 {
+            text-align: center;
+            color: $black;
+            font-size: 0.18rem;
+            margin: .18rem 0 .375rem 0;
+            span{
+                font-size: 0.32rem;
+                margin-left: 5px;
+            }
+        }
+
+        .alipay-select {
+            padding: 0 0 .5rem;
+            .tip-code {
+                float: left;
+                height: 0.20rem;
+                line-height: 0.20rem;
+                margin-top: 0.14rem;
+                font-size: 0.14rem;
+            }
+            .tip-obtain {
+                background-color: transparent;
+                float: right;
+                color: $orange;
+                margin-top: 0.14rem;
+                font-size: 0.14rem;
+            }
+        }
+
+        .tip-sent {
+            margin-top: -0.05rem;
+            padding-bottom: 0.36rem;
+        }
+
+        .alipay-select li {
+            width: 100%;
+            overflow: hidden;
+            padding-left: .2rem;
+            line-height: 0.48rem;
+            border-bottom: 1px solid $linecolor;
+            cursor: pointer;
+            height: 0.48rem;
+            list-style: none;
+        }
+
+        .alipay-select li > i {
+            float: left;
+            width: 0.29rem;
+            height: 0.29rem;
+            background: url({{MIMAGE}}/alipay.png) no-repeat;
+            margin: 0.09rem 0.10rem 0 0;
+            display: inline;
+            background-size: 0.29rem auto;
+        }
+
+        .alipay-select li > i.alipay-wechart {
+            background: url({{MIMAGE}}/pay-wechart.png) no-repeat;
+            background-size: 0.29rem auto;
+        }
+        .alipay-select li > i.alipay-bank {
+            background: url({{MIMAGE}}/pay-bank.png) no-repeat;
+            background-size: 0.29rem auto;
+        }
+
+        .alipay-select li > span {
+            float: left;
+            color: $dark-gray;
+            font-size: 0.14rem;
+        }
+
+        .tip-btn-box {
+            padding: 0 0.32rem;
+
+            .btn {
+                display: block;
+            }
+        }
+    }
+    @media screen and (min-width: 768px) {
+        width: 400px;
+        height: 386px;
+
+        form {
+            *display: block;
+            *padding-top: 40px;
+            position: relative;
+            width: 300px;
+            margin: 40px auto 30px;
+        }
+
+        form > div {
+            border-bottom: 1px solid #e0e3e6;
+        }
+
+        h2 {
+            color: #2a2e33;
+            font-weight: normal;
+            font-size: 12px;
+            text-align: center;
+            width: 108px;
+            margin: 0 auto;
+            line-height: 19px;
+        }
+
+        h1 {
+            color: #fd4701;
+            font-weight: normal;
+            font-size: 26px;
+            text-align: center;
+            margin-top: 9px;
+
+            span {
+                font-size: 26px;
+            }
+        }
+
+        .alipay-select {
+            width: 300px;
+            margin: 64px auto 0;
+            border-top: 1px solid #e0e3e6;
+            padding-bottom: 67px;
+        }
+
+        .alipay-select li {
+            width: 100%;
+            overflow: hidden;
+            line-height: 58px;
+            border-bottom: 1px solid #e0e1e6;
+            cursor: pointer;
+            list-style: none;
+        }
+
+        .alipay-select li > i {
+            float: left;
+            width: 22px;
+            height: 23px;
+            background: url({{MIMAGE}}/alipay.png) no-repeat;
+            margin: 18px 10px 0 0;
+            display: inline;
+            background-size: 22px auto;
+        }
+
+        .alipay-select li > span {
+            float: left;
+            color: #2a2e33;
+            font-size: 14px;
+        }
+
+        .aipay-skip {
+            width: 6px;
+            height: 10px;
+            background: url({{MIMAGE}}/skip.png) no-repeat;
+            float: right;
+            margin-top: 24px;
+            display: inline;
+            background-size: 6px auto;
+        }
+
+        .btn {
+            width: 100%;
+            height: 36px;
+            padding: 0;
+            cursor: pointer;
+            display: inline-block;
+            line-height: 36px;
+        }
+    }
+}

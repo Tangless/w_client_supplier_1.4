@@ -1,0 +1,14 @@
+{{DONE}}
+<div id="{{ID}}" {{IMODULE}}>
+    {{IncludeMCSS}}
+    <div class="low-modal">
+        <div class="title" idom="title">请确认付费</div>
+        <div class="pay-info">
+            您想付费
+            <i class="text-primary">&yen;&nbsp;</i><span class="text-primary" idom="money"></span>，<br>
+            以获得电话联系客户的机会吗？
+        </div>
+    </div>
+    <button class="sub-btn btn btn-primary cancel-pay" ievent="closeModal">取消</button>
+    <button class="sub-btn btn btn-primary" idom="sure" id="ensure-pay" ievent="ensure">付费</button>
+</div>

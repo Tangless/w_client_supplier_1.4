@@ -1,0 +1,139 @@
+{{DONE}}
+<!DOCTYPE html>
+<html>
+<head lang="zh">
+    @@include('www/common/InsertTop/main.html',{"title": ""})
+    {{IncludeMCSS}}
+    <style>
+        img {
+            width: 100%;
+        }
+
+        p {
+            font-size: 48px;
+        }
+
+        h5 {
+            font-size: 14px;
+        }
+    </style>
+   
+</head>
+<body id="L005LedScreenPrice" {{IMODULE}}>
+<!-- 引入头部 -->
+@@include('www/common/LandHeader/main.md.html',{"href":"#"})
+
+<div class="whiteBg"></div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="company-info">
+                上市公司洲明科技
+                <span class="font14">(SZ:300232)</span>
+                旗下，1368家加盟品牌商直供，服务覆盖全国，
+                <span class="sup-phone"></span>
+                <span class="white">400-992-9033</span>
+            </div>
+        </div>
+        <div class="col-md-4 col-xs-6">
+            <div class="screen-info">
+                <img src="/images/imodules/L005LedScreenPrice/screens-img1.jpg" alt="门头招揽">
+                <div class="img-title">门头招揽</div>
+                <div class="padding15">
+                    <div class="margin30">
+                        <label class="label">户外</label>
+                        <label class="label">P10</label>
+                        <label class="label">单色</label>
+                        <label class="label">节能</label>
+                    </div>
+                    <div>
+                        <div class="single-info">
+                            <p>278<span class="font14">元/㎡</span></p>
+                            <h5><span class="font14">471</span>家品牌厂商提供</h5>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="get-price-btn btn btn-success" ievent='goTalk'>点击获取订制报价</button>
+                <div class="sup-star sup-star1"></div>
+            </div>
+        </div>
+        <div class="col-md-4 col-xs-6">
+            <div class="screen-info">
+                <img src="/images/imodules/L005LedScreenPrice/screens-img2.jpg" alt="广告公告">
+                <div class="img-title">广告公告</div>
+                <div class="padding15">
+                    <div class="margin30">
+                        <label class="label">户外</label>
+                        <label class="label">P4</label>
+                        <label class="label">全彩</label>
+                        <label class="label">联网管理</label>
+                    </div>
+                    <div>
+                        <div class="single-info">
+                            <p>1888<span class="font14">元/㎡</span></p>
+                            <h5><span class="font14">962</span>家品牌厂商提供</h5>
+                        </div>
+                    </div>
+                </div>
+                <button class="get-price-btn btn btn-success" ievent='goTalk'>点击获取订制报价</button>
+                <div class="sup-star sup-star2"></div>
+            </div>
+        </div>
+        <div class="col-md-4 col-xs-6">
+            <div class="screen-info">
+                <img src="/images/imodules/L005LedScreenPrice/screens-img3.jpg" alt="舞台会议">
+                <div class="img-title">舞台会议</div>
+                <div class="padding15">
+                    <div class="margin30">
+                        <label class="label">室内</label>
+                        <label class="label">P2.5</label>
+                        <label class="label">全彩</label>
+                        <label class="label">带4G模块</label>
+                    </div>
+                    <div class="single-info">
+                        <p>6999<span class="font14">元/㎡</span></p>
+                        <h5><span class="font14">52</span>家品牌厂商提供</h5>
+                    </div>
+                </div>
+                <button class="get-price-btn btn btn-success" ievent='goTalk'>点击获取订制报价</button>
+                <div class="sup-star sup-star3"></div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+            <div class="input-group input-group-lg">
+                <div class="user-phone"></div>
+                <input type="text" class="form-control user-input" id="inputSuccess" placeholder="请输入手机号，1个电话获得30家品牌报价" ievent='userInput'>
+                <span class="input-group-btn">
+                    <button class="btn btn-success" type="button" ievent='submitPhone'>获得报价</button>
+                </span>
+            </div>
+            <div class="error-tip">
+                请输入正确联系方式
+                <div class="xiaosanjiao"></div>
+            </div>
+        </div>
+    </div>
+    <div class="succ-tip">
+        <h5>
+            <img src="/images/imodules/L005LedScreenPrice/succ.png">
+            操作成功
+        </h5>
+        <p>请耐心等待，我们的客服将于24h内与您联系。400-992-9033</p>
+    </div>
+</div>
+
+@@include('www/common/LandInsertBottom/main.html')
+
+<script type="text/javascript">
+    $(function () {
+        // 三个按钮也绑定(#zhichiBtn也绑定了，就调2次吧)
+        $('.get-price-btn').click(function() {
+            project.getIModule('imodule://Track').trackConsult();
+        })
+    })
+</script>
+</body>
+</html>

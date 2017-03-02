@@ -1,0 +1,26 @@
+<div id="{{ID}}" {{IMODULE}}>
+    {{IncludeMCSS}}
+    <h2 class="i-title">进行中...</h2>
+    <div class="i-sure">
+        <div class="i-content">
+            <p class="i-qufen">身份确认</p>
+            <div class="i-detail">
+                <span class="i-name" idom="iName"></span><span class="i-phone" idom="iPhone"></span>
+            </div>
+            <span class="i-ver" idom="idMark"></span>
+            <span class="i-loading" idom="iLoadOne"><img src="{{MIMAGE}}/loading.gif" width="14"></span>
+        </div>
+
+        <div class="i-content">
+            <p class="i-qufen">钱包余额</p>
+            <div class="i-detail">
+                <p idom="moneyDefault">钱包余额(¥<span idom="iYue"></span>)</p>
+                <p idom="notEnough" class="hide">钱包余额(¥<span idom="iYue"></span>)不足以支付本次押金</p>
+                <p idom="toRecharge" class="hide"><button class="btn btn-primary btn-i" id="doCharge" ievent="goCharge">去充值</button></p>
+                <p idom="adequate" class="hide">余额充足</p>
+            </div>
+            <span class="i-ver" idom="iwallet"></span>
+            <span class="i-loading" idom="iLoadYu"><img src="{{MIMAGE}}/loading.gif" width="14"></span>
+        </div>
+    </div>
+</div>

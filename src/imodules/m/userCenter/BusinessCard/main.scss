@@ -1,0 +1,32 @@
+@import"src/sass/global/mixin";
+#BusinessCard{
+    height: 1.45rem;
+    font-size: .12rem;
+    ul,li{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .icon-user4-51px{
+        font-size: .46rem;
+        color: #4785f9;
+    }
+    .avatar{
+        position: absolute;
+        width: .84rem;
+        padding-top: .5rem;
+        top: 0;
+        text-align: center;
+    }
+    .welcome{
+        margin-left: .85rem;
+        padding-top: .4rem;
+        margin-right: .2rem;
+    }
+    .title{
+        border-bottom: $linecolor 1px solid;
+        padding-bottom: .055rem;
+        margin-bottom: .07rem;
+        .nick{padding-right: .13rem;font-size: .18rem; font-weight:100; color: $black;}
+    }
+}

@@ -1,0 +1,52 @@
+@import "src/sass/global/mixin";
+
+.container,.container-fluid{
+  position: relative;
+  //min-width: 768px !important;
+}
+.container-fluid{
+  padding: 0;
+}
+div[class^="col-"]{
+  position: relative;
+}
+
+//immy弹窗
+.-immy-dialog-header .tool-close {
+  width: 16px;
+  height: 16px;
+  padding-left: 0;
+  margin-top: 15px;
+  margin-right: 10px;
+  display:none;
+}
+.-immy-dialog-mask .tool-close{
+  position:fixed;
+  right:20px;
+  top:20px;
+  cursor: pointer;
+  font-size:20px;
+}
+.-immy-dialog-mask .tool-close:hover{
+  color:$lightgray;
+}
+@media screen and (max-width: 768px){
+  .-immy-dialog-header .tool-close{
+    display:block;
+  }
+  .-immy-dialog-mask .tool-close{
+    display:none;
+  }
+}
+#MEIQIA-BTN-HOLDER{//美恰客服档住地图缩放按钮
+  right: 70px !important;
+  z-index: 333 !important;
+}
+#MEIQIA-INVITE{
+  margin-bottom: 5px !important;
+  right: 150px;
+  bottom: 0px;
+}
+#MEIQIA-INVITE #MEIQIA-INVITE-CLOSE{
+  background: url("/global/images/icon-mq-round.png") center -12px no-repeat !important;
+}

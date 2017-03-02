@@ -1,0 +1,20 @@
+#QQTalk{
+  position: fixed;
+  right: 100px;
+  bottom: 0;
+  background:#4D8F00;
+  width:146px;
+  height: 57px;
+  line-height: 57px;
+  text-align: center;
+  color: #FFF;
+  font-size: 18px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  cursor: pointer;
+
+  img {
+    width: 26px;
+    height: 30px;
+  }
+}

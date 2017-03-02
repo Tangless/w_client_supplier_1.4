@@ -1,0 +1,124 @@
+{{DONE}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  @@include('www/common/InsertTop/main.html',{"title": ""})
+  <style> @@include('www/landingPages/L002FullColor/main.css.min')</style>
+</head>
+<body id="L002FullColor" {{IMODULE}}>
+<!-- 引入头部 -->
+<div class="full-color" >
+@@include('www/common/LandHeader/main.md.html',{"href":"http://www.wanpinghui.com"})
+
+  <div class="container-fluid fullcolor-con">
+    <div class="row fullcolor-row" idom="aaa">
+      <div class="col-md-12 fullcolor-con">
+        <div class="fullcolor-banner">
+
+          <div class="fullcolo-banback"></div>
+          <div class="back">
+             <div class="container">
+                  <div class="row">
+                      <div class="col-xs-8 col-xs-offset-2">
+                          <div class="move">
+                              <div class="row fulluser-inp" data-text="true">
+                                  <form idom="form">
+                                      <div class="col-md-4 col-sm-4 col-xs-4 min-widt user_div">
+                                          <input name="username" type="text" class="form-control" id="username" placeholder="姓名" data-flg = '2'>
+                                      </div>
+                                      <div class="col-md-6 col-sm-5 col-xs-5 min-widt phone_div">
+                                          <input name="password" type="text" class="form-control" id="phone" ievent='' placeholder="电话" >
+                                      </div>
+                                      <div class="col-md-2 col-sm-3 col-xs-3">
+                                          <button name="submit" type="button" class="btn btn-fullcolor" id="btnfull" ievent="btnactive">OK</button>
+                                      </div>
+                                  </form>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="fullcolor-line">
+
+          <div class="full-relative">
+          <span></span>
+          <label>经典案例<font><img src="/images/imodules/L002FullColor/arrow.png"></font></label>
+          </div>
+
+  </div>
+
+  <div class="fullcolor-conbox">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-xs-offset-3 fullcolor-slider">
+             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" idom="carousel">
+
+              <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                   <img src="/images/imodules/L002FullColor/slider1.jpg">
+                   <div class="carousel-caption">
+                      <label><span></span><font>东莞　市辖区　大润发</font></label>
+                   </div>
+                  </div>
+                  <div class="item">
+                   <img src="/images/imodules/L002FullColor/slider2.jpg">
+                    <div class="carousel-caption">
+                       <label><span></span><font>广州　天河区　海洋馆</font></label>
+                   </div>
+                  </div>
+                   <div class="item">
+                   <img src="/images/imodules/L002FullColor/slider3.jpg">
+                    <div class="carousel-caption">
+                       <label><span></span><font>深圳　西丽区　动物园</font></label>
+                   </div>
+                  </div>
+                  <div class="item">
+                   <img src="/images/imodules/L002FullColor/slider4.jpg">
+                    <div class="carousel-caption">
+                       <label><span></span><font>深圳　南山区　万象城</font></label>
+                   </div>
+                  </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev" ievent="slideleft">
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                </a>
+              </div>
+            </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <!--弹出框-->
+    <div class="porp-box" idom="alert">
+      <label></label>
+        <div class="porp-Alert">
+          <span></span>
+          <p>操作成功</p>
+        </div>
+
+    </div>
+
+</div>
+@@include('www/common/LandFooter/main.md.html')
+
+@@include('www/common/LandInsertBottom/main.html')
+<!-- @huhao: 这个页面并没有用到swiper吧？因其导致页面加载不出来，故注释 by SongErwei-->
+<!-- <script>
+    @ @include('../iscripts/global/tools/swiper.js')
+</script> -->
+
+</body>
+</html>

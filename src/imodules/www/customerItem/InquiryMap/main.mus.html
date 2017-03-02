@@ -1,0 +1,27 @@
+<div class="tpl">
+	<div class="inline name">
+		你好，{{user.nick}}
+	</div>
+	<div class="min inline hide">
+		<div class="minName">你好，{{user.nick}}</div>
+		<div class="minTime">{{util.time}}</div>
+	</div>
+	<div class="inline info">
+		<div class="scrInfo">
+			<span class="scrType">{{util.type}}项目正在洽谈</span>
+			<span>{{#json.budget}}{{util.budget}}{{/json.budget}}{{^json.budget}}议价{{/json.budget}} / {{util.loc}} / {{util.color}} / {{json.size}}㎡ / {{json.span}}</span>
+		</div>
+		<div class="userInfo">
+			<!-- 王安五-洲明科技：高空安装，您这需要打钢结构的。 -->
+			<span class="userId"></span><span class="lastMsg"></span>
+		</div>
+	</div>
+	<div class="inline time">
+		{{util.time}}
+	</div>
+	<div class="message icon-message-pc" ievent="inquiry">
+		<div class="unread hide"></div>
+		<div class="unreadAll hide"></div>
+	</div>
+	
+</div>

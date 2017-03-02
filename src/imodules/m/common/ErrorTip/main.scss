@@ -1,0 +1,47 @@
+.sign-errortip {
+    width: 2.5rem;
+    height: .43rem;
+    background-color: #FAF9D3;
+    display: inline-block;
+    position: absolute;
+    border-radius: 3px;
+    box-shadow: 4px 4px 6px rgba(0,0,0,.1);
+    font-size: .12rem;
+    color: #3C3E46;
+    line-height: .43rem;
+    left: 50%;
+    margin-left: -1.25rem;
+    top: 0.1rem;
+}
+
+.sign-errortip:after {
+    content: '';
+    position: absolute;
+    bottom: -0.07rem;
+    width: 0.16rem;
+    height: 0.16rem;
+    background-color: #FAF9D3;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    box-shadow: 4px 4px 6px rgba(0,0,0,.1);
+    left: 50%;
+    margin-left: -0.08rem;
+}
+/*input框错误提示*/
+.input-error {
+    width: 2.5rem;
+    height: .43rem;
+    background-color: #FAF9D3;
+    display: inline-block;
+    position: absolute;
+    border-radius: 3px;
+    box-shadow: 4px 4px 6px rgba(0,0,0,.1);
+    font-size: .12rem;
+    color: #3C3E46;
+    line-height: .43rem;
+    left: 50%;
+    margin-left: -1.25rem;
+    top:1.8rem;
+}

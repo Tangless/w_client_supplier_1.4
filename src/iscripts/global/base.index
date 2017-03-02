@@ -1,0 +1,7 @@
+
+@@include('global/base/compat.js')
+@@include('global/base/ip_city.js')
+@@include('global/base/prototype_ext.js')
+@@include('global/base/time_ago.js')
+@@include('global/base/utils.js')
+@@include('global/base/vtimer.js')

@@ -1,0 +1,396 @@
+@import "src/sass/global/mixin";
+
+#GrabDetails {
+  background-color: #fff;
+
+  .new-info {
+    width: 100%;
+    position: relative;
+    padding-top: 0.16rem;
+    height: 0.86rem;
+    .info-return {
+      float: left;
+      color: $blue;
+      font-size: 0.16rem;
+      padding-left: 0.15rem;
+    }
+  }
+
+  .client-info {
+    padding: .2rem .15rem;
+    background-color: #fff;
+    position: relative;
+
+    .triangle{
+      position: absolute;
+      bottom: -1px;
+      right: .42rem;
+      color: $bgblue;
+      font-size: 12px;
+    }
+  }
+  .client-fname {
+    width: .56rem;
+    height: .56rem;
+    display: inline-block;
+    margin-top: .04rem;
+    margin-bottom: .04rem;
+    text-align: center;
+    line-height: .56rem;
+    color: #fff;
+    font-size: .26rem;
+    position: absolute;
+    left: 50%;
+    margin-left: -0.28rem;
+  }
+  .male-color{
+    background-color: #78AAFF;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  .info-iphone {
+    width: 0.19rem;
+    height: 0.19rem;
+    float: left;
+    position: absolute;
+    bottom: -0.02rem;
+    right: 0.02rem;
+    background-color: #fff;
+    border-radius: 50%;
+    display: none;
+    .icon-phone06 {
+      color: $blue;
+      font-size: 0.12rem;
+      float: left;
+      margin: 0.04rem 0 0 0.05rem;
+      display: inline;
+    }
+  }
+
+  .female-color{
+    background-color: $pink;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  .d-adress {
+    max-width: 0.72rem;
+    overflow: hidden;
+    display: inline-block;
+    height: 0.18rem;
+    line-height: 0.17rem;
+    vertical-align: middle;
+    white-space:nowrap; 
+    text-overflow:ellipsis;
+  }
+  .name-address {
+    display: inline-block;
+    width: 1.65rem;
+    height: .54rem;
+    margin-left: .1rem;
+    vertical-align: top;
+    overflow: hidden;
+    line-height: 1;
+
+    h3 {
+      font-size: .18rem;
+      color: #2A2E33;
+      margin: .06rem 0 .11rem;
+      font-weight: 500;
+    }
+    p {
+      margin: 0;
+      color: $lightgray;
+      font-size: .12rem;
+
+      .icon-location5 {
+        color: $blue;
+      }
+    }
+  }
+  .grab-status {
+    margin: 0;
+    color: $blue;
+    font-size: .17rem;
+    padding-right: 0.12rem;
+
+    span {
+      font-size: .16rem;
+      margin-right: .05rem;
+    }
+    .icon-Tender {
+      color: $blue;
+    }
+    .icon-Correct-complete {
+      color: $green;
+    }
+  }
+  .demand-info {
+    position: relative;
+    padding: .22rem .15rem .1rem;
+    text-align: left;
+
+    p{
+      font-size: .14rem;
+      margin-bottom: .15rem;
+
+      .icon-checkmark02{
+        color: $green;
+        margin-right: 3px;
+      }
+      .address{
+        @include text-ellipsis(1.3rem);
+		width: 1.6rem;
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        top: -1px;
+      }
+    }
+
+    .demand-type {
+      color: #212022;
+      font-size: 0.16rem;
+    }
+    .demand-budget {
+      position: absolute;
+      right: .28rem;
+      top: .23rem;
+      color: $black;
+      font-size: .24rem;
+      line-height: 1;
+
+      span {
+        font-size: .36rem;
+        font-weight: 500;
+        margin-right: 3px;
+      }
+      
+      .bargaining {
+        font-size: 0.24rem;
+      }
+      .budget-label{
+        width: .58rem;
+        position: absolute;
+        right: 0 ;
+        top: .44rem;
+        display: block;
+      }
+    }
+    .demand-image{
+      margin: .47rem auto .21rem;
+      text-align: center;
+      font-size: .12rem;
+      color: $lightgray;
+
+      img{
+        width: 2.05rem;
+        margin: 0 auto .11rem;
+        display: block;
+        background-color: #EBF0F8;
+      }
+
+    }
+    .reedit-bid{
+      font-size: .12rem;
+      text-align: center;
+      margin: .1rem 0;
+      margin-top:0.3rem;
+    }
+
+    .budg-ys {
+      font-size: 0.12rem;
+      color: #83848e;
+      font-style: normal;
+      vertical-align: 0.15rem;
+      margin-right: 0.07rem;
+    }
+  }
+
+
+
+  .audio-items {
+    margin: .5rem auto .2rem;
+  }
+  .btn-primary {
+    width: 1.65rem;
+    width: calc((100% - 15px)/2);
+    margin-bottom: .2rem;
+
+    span {
+      font-size: .17rem;
+      margin-right: .10rem;
+    }
+    .icon-message {
+      font-weight: 400;
+      font-size: .18rem;
+    }
+  }
+  .edit-comment {
+   width: 58%;
+   background-color: #fff;
+   color: $blue;
+   border-right: 1px solid $linecolor;
+   padding: 0.17rem 0;
+   .icon-message02 {
+    margin-right: 0.03rem;
+   }
+
+   .icon-circle-up {
+    margin-left: 0.14rem;
+    font-size: 0.12rem;
+   }
+  }
+  .grab-call {
+    position: relative;
+    width: 40%;
+    color: $blue;
+
+    .icon-phone06 {
+      margin-right: 0.03rem;
+      font-size: 0.16rem;
+    }
+
+    .icon-rmb {
+      position: absolute;
+      bottom: 5px;
+      right: 5px;
+      font-size: 12px;
+      margin: 0;
+    }
+  }
+  .container{
+    position: relative;
+  }
+  .wait-tips{
+    position: absolute;
+    top: -.43rem;
+    right: .20rem;
+    width: 1.85rem;
+    height: 43px;
+    @include background('{{MIMAGE}}/wait-rect2.png');
+    text-align: center;
+    color: #fff;
+    font-size: .12rem;
+    line-height: 35px;
+  }
+  .demand-tips {
+    text-align: center;
+    color: $lightgray;
+    font-size: .12rem;
+    padding-bottom: .3rem;
+  }
+
+  .bigImgBg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.6);
+    z-index: 9999;
+
+    .bigImg{
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      z-index: 10086;
+    }
+  }
+
+  .btn-fixed {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 1px 1px 4px rgba(0,0,0,.53);
+    z-index: 1000
+  }
+
+  .qiatan-info {
+    text-align: center;
+    width: 100%;
+    font-size: 0.12rem;
+    color: $black;
+    margin-top: 0.10rem;
+    padding-bottom: 0.05rem;
+    opacity: 0;
+    display: none;
+
+    .icon-circle-down {
+      color: $blue;
+    }
+
+    .qiatan-infowid {
+      width: 1.75rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .icon-circle-down {
+      text-indent: 0.3rem;
+      vertical-align: top;
+      display: inline-block;
+      position: absolute;
+      right: -0.42rem;
+    }
+
+    .info-ci {
+      position: relative;
+      font-style: normal;
+    }
+  }
+  .detailFadeInUp {
+    -webkit-animation-name: detailFadeInUp;
+    animation-name: detailFadeInUp;
+  }
+
+  @-webkit-keyframes detailFadeInUp {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 3px, 0);
+      transform: translate3d(0, 3px, 0);
+      display: none;
+    }
+
+    to {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+      display: inline;
+    }
+  }
+
+  @keyframes detailFadeInUp {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 3px, 0);
+      transform: translate3d(0, 3px, 0);
+      display: none;
+    }
+
+    to {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+      display: inline;
+    }
+  }
+
+  .detanimated {
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-delay: .2s;
+    -webkit-animation-delay: .2s;
+  }
+}

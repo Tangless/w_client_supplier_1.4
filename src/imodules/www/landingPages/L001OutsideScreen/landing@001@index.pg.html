@@ -1,0 +1,118 @@
+{{DONE}}
+<!DOCTYPE html>
+<html lang="zh" xmlns="http://www.w3.org/1999/html">
+<head>
+    @@include('www/common/InsertTop/main.html',{"title": ""})
+
+    <style>@@include('{{MCSS}}')</style>
+</head>
+<body id="{{ID}}" {{IMODULE}}>
+
+<!-- 引入头部 -->
+@@include('www/common/LandHeader/main.md.html',{"href":"#"})
+
+<h2 class="container-fluid text-center page-title">
+    <p class="container">免费提供多家方案，上门安装LED屏</p>
+</h2>
+<div class="container">
+    <div class="row">
+        <div class="col-md-5 col-md-offset-1 col-xs-offset-0 col-xs-6">
+            <div class="thumbnail">
+                <div id="carousel1" class="carousel slide" data-ride="carousel" idom="carousel1">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="{{MIMAGE}}/slider1-1.jpg" alt="户外显示屏">
+                        </div>
+                        <div class="item">
+                            <img src="{{MIMAGE}}/slider1-2.jpg" alt="户外显示屏">
+                        </div>
+                        <div class="item">
+                            <img src="{{MIMAGE}}/slider1-3.jpg" alt="户外显示屏">
+                        </div>
+                        <div class="item">
+                            <img src="{{MIMAGE}}/slider1-4.jpg" alt="户外显示屏">
+                        </div>
+                    </div>
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel1" role="button" data-slide="prev">
+                        <span></span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel1" role="button" data-slide="next">
+                        <span></span>
+                    </a>
+                </div>
+                <div class="caption">
+                    <h4>[单色]&nbsp;LED门头走字屏P10间距</h4>
+                    <div class="tags">
+                        <label class="label">户外</label>
+                        <label class="label">防水</label>
+                    </div>
+                    <div class="price text-right">
+                        <span>￥89</span>
+                    </div>
+                    <p class="collect-numbers">
+                        <span class="error-tip" idom="errorTip">*请输入正确的手机号</span>
+                        <input type="text" class="form-control" placeholder="您的手机号" ievent='hideTip'>
+                        <button class="btn btn-primary" ievent='postPhone'>获得方案</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5 col-xs-6">
+            <div class="thumbnail">
+                <div id="carousel2" class="carousel slide" data-ride="carousel" idom="carousel2">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="{{MIMAGE}}/slider2-1.jpg" alt="户外显示屏">
+                        </div>
+                        <div class="item">
+                            <img src="{{MIMAGE}}/slider2-2.jpg" alt="户外显示屏">
+                        </div>
+                        <div class="item">
+                            <img src="{{MIMAGE}}/slider2-3.jpg" alt="户外显示屏">
+                        </div>
+                        <div class="item">
+                            <img src="{{MIMAGE}}/slider2-4.jpg" alt="户外显示屏">
+                        </div>
+                    </div>
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel2" role="button" data-slide="prev">
+                        <span></span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel2" role="button" data-slide="next">
+                        <span></span>
+                    </a>
+                </div>
+                <div class="caption">
+                    <h4>[全彩]&nbsp;LED墙体屏P10间距</h4>
+                    <div class="tags">
+                        <label class="label">半户外</label>
+                        <label class="label">防水</label>
+                    </div>
+                    <div class="price text-right">
+                        <span>￥139</span>
+                    </div>
+                    <p class="collect-numbers">
+                        <span class="error-tip" idom="errorTip">*请输入正确的手机号</span>
+                        <input type="text" class="form-control" placeholder="您的手机号"  idom="phone" ievent='hideTip'>
+                        <button class="btn btn-primary" ievent='postPhone'>获得方案</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <p class="center-block text-center">实际价格和具体尺寸有关，请留下您的联系方式，当地的供应商会免费上门测量，提供方案和报价。</p>
+        </div>
+        <div class="succ-tip" idom="succTip">
+            <h5>
+                <img src="{{MIMAGE}}/succ.png">
+                操作成功
+            </h5>
+            <p>请耐心等待，我们的客服将于24h内与您联系。400-992-9033</p>
+        </div>
+    </div>
+</div>
+@@include('www/common/LandFooter/main.md.html')
+@@include('www/common/LandInsertBottom/main.html')
+</body>
+</html>

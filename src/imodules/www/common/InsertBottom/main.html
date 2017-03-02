@@ -1,0 +1,25 @@
+@@include('www/common/_InsertBottom/main.html')
+
+<!-- @@todo: 有些页面，并不需要定位、客服，先放在这里，后续再细化 -->
+<!-- 地图页和需要定位城市的页需要 -->
+<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.3&key=24a59ee2492ddf5fba6e8208f6383560&plugin=AMap.CitySearch"></script>
+<!--<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.3&key=24a59ee2492ddf5fba6e8208f6383560&plugin=AMap.Geocoder"></script>-->
+
+<!-- 卫星站不需要客服 -->
+@@if (wph) {
+<script type='text/javascript'>
+    // (function(m, ei, q, i, a, j, s) {
+    //     m[i] = m[i] || function() {
+    //                 (m[i].a = m[i].a || []).push(arguments)
+    //             };
+    //     j = ei.createElement(q),
+    //             s = ei.getElementsByTagName(q)[0];
+    //     j.async = true;
+    //     j.defer = true;
+    //     j.charset = 'UTF-8';
+    //     j.src = '//static.meiqia.com/dist/meiqia.js';
+    //     s.parentNode.insertBefore(j, s);
+    // })(window, document, 'script', '_MEIQIA');
+    // _MEIQIA('entId', 29473);
+</script>
+}

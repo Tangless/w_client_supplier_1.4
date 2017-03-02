@@ -1,0 +1,79 @@
+@import"src/sass/global/mixin";
+#AvatarConsummatePopup {
+  .center{
+    text-align: center;
+    padding-top:0.4rem;
+    padding-left:0.38rem;
+    padding-right:0.38rem;
+    padding-bottom: 0.5rem;
+
+  }
+  .avatar-title{
+    width:100%;
+    line-height: 1;
+    font-size: 0.18rem;
+    color: $black;
+  }
+  .avatar-words{
+    width: 100%;
+    font-size: 0.14rem;
+    line-height: 1.43;
+    text-align: center;
+    color: $lightgray;
+    margin-top:0.37rem;
+    margin-bottom:0.55rem;
+  }
+  //头像
+  .modify-avatar{
+    width: 100%;
+    text-align: center;
+    line-height: 1;
+  }
+  .avatar{
+    position: relative;
+    display: inline-block;
+    width:1rem;
+    height:1rem;
+    -webkit-border-radius:0.5rem 0.5rem;
+    -moz-border-radius:0.5rem 0.5rem;
+    border-radius:0.5rem 0.5rem;
+    background-color:#ebf0f8;
+    cursor:pointer;
+    background-size: cover;
+
+  }
+  .image-avatar{
+    width:1rem;
+    height:1rem;
+    -webkit-border-radius:0.5rem 0.5rem;
+    -moz-border-radius:0.5rem 0.5rem;
+    border-radius:0.5rem 0.5rem;
+    background-color:#ebf0f8;
+
+  }
+  .title{
+    color: $lightgray;
+    font-size:0.12rem;
+    position: relative;
+    top:0.44rem;
+  }
+  .add{
+    position: absolute;
+    bottom:4px;
+    right:4px;
+    width:0.25rem;
+    height:0.25rem;
+    -webkit-border-radius:0.175rem 0.175rem;
+    -moz-border-radius:0.175rem 0.175rem;
+    border-radius:0.175rem 0.175rem;
+    color:#fff;
+    background-color:$blue;
+    text-align:center;
+    line-height:0.25rem;
+  }
+  .icon-up{
+    font-size: 0.11rem;
+    position:relative;
+    top:-2px;
+  }
+}

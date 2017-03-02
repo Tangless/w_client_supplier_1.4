@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @@include('m/common/InsertTop/main.html',{"title": ""})
+    {{IncludeMCSS}}
+</head>
+<body id="{{ID}}" {{IMODULE}}>
+@@include('m/common/Header/main.md.html',{"MenuIcon":"icon-arrow－return","MenuName":"","MenuText":"招标大厅","MenuAction":"transferToHall","TitleClass":"logo","Title":""})
+<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.3&key=24a59ee2492ddf5fba6e8208f6383560&plugin=AMap.CitySearch"></script>
+@@include('m/grab/SuppliersList/main.md.html')
+<div class="top icon-arrow hide"></div> 
+
+@@include('m/common/Footer/main.md.html', {"foo": "false"})
+@@include('m/common/InsertBottom/main.html')
+</body>
+</html>

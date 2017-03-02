@@ -1,0 +1,159 @@
+@import "src/sass/global/mixin";
+
+//覆盖头部的logo以及相应的样式
+#L003LedSubtitle{
+  #LandHeader {
+    border-bottom:1px solid #3bddec;
+
+    .landing-logo {
+      width: 146px;
+      @include background('{{MIMAGE}}/header-logo.png',146px,36px,0,11px)
+    }
+  }
+
+  .box {
+    width: 100%;
+    @include background('{{MIMAGE}}/body-bg.jpg',cover,'',center,top)
+  }
+
+  .lsubtitle {
+    font-size: 48px;
+    font-weight:normal;
+    color: #fff;
+    margin-top: 83px;
+    margin-bottom: 77px;
+  }
+
+
+
+  .lsub-step img {
+    width: 69px;
+  }
+
+  .step-title {
+    color: #fff;
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 26px;
+    margin-bottom: 12px;
+  }
+
+  .step-content {
+    color: #fff;
+    font-size: 14px;
+  }
+
+  .lsub-form {
+    background: rgba(255, 255, 255, 0.2);
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 80px;
+    padding: 60px 60px;
+    margin-bottom: 94px;
+    filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#2Fffffff,endcolorstr=#2Fffffff);
+  }
+
+  .lsub-btn {
+    width: 111px;
+    height: 57px;
+    font-size: 18px;
+    background-color: #3bddec;
+    margin-left: 10px;
+    float: left;
+  }
+
+  .lsub-put-shadow {
+    height: 57px;
+    float: left;
+    line-height: 57px;
+  }
+
+  .lsub-put-shadow:focus {
+    border-color: #3bddec;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(59, 221, 236, 0.4);
+  }
+
+  .lsub-put-error {
+    border-color: #fd4700;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(253, 71, 1, 0.4);
+  }
+
+  .text-primary {
+    color: #3bddec;
+  }
+
+  .lsub-alert-con {
+    width: 100%;
+    background-color: #fff;
+    height: 100%;
+    border-radius: 8px;
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    @include opacity(0);
+  }
+
+  .fadeInTop {
+    bottom: 0;
+    transition: all .3s;
+    @include opacity(1);
+  }
+
+  .fadeInTop .layer-close {
+    display: block;
+  }
+
+  .lsub-alert {
+    position: fixed;
+    top: 50%;
+    margin-top: -130px;
+    left: 0;
+    width: 100%;
+  }
+
+  .lsub-alert-con .layer-success {
+    width: 60px;
+    padding-top: 21px;
+  }
+
+  .lsub-alert-con h3 {
+    font-size: 22px;
+    font-weight: normal;
+    margin-top: 24px;
+    margin-bottom: 4px;
+  }
+
+  .layer-close {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    display: none;
+  }
+
+  .layer-close img {
+    width: 18px;
+  }
+
+
+  .lsub-padd {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+
+  .lsub-form-con {
+    width: 100%;
+    position: relative;
+  }
+
+  .error-tip {
+    color: #fd4700;
+    font-size: 12px;
+    position: absolute;
+    top: 49px;
+    left: 60px;
+  }
+
+}
+

@@ -1,0 +1,72 @@
+@import "src/sass/global/mixin";
+@import "src/sass/global/libs/variable";
+
+#InfoConfirmationPop {
+  height: 3.65rem;
+  .i-title {
+    font-size: 0.32rem;
+    color: $dark-gray;
+    text-align: center;
+    margin: 0;
+    padding-top: 0.30rem;
+  }
+  .i-sure {
+    padding: 0.20rem 0.15rem 0;
+  }
+  .i-content {
+    width: 100%;
+    padding: 0.28rem 0;
+    position: relative;
+  }
+  .i-content:first-child{
+    border-bottom: 0.01rem solid $line-gray;
+  }
+  .i-qufen {
+    width: 80%;
+    font-size: 0.18rem;
+    color: $dark-gray;
+    margin: 0;
+  }
+  .i-detail {
+    width: 80%;
+    color: #999;
+    font-size: 0.14rem;
+    padding-top: 0.07rem;
+    p {
+      margin-bottom: 0.18rem;
+    }
+  }
+  .i-name {
+    margin-right: 0.15rem;
+  }
+  .i-ver {
+    display: block;
+    position: absolute;
+    right: 0.07rem;
+    top: 0.3rem;
+    font-size: 0.22rem;
+  }
+  .i-loading {
+    display: block;
+    position: absolute;
+    right: 0.06rem;
+    top: 0.3rem;
+    width: 0.27rem;
+    height: 0.27rem;
+    background-color: #fff;
+    text-align: center;
+  }
+  .icon-Correct-complete {
+    color: #44db5e;
+  }
+  .icon-error {
+    color: #f00;
+  }
+  .btn-i {
+    width: 0.78rem;
+    height: 0.29rem;
+    font-size: 0.14rem;
+    line-height: 0.29rem;
+    padding: 0;
+  }
+}

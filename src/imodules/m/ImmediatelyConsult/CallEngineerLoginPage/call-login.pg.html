@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @@include('m/common/InsertTop/main.html',{"title": ""})
+    {{IncludeMCSS}}
+</head>
+<body id="{{ID}}" {{IMODULE}}>
+	<div class="call-login" idom="callLogin">
+		<div class="call-return">
+			<a href="javascript:;" class="icon-return" ievent="returnType"></a>
+		</div>
+		<div class="call-title">
+			立即为您召集工程商
+		</div>
+		<div class="type-title">
+			请使用手机号快捷登录
+		</div>
+		@@include('m/userCenter/ClientLoginForm/main.md.html')
+	</div>
+	<div class="type-ani">
+		<div class="gif-back">
+			<div class="type-gif"></div>
+		</div>
+		<div class="type-location"></div>
+		<span class="loc-circle loc-circle-one fadeIn animated2"></span>
+		<span class="loc-circle loc-circle-two fadeIn animatedleida2"></span>
+		<span class="loc-circle loc-circle-three fadeIn animatedleida3"></span>
+	</div>
+@@include('m/common/InsertBottom/main.html')
+</body>
+</html>

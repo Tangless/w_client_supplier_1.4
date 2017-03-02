@@ -1,0 +1,30 @@
+{{#list}}
+<div class="row allInfo">
+	<div class="col-md-12">
+		<div class="list">
+			{{#isImg}}
+			<div class="inline img">
+				<img src="{{avatar}}">
+			</div>
+			{{/isImg}}
+			{{^isImg}}
+			<div class="inline noImg">{{util.nickFmt}}</div>
+			{{/isImg}}
+			<div class="inline">
+				<div class="name">{{nick}} | {{position}}</div>
+				<div>
+					<span class="icon-location-pcs mark"></span>
+					<span class="addr">{{address}}</span>
+				</div>
+			</div>
+			<!-- <div class="icon-phone03 inline phone">
+				
+			</div> -->
+			<div class="phoneDiv">
+				<div class="phoneNum">{{phone}}</div>
+				<div class="icon-phone03 phone"></div>
+			</div>
+		</div>
+	</div>
+</div>
+{{/list}}

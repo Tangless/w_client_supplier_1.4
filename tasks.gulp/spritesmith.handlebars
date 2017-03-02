@@ -1,0 +1,9 @@
+{{#sprites}}
+@mixin sprite-{{name}} {
+	/* @@todo: size / 2 */
+	/* @include background('{{{escaped_image}}}', {{px.width}}, {{px.height}}, {{px.offset_x}}, {{px.offset_y}}); */
+	/* @include background('{{{escaped_image}}}', auto, auto, {{px.offset_x}}, {{px.offset_y}}); */
+	@include background('{{{escaped_image}}}', 50%, 50%, {{px.offset_x}}, {{px.offset_y}});
+} 
+
+{{/sprites}}

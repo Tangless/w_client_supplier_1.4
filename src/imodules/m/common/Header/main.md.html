@@ -1,0 +1,19 @@
+<div id="Header" {{IMODULE}}>
+    <style type="text/css">@@include('{{MCSS}}')</style>
+    <div class="header">
+        <a class="top-left" href="#" ievent="@@MenuAction">
+            <span class="@@MenuIcon"></span>
+            <span class="service-area" idom="@@MenuName">@@MenuText</span>
+        </a>
+        <div class="title-box" ievent="logoMenu">
+        	<h1 class="title can_click @@TitleClass">@@Title<span class="title-btn icon-circle-down" idom="circleDown"></span></h1>
+        	<div class="menu" idom="menuList">
+        		<p class="active" ievent="menuBtn"><a href="/index.html">招标大厅<i class="blueact" style="top: 0;height: 0.48rem;"></i></a></p>
+        		<!--p ievent="menuBtn"><a href="/my-invite.html?menu=2">我的招标<i class="blueact"></i></a></p-->
+        		<p ievent="menuBtn"><a href="/single.html?menu=3">附近的工程商<i class="blueact"></i></a></p>
+        		<p ievent="menuBtn"><a href="javascript:;" class="know" ievent="aboutUs"><span class="icon-Doubt"></span>了解万屏汇<i class="blueact"></i></a></p>
+        	</div>
+        </div>
+        <div ievent="showUserInfo" class="top-right"><span class="icon-user2"></span></div>
+    </div>
+</div>

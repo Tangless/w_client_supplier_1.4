@@ -1,0 +1,44 @@
+#Refund {
+	.low-modal {
+		text-align:center;
+		.title {
+			font-size:0.16rem;
+			margin-bottom:0.255rem;
+			padding-top:0.35rem;
+		}
+		.lowbalance {
+			color:#B3B5B7;
+			font-size:0.12rem;
+			margin:0 auto;
+			margin-bottom:0.4rem;
+		}
+		.money {
+			font-size:0.48rem;
+			margin-bottom:0.24rem;
+			line-height:1;
+		}
+		.bl {
+			margin:0 auto 0.265rem;
+			height:0.035rem;
+			width:2.33rem;
+			background:url({{MIMAGE}}/bl.png) no-repeat center;
+			background-size:2.33rem 0.035rem;
+		}
+		.pay-info {
+			padding:0 0.685rem;
+			font-size:0.14rem;
+			margin-bottom:0.3rem;
+			color:#B3B5B7;
+		}
+	}
+	.sub-btn {
+		width:2.55rem;
+		height:0.44rem;
+		line-height:0.44rem;
+		background-color:#FD4701;
+		color:#fff;
+		margin:0 auto;
+		border-radius:3px;
+		text-align:center;
+	}
+}

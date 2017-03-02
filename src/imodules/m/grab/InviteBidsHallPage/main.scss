@@ -1,0 +1,54 @@
+#InviteBidsHallPage {
+	.userinfo {
+		margin-top:.48rem!important;
+        position: fixed!important;
+	}
+	.top {
+		width:50px;
+		height:50px;
+		background:#4785F9;
+		display:inline-block;
+		border-radius:50%;
+		position:fixed;
+		z-index:1;
+		text-align:center;
+		line-height:50px;
+		font-size:17px;
+		color:#fff;
+		bottom:128px;
+		right:10px;
+		cursor: pointer;
+		font-weight:600;
+		border: 1px solid rgba(0, 0, 0, .1);
+		box-shadow: 0 0 14px 0 rgba(0, 0, 0, .16);
+	}
+	.my-invite {
+		bottom:68px!important;
+	}
+	.my-info {
+		position:absolute;
+		bottom: -.05rem;
+	    font-size: .12rem;
+	    left: 31px;
+	    font-weight:400;
+	}
+	.my-msgs {
+		position:absolute;
+		width:.16rem;
+		height:.16rem;
+		background:#FF001F;
+		border-radius:50%;
+		line-height:.15rem;
+		text-align:center;
+		font-size:12px;
+		color:#fff;
+		bottom:.27rem;
+		right:-.05rem;
+	}
+	.MEIQIA-ICON-CHAT7 {
+   		 background-position: 0 -220px !important;
+  }
+  .MEIQIA-ICON-TICKET2 {
+    background-position: -32px -29px !important;
+}
+}

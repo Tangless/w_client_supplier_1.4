@@ -1,0 +1,13 @@
+*.bak
+*.swp
+*.swo
+*.log
+*.min
+*.out.scss
+.DS_Store
+node_modules/*
+.idea/*
+'node_global'/*
+dist
+dist.tpl
+tmp

@@ -1,0 +1,54 @@
+{{DONE}}
+<div id="{{ID}}" {{IMODULE}}>
+    {{IncludeMCSS}}
+    <div class="modify-supplier">
+        <div class="modify-avatar">
+            <div class="avatar clearfix" ievent="addAvatar">
+                <!--<image class="image-avatar" src=""></image>-->
+                <div class="add " ><span class="icon-up"></span></div>
+            </div>
+        </div>
+        <div class="modify-name">
+            <div class="modify-gender clearfix">
+                <div class="img-male class-male clearfix" ievent="choiceMale">
+                    <span class="clearfix"><i class="male-mark"></i></span>先生
+                </div>
+                <div class="div-or">
+                    <i class="spacer"></i>
+                </div>
+                <div class="img-female class-female clearfix" ievent="choiceFemale">
+                    <span class="clearfix"><i class="female-mark"></i></span>女士
+                </div>
+            </div>
+            <input type="text" class="form-control input-name" placeholder="姓名" maxlength="5">
+
+        </div>
+      <!--  <div class="modify-gender clearfix">
+            <div class="img-male class-male clearfix" ievent="choiceMale">
+                <span class="clearfix"><i class="male-mark"></i></span>先生
+            </div>
+            <div class="div-or">
+                <i class="spacer"></i>
+            </div>
+            <div class="img-female class-female clearfix" ievent="choiceFemale">
+                <span class="clearfix"><i class="female-mark"></i></span>女士
+            </div>
+        </div>-->
+        <div class="modify-address">
+            <input idom="address" type="text" class="form-control input-address" placeholder="联系地址" >
+        </div>
+        <div class="modify-company">
+            <input idom="company" type="text" class="form-control input-company" placeholder="公司简称" >
+        </div>
+        <div class="modify-job">
+            <input idom="position" type="text" class="form-control input-job" placeholder="职务简称" >
+        </div>
+
+        <div class="modify-phone">
+            <span idom="phone"></span>
+        </div>
+        <div class="modify-click">
+            <button class=" btn btn-primary btn-save " ievent="btnSave">保存</button>
+        </div>
+    </div>
+</div>

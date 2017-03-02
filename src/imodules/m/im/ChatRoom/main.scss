@@ -1,0 +1,240 @@
+@import "src/sass/global/mixin";
+
+#ChatRoom {
+  background-color: #fff;
+  padding-bottom: 44px;
+
+  .group-list, .supplier-list {
+    width: 100%;
+    height: .5rem;
+    padding: 0 .1rem 0;
+    position: relative;
+    border-bottom: 1px solid #b5cef9;
+
+    .active {
+      border-bottom: 3px solid $mblue;
+    }
+  }
+  .group-member {
+    width: 100%;
+    padding-left: 1rem;
+    position: relative;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    .scroll-pane {
+      width: 1000%;
+    }
+  }
+  .group-item {
+    padding-bottom: .1rem;
+    position: relative;
+    display: inline-block;
+    width: .4rem;
+    margin: 0 .04rem;
+    text-align: center;
+    vertical-align: top;
+
+    .user-head {
+      display: inline-block;
+      width: .36rem;
+      height: .36rem;
+      line-height: .36rem;
+      border-radius: 50%;
+      background-color: $mblue;
+      color: #fff;
+      font-size: .18rem;
+
+    }
+  }
+  .default-chat {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: .1rem;
+    background-color: #fff;
+    z-index: 2;
+  }
+  .vip .icon-vip {
+    position: absolute;
+    top: .24rem;
+    right: 0;
+    color: #4A90E2;
+    font-size: .12rem;
+  }
+
+  .supplier-list{
+    text-align: center;
+    height: auto;
+
+    .sup-gChat, .sup-cChat{
+      width: 1rem;
+      padding-bottom: .1rem;
+      display: inline-block;
+      vertical-align: top;
+      font-size: .12rem;
+      line-height: .12rem;
+      color: $black;
+      margin: 0 .32rem;
+      span{
+        color: $mblue;
+      }
+    }
+  }
+
+  .chat-pane{
+    position: relative;
+    min-height: 2rem;
+    padding: .3rem .15rem 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    .one-message{
+      text-align: left;
+      margin-bottom: .15rem;
+      position: relative;
+
+      .icon-vip{
+        position: absolute;
+        top: .24rem;
+        left: .25rem;
+        color: #4A90E2;
+        font-size: .12rem;
+      }
+    }
+    .user-head-icon{
+      display: inline-block;
+      width: .36rem;
+      height: .36rem;
+      line-height: .36rem;
+      border-radius: 50%;
+      background-color: $mblue;
+      color: #fff;
+      font-size: .18rem;
+      text-align: center;
+      margin-right: .1rem;
+    }
+    .msgbody{
+      position:relative;
+      display: inline-block;
+      line-height: 1;
+      vertical-align: top;
+      width: 70%;
+      width: -webkit-calc(100% - 1rem);
+      width: -moz-calc(100% - 1rem);
+      width: calc(100% - 1rem);
+
+      pre{
+        display: inline-block;
+        text-align: left;
+        padding: .07rem .1rem;
+        min-height: .36rem;
+        font-size: .14rem;
+        line-height: .2rem;
+        color: $black;
+        background-color: #fff;
+        border-color: $linecolor;
+        margin: 0;
+        white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+        white-space: -o-pre-wrap; /* Opera 7 */
+        word-wrap: break-word; /* Internet Explorer 5.5+ */
+        white-space: pre-wrap;
+      }
+      .chat-img{
+        max-width: 100%;
+        padding: 6px;
+        border: 1px solid $linecolor;
+        border-radius: 4px;
+        background-color: #fff;
+      }
+      .triangle{
+        width: 8px;
+        height: 10px;
+        position: absolute;
+        left: -6px;
+        top: .14rem;
+        display: block;
+      }
+    }
+    .self-msg{
+      text-align: right;
+
+      .msgbody .triangle{
+        left: auto;
+        right: -6px;
+      }
+      .user-head-icon{
+        float: right;
+        margin-right: 0;
+        margin-left: .14rem;
+      }
+    }
+    .system-msg{
+      font-size: .12rem;
+      color: $lightgray;
+      text-align: center;
+    }
+  }
+
+  .input-pane{
+    width:100%;
+    min-height: 46px;
+    max-height: 100px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 9;
+    line-height: 46px;
+    overflow: hidden;
+    padding: 0 .15rem;
+    border-top: 1px solid $linecolor;
+    background-color:#fff;
+
+    #input,#input:hover,#input:focus,#input:hover:focus,#input:active,#input[disabled='']{
+      width: 68%;
+      width:-webkit-calc(100% - 55px);
+      width:-moz-calc(100% - 55px);
+      width:calc(100% - 55px);
+      height: 26px;
+      font-size: .12rem;
+      color: $black;
+      line-height: 20px;
+      outline: none;
+      border: none;
+      box-shadow: none;
+      background-color: #fff;
+      display: inline-block;
+      vertical-align: middle;
+      resize: none;
+      overflow-y: visible;
+      white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+      white-space: -o-pre-wrap; /* Opera 7 */
+      word-wrap: break-word; /* Internet Explorer 5.5+ */
+      white-space: pre-wrap;
+      word-break: keep-all;
+
+    }
+    .emotion,.enclosure{
+      position: absolute;
+      bottom: 15px;
+      right: .65rem;
+      font-size: 16px;
+      color: $lightgray;
+      width: 16px;
+      height: 16px;
+      text-align: center;
+    }
+    .enclosure{
+      right: .3rem;
+    }
+    #sendMsg{
+      position:absolute;
+      bottom: 10px;
+      right: .15rem;
+      font-size: 12px;
+      line-height: 12px;
+      padding: 7px 9px;
+    }
+  }
+
+}

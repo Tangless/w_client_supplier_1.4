@@ -1,0 +1,87 @@
+<div id="{{ID}}" {{IMODULE}}>
+    {{IncludeMCSS}}
+    <div class="transferModal hide">
+    	<div class="title padding35">申请提现</div>
+    	<div class="modal-body padding50">
+    		<div class="modal-contents">
+    			<div class="modal-content-left">
+    				<input id="oneMoney" type="number" class="input" placeholder="提现金额">
+    			</div>
+    			<div class="modal-content-right">
+    				可提现余额&yen;<span class='myBalance'></span>
+    			</div>
+    		</div>
+    		<div class="modal-contents choose" ievent="changeCard">
+    			工商银行（8632）王平
+    		</div>
+            <div class="cardNum hide"></div>
+    	</div>
+        <div class="pos">
+            <!-- @@include('m/common/ErrorTip/main.md.html') -->
+            <div class="error-tip"><span class="icon-error"></span><span class="error-data"></span></div>
+        	<div class="btn btn-primary one disabled" disabled ievent="conBtn">确认提现</div>
+        </div>
+    </div>
+    <div class="chooseCardModal hide">
+    <div class="go-back" ievent="goBack"></div>
+    	<div class="title padding10">选择银行卡</div>
+    	<div class="modal-body padding30">
+			   <div class="modal-contents hide">
+			   	<span class="cardName"></span>
+                <span class='cardList hide'></span>
+			   </div>
+			   <div class="modal-contents choose" ievent="useNewCard">
+			   	使用新卡
+			   </div> 		
+    	</div>
+    </div>
+    <div class="transferMoneyModal hide">
+        <div class="go-back" ievent="goBack"></div>
+    	<div class="title padding10">申请提现</div>
+    	<div class="modal-body padding50">
+			   <div class="modal-contents">
+				   	<div class="modal-content-left">
+	    				<input id="threeMoney" type="number" class="input mon" placeholder="提现金额">
+	    			</div>
+	    			<div class="modal-content-right ">
+	    				可提现余额&yen;<span class='myBalance'>23,000</span>
+	    			</div>
+				   </div> 	
+			   <div class="modal-contents">
+				   	<input id="threeCard" type="number"
+				   	class="input card" placeholder="请输入银行卡号" name="" >
+			   </div> 	
+			   <div class="modal-contents">
+				   	<input id="threeName" type="text"
+				   	class="input name" placeholder="开户名" name="">
+			   </div> 		
+    	</div>
+        <div class="pos">
+            <!-- @@include('m/common/ErrorTip/main.md.html') -->
+            <div class="error-tip"><span class="icon-error"></span><span class="error-data"></span></div>
+        	<div class="btn btn-primary three disabled" disabled ievent="nextBtn">下一步</div>
+        </div>
+    </div>
+    <div class="testPhoneModal hide">
+    <div class="go-back" ievent="goBack"></div>
+    	<div class="title padding10">手机验证</div>
+    	<div class="modal-body padding25">
+    		<div class="testPhone-content">
+    			<div class="content-left">
+    				<input id="code" type="number" class="input code" maxlength="6" placeholder="请输入验证码">
+    			</div>
+    			<botton class="content-right" ievent="getCaptcha" name="getCaptcha">
+    				获取验证码
+    			</botton>
+    			<div class="clear"></div>
+    		</div>
+    	</div>
+    	<div class="sendPhone hide">验证码已发送至<span>156****0297</span></div>
+        <div class="pos">
+            <!-- @@include('m/common/ErrorTip/main.md.html') -->
+            <div class="error-tip"><span class="icon-error"></span><span class="error-data"></span></div>
+    	   <div class="btn btn-primary one disabled" disabled ievent="conMoneyBtn">确认提现
+           </div>
+        </div>
+	</div>
+</div>

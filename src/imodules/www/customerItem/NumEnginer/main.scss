@@ -1,0 +1,58 @@
+@import "src/sass/global/mixin";
+@import "src/sass/global/libs/variable";
+
+#{{ID}} {
+	.enginer {
+		width: 1140px;
+		margin: 0 auto;
+		text-align: left;
+		padding-top: 100px;
+	}
+	.e-tit {
+		font-size: 80px;
+		color: #4785f9;
+		margin-bottom: 21px;
+		margin-top: 0;
+		font-weight: bold;
+	}
+	.e-count {
+		font-size: 48px;
+		color: #83848e;
+		margin-bottom: 72px;
+	}
+	.e-count a:hover, .e-count a:focus {
+		color: #83848e;
+	}
+	.e-blue {
+		color: #4785f9;
+		font-weight: bold;
+	}
+
+	/*当屏幕小于1200的时候*/
+	@media (max-width: 1200px){
+		.enginer {
+			width: 940px;
+		}
+		.e-tit {
+			font-size: 72px;
+		}
+		.e-count {
+			font-size: 36px;
+			color: #83848e;
+		}
+	}
+
+	/*当屏幕小于992的时候*/
+	@media (max-width: 992px){
+		.enginer {
+			width: 720px;
+		}
+		.e-tit {
+			font-size: 64px;
+		}
+		.e-count {
+			font-size: 32px;
+			color: #83848e;
+		}
+	}
+}

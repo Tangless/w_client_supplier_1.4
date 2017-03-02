@@ -1,0 +1,40 @@
+@import"src/sass/global/mixin";
+#ValueAddService {
+  background-color:#fff;
+  min-height:100%;
+  .value-title{
+    width:100%;
+    line-height:0.16rem;
+    font-size:0.18rem;
+    padding-top:0.23rem;
+    padding-bottom:0.25rem;
+    text-align: center;
+    border-bottom:1px solid $linecolor;
+    color:#333;
+  }
+  .content-list{
+    margin-left: 0.15rem;
+    margin-right:0.15rem;
+  }
+  h6{
+    margin-top:0.21rem;
+    margin-bottom:0.14rem;
+    font-size:0.14rem;
+    line-height:1;
+    position: relative;
+    color:$black;
+    a{
+      position: absolute;
+      right:0;
+      text-align: right;
+      color:$blue;
+      text-decoration:underline;
+    }
+  }
+  p{
+    width:100%;
+    font-size: 0.12rem;
+    line-height: 1.38;
+    color: $lightgray;
+  }
+}

@@ -1,0 +1,24 @@
+<div id="{{ID}}" {{IMODULE}}>
+    {{IncludeMCSS}}
+    <div class="content">
+        <div class="login-title">登录·注册</div>
+        <form method="post" ievent="submitForm" idom="form" autocomplete="off">
+            <div class="login-phone">
+                <span class="login-label">手机号</span>
+                <input type="text" class="form-control phone" ievent="getPhone" placeholder="您的手机号" name="mobile">
+                <div class="phone-check"></div>
+            </div>
+            <div class="login-code">
+                <span class="login-label">验证码</span>
+                <input type="text" class="form-control code" placeholder="输入验证码" name="captcha">
+                <button class="getcode" type="button" ievent="getCaptcha" name="getCaptcha">获取验证码</button>
+            </div>
+
+            <div class="login-btn">
+                <div class="code-check"><span class="icon-error"></span><span class="error-data">验证码输入有误</span></div>
+                <button id="login" type="submit" class="btn btn-primary">确认</button>
+                <div class="inquiry-tips"><span class="icon-error"></span>您已有项目未完成，可登录去查看</div>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,213 @@
+@import "src/sass/global/mixin";
+
+#AboutForm {
+  background-color: #f7faff;
+  h2 {
+    height: 30px;
+    font-size: 30px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 2px;
+    text-align: center;
+    color: $black;
+    margin: 0 0 16px 0;
+  }
+  h3 {
+    font-size: 24px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    text-align: justify;
+    color: $black;
+    margin: 0;
+    margin-bottom: 30px;
+    line-height: 1.5;
+  }
+  p {
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5em;
+    -webkit-font-smoothing: antialiased; /*chrome、safari字体抗锯齿效果*/
+    color: $gray;
+  }
+  .line-shadow{
+    background-color: $linecolor;
+    height: 1px;
+  }
+  .m-title{
+    font-size: 24px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    text-align: justify;
+    color: $black;
+    margin: 0;
+    margin-top:60px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+  }
+  .title-1 {
+    padding: 70px 0 59px 0;
+    text-align: center;
+    letter-spacing: 1.5px;
+  }
+  .title-2 {
+    padding-top: 90px;
+    padding-bottom: 44px;
+    text-align: center;
+    letter-spacing: 1.5px;
+  }
+  .title-3 {
+    padding-top: 82px;
+    padding-bottom: 66px;
+    text-align: center;
+    letter-spacing: 1.5px;
+  }
+  [class^="about-"] {
+    padding: 40px 30px 45px;
+    margin: 0 24px 40px 24px;
+    background-color: #fff;
+    position: relative;
+    border-radius: 4px;
+    box-shadow: 0 1px 6px 0 rgba(71, 133, 249, 0.1);
+    .icon-circle-down {
+      width: 12px;
+      height: 12px;
+      font-size: 12px;
+      color: $blue;
+      position: absolute;
+      right: 36px;
+      top: 13px;
+      cursor: pointer;
+    }
+    .icon-circle-up {
+      width: 12px;
+      height: 12px;
+      font-size: 12px;
+      color: $gray;
+      position: absolute;
+      right: 36px;
+      bottom: 13px;
+      cursor: pointer;
+      display: none;
+    }
+  }
+  [class^="picture-"] {
+    width: 263px;
+    height: 176px;
+    display: inline-block;
+    position: absolute;
+  }
+  [class^="text-"] {
+    display: inline-block;
+    margin-left: 293px;
+  }
+  .text-u {
+    h3 {
+      width: 314px;
+    }
+  }
+  .text-j {
+    h3 {
+      width: 365px;
+    }
+  }
+  .words {
+    height: 115px;
+    overflow: hidden;
+  }
+  .about-join .words {
+    height: 74px;
+  }
+  .about-values .words {
+    height: 94px;
+  }
+  .about-sina .words {
+    height: 85px;
+  }
+  .line {
+    height: 1px;
+    width: 100%;
+    border-bottom: 1px solid $linecolor;
+    padding-top: 60px;
+  }
+  .connection-us {
+    background-color: #fff;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-top: 93px;
+  }
+  .address {
+    position: relative;
+    .address-words {
+      padding-top: 16px;
+      margin-bottom: 217px;
+      p {
+        font-size: 12px;
+        line-height: 36px;
+        letter-spacing: 1.2px;
+        margin: 0;
+        padding: 0;
+      }
+    }
+    .address-map {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+  .map {
+    background: url("{{MIMAGE}}/newmap.jpg") center top no-repeat;
+    background-size: 185%;
+    width: 336px;
+    height: 284px;
+  }
+  @media screen and(min-width: 992px) {
+    [class^="about-"] {
+      margin-left: 26px;
+      margin-right: 26px;
+    }
+    .connection-us {
+      padding-left: 26px;
+      padding-right: 26px;
+      .map {
+        width: 485px;
+        height: 284px;
+        background-size: 126%;
+      }
+    }
+  }
+  @media screen and(min-width: 1200px) {
+    .connection-us {
+      .map {
+        width: 621px;
+        height: 284px;
+        background-size: 100%;
+      }
+    }
+    .address {
+      margin-left: auto;
+      margin-right: auto;
+      width: 1140px;
+    }
+    [class^="about-"] {
+      margin-left: auto;
+      margin-right: auto;
+      width: 1140px;
+    }
+  }
+  .report{
+    .words {
+      height: auto;
+    }
+    .icon-circle-down{
+      display: none;
+    }
+    .icon-circle-up{
+      display: block;
+    }
+  }
+}

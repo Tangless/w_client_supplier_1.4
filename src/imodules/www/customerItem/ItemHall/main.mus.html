@@ -1,0 +1,64 @@
+{{#list}}
+<div class="col-md-4 col-xs-6 allList" ievent="goToDetail">
+	<div class="projectList">
+		{{#util.status}}
+			<div class="status icon-message02"></div>
+		{{/util.status}}
+		{{^util.status}}
+			<div class="end"></div>
+		{{/util.status}}
+		<div>
+			<div class="project">{{util.type}}项目</div>
+			<div class="userInfo"><span class="blueLine"></span> {{demand.city_name}}<span class="line">|</span>
+			<span class="nick">{{user.nick}}</span> 
+			<span class="time">{{util.time}}</span></div>
+		</div>
+
+		<div class="budget">
+			{{#demand.budget}}预算
+				<span class="money">{{util.budget}}</span><span class="unit">{{util.unit}}</span>
+			{{/demand.budget}}
+			{{^demand.budget}}
+				<div class="price">议价</div>
+			{{/demand.budget}}
+		</div>
+		
+		<p class="addrHide">
+			<span class="icon-checkmark-pc3 green"></span>
+			{{#demand.address}}
+                <span>位置在</span><span class="addr">{{demand.address}}</span>
+            {{/demand.address}}
+            {{^demand.address}}
+                <span>位置在</span><span class="addr">{{demand.city_name}}</span>
+            {{/demand.address}}
+			
+		</p>
+		<p>
+			<span class="icon-checkmark-pc3 green"></span>
+			<span>面积约</span><span class="size">{{demand.size}}㎡</span>
+		</p>
+		<p>
+			<span class="icon-checkmark-pc3 green"></span>
+			<span>{{util.loc}}</span><span>{{util.color}}显示</span><span class="addr">间距{{demand.span}}</span>
+		</p>
+		<div>
+			{{#util.supplier}}
+			<div class="supplier"><span class="join">参与工程商</span>
+				{{#supplier_list}}
+					{{#avatar}}
+						<img src="{{avatar}}" ievent="callTalk">
+					{{/avatar}}
+					{{^avatar}}
+						<span class="noImg">{{util.img}}</span>
+					{{/avatar}}
+				{{/supplier_list}}
+			</div>
+			{{/util.supplier}}
+			{{^util.supplier}}
+			<div class="supplier"><span class="join">正在召集工程商...</span></div>
+			{{/util.supplier}}
+		</div>
+		<div class="hide demandId">{{demand_id}}</div>
+	</div>
+</div>	
+{{/list}}

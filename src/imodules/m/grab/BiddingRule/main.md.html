@@ -1,0 +1,52 @@
+<div id="{{ID}}" {{IMODULE}} {{DONE}}>
+    {{IncludeMCSS}}
+    <div class="done-status">
+        <ul class="r-doubt curr" idom="statusInit">
+            @@include('../iwidgets/m/GrabRule/main.html',{
+            "current":"active",
+            "q": "这条招标是怎么回事？",
+            "a": "<div class='part-gray'>万屏汇每天会收到数千个客户招标信息。我们倾向于让高等级的工程商（积极参与、成单率高、口碑好），优先为客户提供服务。</div>"
+            })
+
+            @@include('../iwidgets/m/GrabRule/main.html',{
+            "current":"",
+            "q": "如何参与竞标？",
+            "a": "<div class='part-gray'>可以选择线上免费留言参与竞标，或电话联系客户参与竞标。为了帮助客户筛选出服务意识强，有资质的工程商，电话联系时需要交纳少量的费用。其他无需支付任何费用。</div><div class='part-gray'>另外，万屏汇期望建立一个公平、有序的平台，为了客户免于频繁的电话骚扰，我们将定时控制电话跟进人数。</div>"
+            })
+
+            @@include('../iwidgets/m/GrabRule/main.html',{
+            "current":"",
+            "q": "如何为客户提供更高效的服务？",
+            "a": "<div class='part-gray'>联系客户时，请说明来自万屏汇。客户更倾向于选择沟通积极、成单率高、服务口碑好、真诚的工程商提供服务。</div>"
+            })
+        </ul>
+        <ul class="r-doubt" idom="statusDone">
+            @@include('../iwidgets/m/GrabRule/main.html',{
+            "current":"active",
+            "q": "交易怎么就完成了？",
+            "a": "<div class='part-gray'>客户已经和其它竞争者达成了交易，下次再努力吧。</div>"
+            })
+
+            @@include('../iwidgets/m/GrabRule/main.html',{
+            "current":"",
+            "q": "是否还能获得其他招标信息推送？",
+            "a": "<div class='part-gray'>万屏汇每天为合作伙伴创造数千次机会，请留意我们的招标信息推送短信。</div><div class='part-orange'>参与越积极、成单率越高、服务口碑越好，获得的推送招标信息就会越多！</div>"
+            })
+
+        </ul>
+        <ul class="r-doubt" idom="statusWait">
+            @@include('../iwidgets/m/GrabRule/main.html',{
+            "current":"active",
+            "q": "电话联系客户，为什么要排队？",
+            "a": "<div class='part-gray'>万屏汇期望建立一个公平、有序的平台，一方面为所有优质的服务商创造机会，一方面留给每一位服务商足够的空间。</div>"
+            })
+
+            @@include('../iwidgets/m/GrabRule/main.html',{
+            "current":"",
+            "q": "成单率高，就能排在前面？",
+            "a": "<div class='part-gray'>是的，万屏汇倾向于将招标信息更多地推送给高等级的合作伙伴（响应及时、成单率高、口碑好）。</div><div class='part-gray'>因此，在响应时间接近时，成单率高者排名靠前。</div>"
+            })
+
+        </ul>
+    </div>
+</div>

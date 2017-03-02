@@ -1,0 +1,28 @@
+{{DONE}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @@include('m/common/InsertTop/main.html',{"title": ""})
+    <style> @@include('{{MCSS}}')</style>
+</head>
+<body id="{{ID}}" {{IMODULE}}>
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="infos text-center">
+                <img src="{{MIMAGE}}/error.png" class="bigpic">
+                <h3>您访问的页面出现错误了</h3>
+                <p>您在地址栏中输入的网址有误或者点击某个链接已过期</p>
+                <img src="{{MIMAGE}}/error-logo.png" width="139">
+                <div><a id="host" class="btn btn-primary" href="http://www.wanpinghui.com/?pgv_ref=404"><span id="time">7</span> 秒后，返回万屏汇首页</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@@include('m/common/InsertBottom/main.html')
+</body>
+</html>

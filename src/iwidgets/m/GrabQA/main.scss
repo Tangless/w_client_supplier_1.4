@@ -1,0 +1,125 @@
+@import "src/sass/global/mixin";
+@import "src/sass/global/libs/variable";
+
+.GrabQA {
+    border-bottom: 1px solid #E0E1E6;
+    position: relative;
+    padding-bottom: 0.150000rem;
+    margin: 0 0.15rem;
+
+  h5 {
+    font-size: 0.14rem;
+    font-weight: 300;
+    color: #666666;
+    padding-top: 0.15rem;
+  }
+
+  .active h5 {
+    color: #FD4701;
+  }
+
+  .active .part-doucon {
+    display: inline-block;
+  }
+
+  .grab-open {
+    width: 0.12rem;
+    height: 0.12rem;
+    float: left;
+    position: absolute;
+    right: 0.09rem;
+    top: 0.17rem;
+    transition: transform .3s ease-in 0s;
+    -webkit-transition: -webkit-transform .3s ease-in 0s;
+    -o-transition: -o-transform .3s ease-in 0s;
+    -ms-transition: -ms-transform .3s ease-in 0s;
+  }
+
+  .grab-open.rotate {
+    transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform-origin: center center;
+    -webkit-transform-origin: center center;
+    -o-transform-origin: center center;
+    -ms-transform-origin: center center;
+  }
+
+  .grab-open.rotate:before {
+    color: $orange;
+  }
+
+  .grab-open:before {
+    color: #999;
+    font-size: 0.12rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform:scale(0.8);
+    transform:scale(0.8);
+  }
+
+  .grab-open.icon-circle-up:before {
+    color: $orange;
+    font-size: 0.12rem;
+  }
+
+  /*最后一个子元素下面没有内容时不需要线*/
+  li.last-no-line {
+    border-bottom: none;
+  }
+
+  .part-doucon {
+    font-size: 0.130000rem;
+    color: #999;
+    margin-top: 0.05rem;
+    line-height: 0.18rem;
+    font-size: 0.12rem;
+    padding: 0 0.30rem;
+    display: none;
+    .partp {
+      padding-bottom: 10px;
+    }
+    p > a {
+      color: $orange;
+      text-decoration: underline;
+    }
+    p > i {
+      color: $orange;
+      vertical-align: middle;
+      margin-right: 0.12rem;
+    }
+    .part-link {
+      color: $orange;
+      text-decoration: underline;
+      font-size: 0.12rem;
+    }
+
+    .part-gray {
+      line-height: 0.18rem;
+      padding-top: 0.10rem;
+    }
+
+    .part-orange {
+      line-height: 0.18rem;
+      padding-top: 0.10rem;
+      color: #fea380;
+    }
+    .striking {
+      color: #fea380;
+      font-style: normal;
+    }
+  }
+}
+
+ul,li,h6,h5,p {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.GrabQA.active h5 {
+  color: $orange;
+}
+

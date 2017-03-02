@@ -1,0 +1,446 @@
+@import "src/sass/global/mixin" ;
+#{{ID}}{
+	position:fixed;
+	bottom:1px;
+	background:#fff;
+	width:100%;
+	.container {
+		width:100%;
+	}
+	.cli {
+		@include behavior('{{MIMAGE}}/click.png');
+		background-size:8px 12px;
+		width:8px;
+		height:12px;
+		display:inline-block;
+		position: absolute;
+    	top: 5px;
+    	right:0;
+	}
+	.cli2 {
+		@include behavior('{{MIMAGE}}/click1.png');
+		background-size:8px 12px;
+		width:8px;
+		height:12px;
+		display:inline-block;
+		position: absolute;
+    	top: 38px;
+    	right:26px;
+	}
+	.unread {
+		position:absolute;
+		width:14px;
+		height:14px;
+		right:36px;
+		background:red;
+		line-height:14px;
+		text-align:center;
+		bottom:22px;
+		font-size:12px;
+		border-radius:14px;
+	}
+	.unreadAll {
+		height:8px;
+		width:8px;
+		position:absolute;
+		border-radius:8px;
+		right:40px;
+		bottom:25px;
+		background:red;
+	}
+	.cli3 {
+		right:31px;
+	}
+	.phone {
+		background:#fff;
+	}
+	.cli1 {
+		right:5px;
+	}
+	.cliDiv {
+		width:20px;
+		height:12px;
+		position:absolute;
+		right:30px;
+		bottom:45px;
+	}
+	.cliDiv1 {
+		display:inline-block;
+		width:20px;
+		height:12px;
+		text-align:center;
+		line-height:90px;
+	}
+	.hideCli {
+		background:#fff;
+		width:86px;
+		height:90px;
+		border-top-left-radius:90px;
+		border-bottom-left-radius:86px;
+		position:absolute;
+		right:0;
+		bottom:0;
+		border:1px solid #e3e8ee;
+	}
+	.city {
+		text-align:center;
+		line-height:90px;
+		color:$black;
+		font-weight:bold;
+	}
+	.border {
+		border-left:1px solid $linecolor;
+	}
+	// .border-middle {
+	// 	border-top:1px solid $linecolor;
+	// 	border-bottom:1px solid $linecolor;
+	// }
+	.info {
+		@include font(14px);
+	}
+	.login {
+		border-top:1px solid $linecolor;
+		border-bottom:1px solid $linecolor;
+	}
+	.btn {
+		background:$blue;
+		width:110px;
+		height:50px;
+		color:#fff;
+		float:right;
+		padding:0;
+		font-size:18px;
+		line-height:50px;
+		margin-top:20px;
+		border-radius:2px;
+		border:1px solid $lightblue;
+		&:hover {
+			background:#357ae8;
+		}
+	}
+	.inline {
+		display:inline-block;
+	}
+	.blue {
+		color:$blue;
+		padding-right:5px;
+	}
+	.max {
+		max-width:150px;
+	}
+	.askDiv {
+		padding:26px 0 26px 5px;
+		cursor: pointer;
+	}
+	.font12 {
+		@include font(12px);
+	}
+	.font13 {
+		@include font(13px);
+	}
+	.title {
+		margin-bottom:10px;
+		color:$black;
+		font-weight: bold;
+	}
+	.select {
+		border-bottom:1px solid $linecolor;
+		padding:18px 0 18px 20px; 
+		@include font(14px);
+		color:$gray;
+	}
+	.option {
+		position:absolute;
+		width:100%;
+		left:0;
+		bottom:89px;
+		background:#fff;
+		z-index:1;
+		border:1px solid $linecolor;
+		box-shadow: 0 1px 4px rgba(0,0,0,.13);
+		min-width:254px;
+	}
+	.size {
+		font-size:14px;
+		border:0;
+	}
+	.scrSize {
+		padding:20px 0 10px 20px;
+		border-bottom:1px solid $linecolor;
+	}
+	.choose {
+		border:1px solid $linecolor;
+		color:$gray;
+		text-align:center;
+		font-size:14px;
+		height:32px;
+		line-height:32px;
+		border-radius:3px;
+		margin-bottom:15px;
+	}
+	input {
+		border:0;
+		font-size:14px;
+		outline:none;
+	}
+	.locChoosed,.corChoosed,.spanChoosed {
+		color:#fff!important;
+		background:$blue!important;
+		border:1px solid $lightblue;
+	}
+	.padding5 {
+		padding-left:5px;
+	}
+	.col-xs-4 {
+		padding-left:20px;
+		padding-right:20px;
+	}
+	.top {
+		margin-top:20px;
+	}
+	.width {
+		display:inline-block;
+	}
+	.textBor {
+		border-bottom:1px solid $linecolor;
+		padding-bottom:15px;
+		padding-left:20px;
+	}
+	.login {
+		box-shadow: 0 1px 3px 0 #dce0e0;
+	}
+	.errorTip {
+		color:#FE3824;
+		font-size:14px;
+		padding:8px 0 0 15px;
+	}
+	.tpl {
+		display:table;
+		width:100%;
+		margin-left:0;
+		box-shadow: 0 1px 4px 2px rgba(0,0,0,.13);
+		padding:20px 20px 20px 20px; 
+		position:relative;
+		border-radius: 4px;
+		.inline {
+			display:table-cell;
+			vertical-align: middle;
+		}
+		.name {
+			@include font(24px);
+			color:$black;
+			font-weight:bold;
+		}
+		.info {
+			// padding: 0 215px 0 136px;
+		}
+		.scrInfo {
+			@include font(12px);
+			color:$gray;
+			margin-bottom:11px;
+
+		}
+		.userInfo {
+			@include font(12px);
+		}
+		.scrType {
+			@include font(15px);
+			color:$black;
+			padding-right:22px;
+			font-weight:bold;
+		}
+		.time {
+			padding-right:46px;
+			color:$gray;
+			@include font(12px);
+		}
+		.message {
+			width:110px;
+			height:50px;
+			line-height:50px;
+			text-align:center;
+			color:#fff;
+			background:$blue;
+			float:right;
+			display:inline-block;
+			border-radius:3px;
+			font-weight:bold;
+			border:1px solid $lightblue;
+			position:relative;
+			&:hover {
+				background:#357ae8;
+			}
+		}
+	}
+	.pos {
+		position:relative;
+	}
+	.unit {
+		position:absolute;
+		right:15px;
+		top:2px;
+		color:$black;
+	}
+	.sure {
+		text-align:right;
+		@include font(14px);
+		color:$blue;
+		margin-bottom:15px;
+		padding-top:10px;
+	}
+	.retract {
+		margin:20px 15px 15px 0;
+		display:inline-block;
+		float:right;
+	}
+	.spanInput {
+		margin-bottom:10px;
+		position:relative;
+	}
+	.span {
+		padding-left: 10px;
+    	padding-right: 20px;
+    	.col-xs-3 {
+    		padding: 0 0 0 10px;
+    	}
+	}
+	.close {
+		position:absolute;
+		right: 10px;
+	    color: #b3b5b7;
+	    font-size: 12px;
+	    top: 5px;
+	}
+	.cityDiv {
+		float:right;
+	}
+	
+	@media (max-width: 992px) {
+		.width1 {
+			width:18.2%!important;
+		}
+		.width2 {
+			width:23.4%!important;
+		}
+		.width3 {
+			width:34.5%!important;
+		}
+		.btn {
+			margin-right:34px!important;
+			width:70px!important;
+		}
+		.cityDiv {
+			margin-right:39px;
+		}
+	}
+	
+	@media (min-width: 1200px) {
+		.option1 {
+			width:70%!important;
+		}
+		.btn {
+			margin-right:135px;
+		}
+		.city {
+			font-size:20px;
+		}
+		.width1 {
+			width:18.5%;
+		}
+		.width2 {
+			width:22.5%;
+		}
+		.width3 {
+			width:36%;
+		}
+		.cityDiv {
+			margin-right:50px;
+		}
+	}
+	.tpl {
+		.name {
+			width:18.7%;
+			text-align:right;
+		}
+		.info {
+			padding-left:8%;
+			width:51%;
+		}
+		.message {
+			margin-right:135px;
+		}
+ 	}
+ 	@media (max-width: 1200px) {
+		.logout {
+			.info {
+				// padding: 0 150px 0 40px;
+			}
+		}
+		.option1 {
+			width:86%!important;
+		}
+		.width1 {
+			width:14.3%;
+		}
+		.width2 {
+			width:25.4%;
+		}
+		.width3 {
+			width:34.5%;
+		}
+		.btn {
+			margin-right:43px;
+			width:100px;
+		}
+		.cityDiv {
+			margin-right:39px;
+		}
+		.tpl {
+			.name {
+				width:14.3%;
+				text-align:right;
+				text-overflow: ellipsis;
+			    overflow: hidden;
+			    white-space: nowrap;
+			    max-width: 128px;
+			}
+			.info {
+				padding-left:8%;
+				width:62%;
+			}
+			.message {
+				margin-right:26px;
+			}
+	 	}
+	}
+	@media (max-width: 992px) {
+		.tpl {
+			.time {
+				display:none;
+			}
+			.name {
+				display:none;
+			}
+			.min {
+				display:table-cell!important;
+			}
+			.info {
+				padding: 0 50px 0 20px;
+			}
+			.minTime {
+				@include font(12px);
+			}
+			.minName {
+				@include font(18px);
+				color:$black;
+				margin-bottom:11px;
+				font-weight:bold;
+				max-width: 125px;
+			    overflow: hidden;
+			    text-overflow: ellipsis;
+			    white-space: nowrap;
+			}
+		}
+	}
+
+}

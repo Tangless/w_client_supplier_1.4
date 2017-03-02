@@ -1,0 +1,48 @@
+<div id="{{ID}}" {{IMODULE}}>
+    {{IncludeMCSS}}
+    <div class="chat-content" idom="chatContent">
+        <div class="demand-info" idom="demandPane">
+            @@include('www/customerItem/Details/main.md.html')
+        </div>
+        <div class="chat-content-sb">
+            <div class="chat-pane" idom="chatPane">
+            </div>
+            <form class="input-pane" idom="inputPane">
+                <span class="icon-expression emotion"></span>
+                <span class="icon-picture enclosure" idom="enclosure" ievent="sendImg"></span>
+                <input id="input" type="text" placeholder="需求称述越清晰，工程报价报价越精准!"/>
+                <button id="sendMsg" type="submit" class="btn hide btn-primary" idom="send">发送</button>
+                <input id="imgFile" class="hide" type="file" accept="image/*">
+            </form>
+            <div class="sendImgPending hide">
+                <div class="loading"></div>
+                <p class="text">上传中</p>
+            </div>
+        </div>
+        <div class="edit-project hide" idom="editProject">
+            @@include('www/grab/EditCurrentItem/main.md.html')
+        </div>
+    </div>
+    <div class="group-list chat-member" idom="glist">
+        <div class="gchat group-item active" idom="gchat" gid="" ievent="clientChangeChat">
+            <span class="user-head icon-crowd"></span>
+            <span class="unread-num hide"></span>
+            <div class="item-info">
+                <h4>工程商报价群(<span class="g-num"></span>)</h4>
+                <span class="last-msg"></span>
+            </div>
+        </div>
+        <div class="vip group-item" gid="" ievent="clientChangeChat">
+            <img class="user-head" src="{{MIMAGE}}/xiaohui.png">
+            <span class="icon-vip"></span>
+            <span class="unread-num hide"></span>
+            <div class="item-info">
+                <h4>万屏汇客服代表</h4>
+                <span class="last-msg"></span>
+            </div>
+        </div>
+        <div class="joined-suppliers">
+
+        </div>
+    </div>
+</div>

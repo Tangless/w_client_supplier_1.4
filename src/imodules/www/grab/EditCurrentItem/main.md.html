@@ -1,0 +1,101 @@
+<div id="{{ID}}" {{IMODULE}}>
+    {{IncludeMCSS}}
+    <h1>您的项目</h1>
+    <h4>编辑招标信息</h4>
+    <p class="description">(项目信息越健全，报价和方案越精准)</p>
+    <div class=" choose-panel">
+        <div class=" type">
+            <span class="words">类型</span>
+            <p class="show-menu" ievent="showMenu">
+                <span idom="type" num="1">户外广告屏</span>
+                <span class="icon-circle-down"></span>
+            </p>
+            <div class="type-choice hide" idom="typePanel" ievent="chooseType">
+                <p class="type-item" num="1">门头招牌</p>
+                <p class="type-item" num="2">户外广告屏</p>
+                <p class="type-item" num="3">信息告示牌</p>
+                <p class="type-item" num="4">舞台用屏</p>
+                <p class="type-item" num="5">室内高清屏</p>
+                <p class="type-item" num="0">其他</p>
+            </div>
+        </div>
+        <div class=" location">
+            <span class="words">环境</span>
+            <p class="show-menu" ievent="showMenu">
+                <span idom="location" num="1">户外</span>
+                <span class="icon-circle-down"></span>
+            </p>
+            <div class="location-choice hide" idom="locPanel" ievent="chooseLocation">
+                <p class="loc-item" num="1">户外</p>
+                <p class="loc-item" num="2">室内</p>
+                <p class="loc-item" num="3">半户外</p>
+            </div>
+        </div>
+        <div class=" color">
+            <span class="words">颜色</span>
+            <p class="show-menu" ievent="showMenu">
+                <span idom="color" num="3">全彩</span>
+                <span class="icon-circle-down"></span>
+            </p>
+            <div class="color-choice hide" idom="colorPanel" ievent="chooseColor">
+                <p class="color-item" num="1">单色</p>
+                <p class="color-item" num="2">双色</p>
+                <p class="color-item" num="3">全彩</p>
+            </div>
+        </div>
+        <div class=" spacing">
+            <span class="words">间距</span>
+            <p class="show-menu" ievent="showMenu">
+                <span idom="spacing" num="3">P10</span>
+                <span class="icon-circle-down"></span>
+            </p>
+            <div class="spacing-choice hide" idom="spacingPanel" ievent="chooseSpacing">
+                <p class="spacing-item" num="1">P6</p>
+                <p class="spacing-item" num="2">P8</p>
+                <p class="spacing-item" num="3">P10</p>
+                <p class="spacing-item" num="0">其他</p>
+            </div>
+            <div class="choice-other hide">
+                <span class="words">其他</span>
+                <input type="text" class="input-div other" maxlength="3" placeholder="如p8、p10"/>
+                <span class="close-other icon-cross-pc"></span>
+                <span class="sure-other">确定</span>
+            </div>
+        </div>
+    </div>
+    <div class="part-1">
+        <div class="with-address">
+            <span class="words">在哪用屏(必填)</span>
+            <input type="text" class="input-div size" idom="address" must="true" placeholder="输入地址(如郑州市二十七区)"
+                   maxlength=50/>
+
+        </div>
+        <div class="with-size">
+            <span class="words">用屏面积(必填)</span>
+            <input type="text" class="input-div size" idom="size" must="true" placeholder="面积(请填写数字，如15)" maxlength=10
+                   onkeyup="value=value.replace(/[^\d{1,}\.\d{1,}|\d{1,}]/g,'')"/>
+            <span class="unit">m<sup>2</sup></span>
+        </div>
+        <div class="with-budget">
+            <span class="words">用屏预算</span>
+            <input type="text" class="input-div budget" idom="budget" must="false" placeholder="输入预算金额" maxlength=10
+                   onkeyup="value=value.replace(/[^\d{1,}\.\d{1,}|\d{1,}]/g,'')"/>
+        </div>
+    </div>
+    <div class="part-2">
+        <div class="with-text">
+            <span class="words">备注</span>
+            <textarea class="input-div" idom="note" placeholder="输入备注 (如工程条件和要求、产品要求、产品品牌要求、工程商要求等）"
+                      maxlength=100></textarea>
+        </div>
+        <div class="with-picture">
+            <span class="words up-words">附加施工现场图片、已计划的设计方案</span>
+            <!-- 文件选择 ,选择之后隐藏,显示上面的预览div-->
+            <div class="file-upload ">
+                @@include('global/misc/ImageUploader/main.md.html')
+            </div>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary btn-block" idom="submit" ievent="submitEdit">提交</button>
+
+</div>

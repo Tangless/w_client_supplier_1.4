@@ -1,0 +1,178 @@
+@import "src/sass/global/mixin";
+@import "src/sass/global/libs/variable";
+
+#LeavingMessage {
+  border-top: .1rem solid #f8f8f8;
+  padding-top: .18rem;
+  background-color: #fff;
+  padding-bottom: 0.55rem;
+  list-style: none;
+
+  .l-title {
+    text-align: center;
+    color: $font-blue;
+    font-size: 0.14rem;
+    margin:0;
+  }
+  .icon-message {
+    margin-right: 0.08rem;
+    vertical-align: -0.02rem;
+    font-size: 0.16rem;
+  }
+  .mes-count {
+    position: relative;
+  }
+  .mes-shu {
+    font-size: 0.12rem;
+    font-style: normal;
+  }
+  .l-content {
+    width: 100%;
+    padding-top: 0.07rem;
+    padding-bottom: 0.1rem;
+  }
+  .l-btn {
+    text-align: center;
+    margin-top: 0.17rem;
+    .btn-primary {
+      width: 1.75rem;
+      height: 0.44rem;
+      padding: 0;
+    }
+  }
+  .icon-data-message {
+    margin-right: 0.16rem;
+    font-size: 0.20rem;
+    vertical-align: -0.02rem;
+  }
+  .l-wuliuyan {
+    text-align: center;
+    font-size: 0.12rem;
+    color: $gray;
+    padding-top: 0.30rem;
+  }
+  .position {
+    font-size: 0.12rem;
+    color: $lightgray;
+    font-style: normal;
+    margin-left: 0.1rem;
+  }
+
+  .show {
+    display: block!important;
+  }
+
+  .aDel {
+    color: #e3e8ee
+  }
+
+  #Message {
+    .comment {
+      padding: 0.17rem 0.15rem 0.15rem;
+      border-bottom: 1px solid $linecolor;
+      padding-bottom: 0.25rem;
+      
+    }
+    .comment-content {
+      width: 100%;
+    }
+    .comment-author-avatar {
+      float: left;
+      width: 0.25rem;
+      height: 0.25rem;
+    }
+    .icon-user3－26px {
+      font-size: 0.25rem;
+      color: $lightgray;
+    }
+    .comment-author-avatar img {
+      width: 100%;
+    }
+    .comment-details {
+      margin-left: 0.35rem;
+      margin-top: 0.04rem;
+    }
+    .comment-author-name {
+      width: 100%;
+    }
+    .com-ming {
+      float: left;
+      font-size: 0.15rem;
+      color: $black;
+    }
+    .comment-date {
+      float: right;
+      font-size: 0.12rem;
+      color: $lightgray;
+    }
+    .comment-body {
+      padding-right: 0.38rem;
+      color: #83848e;
+      font-size: 0.12rem;
+      padding-top: 0.06rem;
+      word-wrap: break-word;
+      .relpay-delete {
+        top: 0.02rem;
+      }
+    }
+    .com-box {
+      position: relative;
+    }
+    .comment-del {
+      color: $linecolor;
+      font-size: 0.12rem;
+    }
+    .relpay-delete {
+      position: absolute;
+      top: 0.11rem;
+      right: -0.33rem;
+      font-size: 0.12rem;
+      color: $blue;
+    }
+    .discover {
+      display:block!important;
+    }
+    .comment-isme {
+      padding: 0.07rem 0.35rem 0;
+    }
+    .isme-replay {
+      color: $font-blue;
+      font-size: 0.12rem;
+    }
+    .children { 
+      padding-left: 0.35rem;
+      padding-right: 0.38rem;
+      list-style: none;
+      .comment {
+        border-bottom: none;
+        background-color: #f4f8ff;
+        padding: 0.08rem;
+        margin-top: 0.17rem;
+        position: relative;
+      }
+      .aDel {
+        color: #b3b5b7;
+      }
+      .comment-author-avatar {
+        display: none;
+      }
+      .comment-date {
+        display: none;
+      }
+      .comment-details {
+        margin-left: 0;
+        margin-top: 0;
+      }
+      .comment-author-name {
+        float: left;
+        width: auto;
+        font-size: 0.12rem;
+        color: $font-blue;
+        margin-right: 0.12rem;
+      }
+      .comment-body {
+        padding-top: 0;
+      }
+    }
+  }
+}

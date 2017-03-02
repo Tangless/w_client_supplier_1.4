@@ -1,0 +1,63 @@
+<div id="{{ID}}" {{IMODULE}}>
+{{IncludeMCSS}}
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="title">
+					项目大厅
+				</div>
+				<div class="cnt">
+					现在有<span class="blue"></span>个用屏客户正在洽谈，为您提供参考
+				</div>
+			</div>
+		</div>
+		<div class="row margin">
+			<div class="col-xs-1">
+				<div class="type border" ievent="chooseType" type="">
+					所有
+				</div>
+			</div>
+			<div class="col-xs-2">
+				<div class="type" ievent="chooseType" type="2">
+					户外广告	
+				</div>
+			</div>
+			<div class="col-xs-2">
+				<div class="type" ievent="chooseType" type="5">
+					室内高清
+				</div>
+			</div>
+			<div class="col-xs-2">
+				<div class="type" ievent="chooseType" type="4">
+					舞台用屏
+				</div>
+			</div>
+			<div class="col-xs-2">
+				<div class="type" ievent="chooseType" type="3">
+					信息告示牌
+				</div>
+			</div>
+			<div class="col-xs-2">
+				<div class="type" ievent="chooseType" type="1">
+					门头招牌
+				</div>
+			</div>
+			<div class="col-xs-1">
+				<div class="type" ievent="chooseType" type="0">
+					其他
+				</div>
+			</div>
+		</div>
+		<div class="row" id="list">
+			{{IncludeMTPL}}
+		</div>
+		<div class="row more hide" ievent="more">
+			查看更多 <span class="icon-Expansion"></span>
+		</div>
+		<div class="loadDiv hide">
+			<div class="loading"></div>
+		</div>
+		<div class="noMsg hide">暂无相关数据</div>
+	</div>
+</div>
+

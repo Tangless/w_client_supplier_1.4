@@ -1,0 +1,57 @@
+{{#demand_info}}
+<h4 class="tourists text-center" id="tourProsess" idom="tourProsess">{{city_name}} | {{nick}} | {{util.type}}{{util.loc}}屏项目</h4>
+<h4 class="tourists text-center hide" id="yourProsess" idom="yourProsess">您的项目</h4>
+<div class="brief-info text-center hide" id="yourDetail" idom="yourDetail"><a href="javascript:;" class="unfold" ievent="slideDown">查看详情<span class="icon-down-pc"></span></a>{{whether}}{{unit}}／{{span}}／{{util.color}}／{{size}}㎡</div>
+<div class="puton" id="putContent" idom="putContent">
+    <div class="content clearfix">
+        <div class="c-drawing">
+            <p class="c-d-tip">工程场地实拍图尚未上传</p>
+            <div class="c-d-tu">
+                <image src="{{image}}" class="hide" idom="drawPic"/>
+            </div>
+            <div class="c-d-site">
+                <span class="icon-nail-pc"></span>工程场地实拍图
+            </div>
+        </div>
+
+        <div class="c-info">
+            <div class="c-info-data">
+                <p class="demand-budget {{havePrice}}"><em class="budg-ys">预算 </em><span class="c-price">{{whether}}</span>{{unit}}</p>
+                <p class="no-budget {{nonePrice}}">议价</p>
+                <p>
+                    <span class="icon-checkmark-pc3"></span>
+                    {{#address}}
+                        <span class="address">位置在{{address}}</span>
+                    {{/address}}
+                    {{^address}}
+                        <span class="address">位置在{{city_name}}</span>
+                    {{/address}}
+                </p>
+                <p>
+                    <span class="icon-checkmark-pc3"></span>
+                    面积约<span>{{size}}</span>m<sup>2</sup>
+                </p>
+                <p>
+                    <span class="icon-checkmark-pc3"></span>
+                    <span>{{util.loc}}</span><span idom="color">{{util.color}}显示，</span><span idom="span">间距{{span}}</span>
+                </p>
+                <p class="c-note {{dHide}}">备注： {{note}}</p>
+                <div class="audio-items hide" id="audioPane" idom="audioPane">
+                    @@include('../iwidgets/www/Audio/main.html')
+                </div>
+            </div>
+            <div class="over-status hide" idom="overStatus">
+                <span class="icon-complete-pc"></span>
+            </div>
+        </div>
+    </div>
+    <div class="my-tour">
+        <div class="my-editor text-center hide" id="myEdit" idom="myEdit">
+            <button class="btn-primary btn" ievent="EditSelf"><span class="icon-edit-pc"></span>编辑需求</button>
+        </div>
+        <div class="my-up text-center hide" id="myUp" idom="myUp">
+            <a href="javascript:;" ievent="slideUp" class="upcli" id="slideUp">收起<span class="icon-up-pc"></span></a>
+        </div>
+    </div>
+</div>
+{{/demand_info}}

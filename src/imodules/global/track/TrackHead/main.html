@@ -1,0 +1,21 @@
+{{DONE}}
+<script>
+    window.is_wph = (location.hostname.indexOf('wanpinghui.com') != -1);
+    window.is_testin = (location.hostname.indexOf('testin.xxtao.com') != -1);
+</script>
+
+<!-- baidu统计 -->
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        console.log('init track');
+        if (window.is_wph) {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?e50695bb38e14c2973d5633e2884e518";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        }
+    })();
+</script>
+
+<!-- 因growingio代码依赖判断用户是否登录、api请求等基础代码，故挪到后面去了 -->

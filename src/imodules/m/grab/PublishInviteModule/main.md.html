@@ -1,0 +1,84 @@
+<div id='{{ID}}' {{IMODULE}}>
+	{{IncludeMCSS}}
+	<h4 class="title">编辑招标信息...</h4>
+	<div class="input-panel">
+		<h5 class="sub-title">在哪用屏?</h5>
+		<input type="text" class="input-div" idom="address" must="true" placeholder="地址(如郑州市二七区)"/>
+	</div>
+	<div class="input-panel">
+		<h5 class="sub-title">有什么要求?</h5>
+		<div class="row choose-panel">
+			<div class="col-xs-12 type">
+				<p ievent="showMenu">
+					<span idom="type" num="1">门头招牌</span>
+					<span class="icon-circle-down"></span>
+				</p>
+				<div class="color-choice" idom="typePanel" ievent="chooseType">
+					<p class="color-item" num="1">门头招牌</p>
+					<p class="color-item" num="2">户外广告牌</p>
+					<p class="color-item" num="3">信息告示牌</p>
+					<p class="color-item" num="4">舞台用屏</p>
+					<p class="color-item" num="5">室内高清屏</p>
+					<p class="color-item" num="0">其他</p>
+				</div>
+			</div>
+		</div>
+		<div class="row choose-panel">
+			<div class="col-xs-6 location">
+				<p ievent="showMenu">
+					<span idom="location" num="1">户外</span>
+					<span class="icon-circle-down"></span>
+				</p>
+				<div class="location-choice" idom="locPanel" ievent="chooseLocation">
+					<p class="loc-item" num="1">户外</p>
+					<p class="loc-item" num="2">室内</p>
+					<p class="loc-item" num="3">半户外</p>
+				</div>
+			</div>
+			<div class="col-xs-6 color">
+				<p ievent="showMenu">
+					<span idom="color" num="3">全彩</span>
+					<span class="icon-circle-down"></span>
+				</p>
+				<div class="color-choice" idom="colorPanel" ievent="chooseColor">
+					<p class="color-item" num="1">单色</p>
+					<p class="color-item" num="2">双色</p>
+					<p class="color-item" num="3">全彩</p>
+				</div>
+			</div>
+		</div>
+		<div class="with-unit">
+			<input type="text" class="input-div size" idom="size" must="true" placeholder="面积(请填写数字，如15)"/>
+			<span class="unit">m<sup>2</sup></span>
+		</div>
+		<input type="text" class="input-div" idom="span" must="true" placeholder="间距(如P10、P4)"/>
+	</div>
+	<div class="input-panel">
+		<h5 class="sub-title">其他要求?</h5>
+		<div class="with-unit">
+			<input type="text" class="input-div budget" idom="budget" must="true" placeholder="预算投入(请填写数字）"/>
+			<span class="unit">元</span>
+		</div>
+		<div class="text-div">
+		<textarea class="input-div" idom="note" placeholder="其它说明(如工程条件和要求、计划开工时间、产品要求、产品品牌要求、工程商要求等)"></textarea>
+		</div>
+	</div>
+	<!-- 文件选择 ,选择之后隐藏,显示下面的预览div-->
+	<div class="file-upload">
+		<span class="enclosure">
+			<span class="icon-enclosure" id="upload"></span>
+		</span>
+		<i>附加施工现场图片、已计划的设计方案</i>
+	</div>
+	<!--图片预览区-->
+	<div class="image-panel hide" >
+		<div class="loadImgDiv hide">
+			<div class="loadImg">
+				<div class="loading"></div>
+				<div class="text">上传中</div>
+			</div>
+		</div>
+		<span class="icon-delete" ievent="deleteImg"></span>
+	</div>
+	<button type="submit" class="btn btn-primary btn-block" idom="submit" ievent="submitInfo">提交</button>
+</div>

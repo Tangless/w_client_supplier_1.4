@@ -1,0 +1,28 @@
+{{#publish_list}}
+<div class="mylist" ievent="goTo">
+	<div class="time">
+		<div class="inline date">{{time}}</div>
+		<div class="inline type">{{type}}</div>
+	</div>
+	<div class="info"><span class="name">{{nick}}</span>{{info}}</div>
+	<div class="note">{{note}}
+		<div class="point hide"></div>
+		<div class="msgs hide">
+		</div>
+	</div>
+	<div class=" demandId">{{demand_im_group_outer_id}}</div>
+	<div class="hide publicId">{{publicId}}</div>
+</div>
+{{/publish_list}}
+{{#bid_list}}
+<div class="mylist" ievent="goTo">
+	<div class="time">
+		<div class="inline date">{{time}}</div>
+		<div class="inline type">{{type}}</div>
+	</div>
+	<div class="info"><span class="name">{{nick}}</span>{{info}}</div>
+	<div class="note">{{note}}</div>
+	<div class="hide demandId">{{demand_im_group_outer_id}}</div>
+	<div class="hide publicId">{{publicId}}</div>
+</div>
+{{/bid_list}}

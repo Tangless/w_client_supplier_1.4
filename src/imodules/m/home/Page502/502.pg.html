@@ -1,0 +1,29 @@
+{{DONE}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @@include('m/common/InsertTop/main.html',{"title": ""})
+    <style> @@include('{{MCSS}}')</style>
+</head>
+<body id="{{ID}}" {{IMODULE}}>
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="infos text-center">
+                <img src="{{MIMAGE}}/502.png" class="bigpic">
+                <h3>502 Bad Gateway</h3>
+                <h1>连接超时</h1>
+                <p>我们向服务器发送请求 由于服务器当前连接太多，导致服务器方面无法给予正常的响应，产生此类报错。</p>
+                <img src="{{MIMAGE}}/error-logo.png" width="139">
+                <div><a class="btn btn-primary" href="/index.html">返回首页</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@@include('m/common/InsertBottom/main.html')
+</body>
+</html>

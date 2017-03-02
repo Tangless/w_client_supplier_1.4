@@ -1,0 +1,79 @@
+<div id='{{ID}}' {{IMODULE}}>
+	{{IncludeMCSS}}
+	<div class="call-demand" idom="callDemand">
+		<div class="call-return">
+			<a href="javascript:;" class="icon-return" ievent="returnLogin"></a>
+		</div>
+		<div class="call-title">
+			立即为您召集工程商
+		</div>
+		<div class="type-title">
+			澄清需求，吸引更多工程商参与
+		</div>
+		<div class="demand-box">
+			<p class="input-bor">
+				<span class="input-div csinput" idom="address">郑州市</span>
+				<!--input type="text" class="input-div fullnull" idom="address" must="true" value="郑州市" disabled="disabled"-->
+			</p>
+			<div class="with-unit">
+				<input type="number" class="input-div size fullnull" idom="size" must="true" placeholder="面积(请填写数字，如15)">
+				<span class="unit">m<sup>2</sup></span>
+			</div>
+			<div class="row choose-panel">
+				<div class="col-xs-6 location">
+					<p ievent="showMenu">
+						<span idom="location" num="1">户外</span>
+						<span class="icon-circle-down"></span>
+					</p>
+					<div class="location-choice" idom="locPanel" ievent="chooseLocation">
+						<p class="loc-item" num="1">户外</p>
+						<p class="loc-item" num="2">室内</p>
+						<p class="loc-item" num="3">半户外</p>
+					</div>
+				</div>
+				<div class="col-xs-6 color">
+					<p ievent="showMenu">
+						<span idom="color" num="3">全彩</span>
+						<span class="icon-circle-down"></span>
+					</p>
+					<div class="color-choice" idom="colorPanel" ievent="chooseColor">
+						<p class="color-item" num="1">单色</p>
+						<p class="color-item" num="2">双色</p>
+						<p class="color-item" num="3">全彩</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="demand-p clearfix" idom="demandCommon">
+				<div class="demandpleft" idom="ordinary">
+					<!--span class="spacing active" ievent="chooseType"><em idom="span">P12</em> <i class="icon-checkmark02"></i></span>
+					<span class="spacing" ievent="chooseType"><em idom="span">P10</em><i class="icon-checkmark02"></i></span>
+					<span class="spacing" ievent="chooseType"><em idom="span">P16</em><i class="icon-checkmark02"></i></span-->
+				</div>
+				<span class="spacing spanc-other" ievent="chooseOtherType">其他</span>
+			</div>
+
+			<div class="demand-other hide" idom="demandOther">
+				<input type="text" class="input-div size" idom="span" must="true" placeholder="间距(如P10、P4)">
+				<a href="javascript:;" class="unit icon-cross" ievent="otherClose"></a>
+			</div>
+		</div>
+
+		<div class="call-sure">
+			<button class="btn btn-primary" idom="callBtn" ievent="callSubmit" disabled="disabled">确认</button>
+		</div>
+	</div>
+	<div class="type-ani">
+		<div class="gif-back">
+			<div class="type-gif"></div>
+		</div>
+		<div class="type-location"></div>
+		<div class="type-location2 fadeInOpacity animatedleida5"></div>
+		<div class="type-location3 fadeInOpacity animatedleida6"></div>
+		<span class="loc-circle loc-circle-one fadeIn animated2"></span>
+		<span class="loc-circle loc-circle-two fadeIn animatedleida2"></span>
+		<span class="loc-circle loc-circle-three fadeIn animatedleida3"></span>
+		<span class="loc-circle loc-circle-four fadeIn animatedleida4"></span>
+		<span class="loc-circle loc-circle-five fadeIn animatedleida7"></span>
+	</div>
+</div>

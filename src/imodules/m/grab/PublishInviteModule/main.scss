@@ -1,0 +1,226 @@
+@import "src/sass/global/mixin";
+
+#PublishInviteModule {
+  padding-bottom: .3rem;
+  //overflow-y: scroll;
+  .dz-preview {
+      font-size: 0px;
+  }
+  .dz-success-mark, .dz-error-mark {
+      display: none;
+  }
+  .title {
+    margin-top: 0;
+    font-size: 0.18rem;
+    margin-bottom: 0.3rem;
+    padding-top: 0.4rem;
+    color: $black;
+    text-align: center;
+  }
+  .loadImgDiv {
+    position: absolute;
+    top: 0 ;
+    left: .3rem;
+    width:2.55rem;
+    height: 100%;
+    background-color: rgba(0,0,0,.6);
+  }
+  .loadImg {
+    padding-top:1.1rem;
+  }
+  .loading {
+    height:10px;
+    background:url('{{MIMAGE}}/loading.gif') no-repeat center;
+    background-size:.6rem .1rem;
+    margin-bottom:.14rem;
+  }
+  .text {
+      text-align:center;
+      font-size:.12rem;
+  }
+  .input-panel {
+    margin-bottom: .27rem;
+
+    .sub-title {
+      font-size: .14rem;
+      color: $blue;
+      margin-bottom: .14rem;
+      padding-left: .2rem;
+    }
+    .input-div, .input-div:focus {
+      width: 100%;
+      height: .44rem;
+      padding: 0 .2rem;
+      background-color: $bgblue;
+      color: $black;
+      font-size: .14rem;
+      outline: none;
+      list-style: none;
+      border-left: none;
+      border-right: none;
+      border-top: 1px solid $linecolor;
+      border-bottom: 1px solid $linecolor;
+      border-radius: 0;
+      box-shadow: none;
+      -webkit-appearance: none;
+    }
+    .size,.budget,.size:focus,.budget:focus{
+      border-bottom: none;
+    }
+    .text-div{
+      width: 100%;
+      background-color: $bgblue;
+      color: $black;
+      padding:0;
+      margin:0;
+      font-size: .14rem;
+      outline: none;
+      list-style: none;
+      border-left: none;
+      border-right: none;
+      border-top: 1px solid $linecolor;
+      border-bottom: 1px solid $linecolor;
+      border-radius: 0;
+      box-shadow: none;
+      -webkit-appearance: none;
+    }
+    textarea.input-div,textarea.input-div:focus{
+      margin: .14rem 0;
+      line-height: .22rem;
+      height: .88rem;
+      resize: none;
+      -webkit-appearance: none;
+      border:none;
+    }
+    .with-unit{
+      position: relative;
+
+      .unit{
+        position: absolute;
+        right: .2rem;
+        top: .14rem;
+        font-size: .14rem;
+        color: $black;
+
+        sup{
+          transform: scale(.7,.7);
+          display: inline-block;
+        }
+      }
+    }
+  }
+  .choose-panel{
+    background-color: #fff;
+    border-top: 1px solid $linecolor;
+    color: $black;
+    margin: 0;
+    .col-xs-6, .col-xs-12 {
+      height: .44rem;
+      text-align: center;
+      font-size: .14rem;
+      line-height:.44rem;
+
+      &:first-of-type{
+        border-right: 1px solid $linecolor;
+      }
+
+      .icon-circle-down{
+        display: inline-block;
+        margin-left: .05rem;
+        position: relative;
+        top: 1px;
+        color: $gray;
+        transition: all .6s;
+        transform: rotate(0deg) scale(.75,.75);
+        transform-origin: 50% 50%;
+      }
+      .rotate{
+        transform: rotate(-180deg) scale(.75,.75);
+        transform-origin: 50% 50%;
+        transition: all .6s;
+      }
+    }
+  }
+  .location,.color{
+    position: relative;
+
+
+
+  }
+  .location-choice,.color-choice{
+    display: none;
+    position: absolute;
+    top: .45rem;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,.13);
+    font-size: .14rem;
+    z-index: 3;
+
+    p{
+      width: 100%;
+      height: .44rem;
+      line-height: .44rem;
+      color: $blue;
+      border-bottom: 1px solid $linecolor;
+      margin-bottom: 0;
+    }
+  }
+  .enclosure{
+    display: inline-block;
+    border: 1px solid $blue;
+    width: .36rem;
+    height: .36rem;
+    border-radius:2px;
+    line-height: .36rem;
+    text-align: center;
+    color: $blue;
+    font-size: .17rem;
+    vertical-align: middle;
+    margin-right: .05rem;
+  }
+  .file-upload{
+    text-align: center;
+    position: relative;
+    margin-bottom: .36rem;
+
+    i{
+      color: $lightgray;
+      font-size: .12rem;
+    }
+    .open-file{
+      position: absolute;
+      top: 0;
+      left: 15%;
+      @include opacity(0);
+    }
+  }
+  .image-panel{
+    margin: .35rem 0 .58rem;
+    position: relative;
+    padding: 0 .3rem;
+
+    img{
+      width: 100%;
+    }
+    .icon-delete{
+      position: absolute;
+      bottom: -.08rem;
+      right: .22rem;
+      width: .33rem;
+      height: .33rem;
+      display: block;
+      border-radius: 50%;
+      background-color: $blue;
+      color: #fff;
+      font-size: .16rem;
+      text-align: center;
+      line-height: .33rem;
+    }
+  }
+  .btn-primary{
+    width: 2.55rem;
+    margin: 0 auto;
+  }
+}

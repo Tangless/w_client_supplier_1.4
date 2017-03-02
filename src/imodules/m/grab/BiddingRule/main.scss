@@ -1,0 +1,31 @@
+@import "src/sass/global/mixin";
+@import "src/sass/global/libs/variable";
+
+#BiddingRule {
+  border-top: 0.10rem solid #f8f8f8;
+  padding-top: 0.10rem;
+  background-color: #fff;
+  display: none;
+  .r-title {
+    margin: 0;
+    font-size: 0.14rem;
+    color: $font-blue;
+    text-align: center;
+    padding-bottom: 0.14rem;
+  }
+  .icon-rule {
+    color: $font-blue;
+    vertical-align: -0.02rem;
+    margin-right: 0.08rem;
+    font-size: 0.16rem;
+  }
+  .r-doubt {
+    padding: 0 0.15rem 0.10rem;
+  }
+  .r-doubt{
+    display: none;
+  }
+  ul.curr{
+    display: block;
+  }
+}

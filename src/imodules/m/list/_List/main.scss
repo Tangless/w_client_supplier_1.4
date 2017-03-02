@@ -1,0 +1,108 @@
+._List {
+.title {
+    color:#4785F9;
+    padding:.205rem 0 .205rem .15rem;
+    font-size:.14rem;
+    border-bottom:1.5px solid #f4f4f4;
+  }
+  .left {
+    text-align:left!important;
+  }
+  .bargain {
+    display:inline-block;
+    font-size:.12rem;
+    width:.58rem;
+    height:.20rem;
+    border:1px solid #A3C3FC;
+    border-radius:.2rem;
+    color:#A3C3FC;
+    text-align:center;
+    line-height:.2rem;
+    font-weight:normal;
+    margin-left:.05rem;
+  }
+  .margin {
+    padding-right:.05rem;
+  }
+  a {
+    display: inline-block;
+    padding: .28rem .15rem .23rem 0;
+    font-size: .12rem;
+    width: 100%;
+    position: relative;
+    background:#FFFFFF;
+    border-bottom: 2px solid #f4f4f4;
+    // &:hover {
+    //   background: #F4F8Ff;
+    //   }
+    }
+  .suppliers {
+    background: #F4F8FF!important;
+  }
+
+  .inline {
+    display: inline-block;
+  }
+  .status {
+    color:#fff;
+    background:#A3C2FC;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size:.14rem;
+    padding:.03rem .1rem;
+    margin-bottom:.07rem;
+    line-height:.14rem;
+  }
+  .sta60 {
+    background:#b3b5b7!important;
+  }
+  .div1 {
+    margin-right:.16rem;
+  }
+  .time {
+    text-align:center;
+    line-height:.12rem;
+  }
+  .name {
+    font-size:.18rem;
+    font-weight:bold;
+    line-height:.18rem;
+  }
+  .info {
+    display:table;
+    margin-bottom:.07rem;
+    color:#202122;
+    max-height:.23rem;
+    
+  }
+  .over {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width:1.4rem;
+    padding-left:.05rem;
+  }
+  .lineH {
+    line-height:.12rem;
+        max-width: 2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .type {
+    width:.46rem;
+    height:.4rem;
+    border-radius:3px;
+    border:1px solid #A3C2FC;
+    color:#A3C2FC;
+    text-align:center;
+    vertical-align: text-bottom;
+    padding-top:.03rem;
+    float:right;
+    display:table;
+  }
+  .center {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
